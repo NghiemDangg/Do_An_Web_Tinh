@@ -1,0 +1,177 @@
+* {
+  padding: 0 ;
+  margin: 0 ;
+  box-sizing: border-box ;
+}
+/* .container{
+  margin: 0 auto ;
+} */
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+body {
+  font-family: "Nunito Sans", sans-serif;
+}
+/* Modal */
+.modal{
+
+}
+.modal-inner{
+
+}
+.modal-header{
+
+}
+.modal-close{
+
+}
+.modal-body{
+
+}
+.modal-description{
+
+}
+.modal-form{
+
+}
+.form-input{
+  
+}
+.form-check{
+  
+}
+.form-check-input{
+  
+}
+.form-check-label{
+  
+}
+.modal-footer{
+
+}
+.modal-btn{
+
+}
+
+
+
+
+
+.header-main {
+  width: 100%;
+}
+.header-top {
+  width: 100%;
+  height: 64px;
+  position: relative;
+  color: #fff;
+  background-color: #605dec;
+  display: flex;
+  line-height: 64px;
+  align-items: center;
+  justify-content: center;
+}
+.header-top-content {
+  font-size: 18px;
+  margin-top: unset;
+}
+.header-top-icon {
+  font-size: 14px;
+  position: absolute;
+  right: 32px;
+  cursor: pointer;
+}
+/* navbar */
+
+.navbar {
+  height: 64px;
+  margin: 0px 33px !important;
+  padding: 33px 0px !important;
+}
+
+.navbar-brand {
+  font-size: 30px !important;
+  font-weight: 800;
+  color: #605dec !important;
+}
+.navbar-nav {
+  line-height: 64px;
+}
+.nav-item {
+  margin-left: 16px !important;
+  margin-right: 16px !important;
+}
+.nav-link {
+  color: #7c8db0;
+}
+.nav-link:hover {
+  color: #605dec;
+}
+.btn-nav {
+  width: 95px;
+  height: 48px;
+  background-color: #605dec;
+  border-radius: 4px;
+  color: #fff;
+  text-align: center;
+  margin-top: 10px !important;
+  line-height: 48px;
+}
+.btn-nav:hover {
+  background-color: #1513a0;
+  transition: ease-in 0.2s;
+}
+
+.section-homepage {
+  height: 700px;
+  background: url(../img/background-world-map-1.gif) top center / cover
+    no-repeat;
+}
+.homepage-slogan {
+  width: 756px;
+  height: 265px;
+  background: url(../img/Hero\ Text\ Gradient.svg) top center / cover no-repeat;
+}
+
+.section-input {
+  display: flex;
+}
+
+/* review-section */
+
+.review-section .review-slider {
+  padding-bottom: 2rem;
+}
+
+.review-section .box {
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+}
+
+.review-section .box img {
+  height: 13rem;
+  width: 13rem;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.review-section .box h3{
+  color: #333;
+  font-size: 2.5rem;
+}
+
+.review-section .box p{
+  color: #6666;
+  font-size: 1.5rem;
+  padding: 1rem 0;
+}
+
+.review-section .box .star{
+  color: #1513a0;
+  font-size: 1.7rem;
+}

@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel</title>
+
+    <!-- boostrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Icon -->
+    <link
+      rel="stylesheet"
+      href="./resources/assets/fonts/themify-icons/themify-icons.css"
+    />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- css -->
+    <link rel="stylesheet" href="./resources/assets/css/style.css" />
+  </head>
+  <body>
+
+    <header class="header-main">
+      <div class="header-top">
+        <div class="header-top-content">
+          Join Travel today and save up to 20% on your flight using code TRAVEL
+          at checkout. Promotion valid for new users only.
+        </div>
+        <i class="ti-close header-top-icon"></i>
+      </div>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">Travel</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Flights</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Hotels</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Packages</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link signin-btn" href="#">Sign in</a>
+              </li>
+              <li class="nav-item btn-nav">
+                <a class="nav-link text-white signup-btn" href="#">Sign up</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section
+        class="section section-homepage d-flex justify-content-center align-items-center"
+      >
+        <div class="homepage-slogan"></div>
+      </section>
+
+      <section class="section section-input">
+        <div class="input-box departure">
+          <img src="./resources/assets/img/departure.svg" alt="" />
+          <select class="form-select" aria-label="Default select example">
+            <option selected>From where?</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+
+        <div class="input-box arrival">
+          <img src="./resources/assets/img/arrival.svg" alt="" />
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Where to?</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+
+        <div class="input-box calendar">
+          <img src="./resources/assets/img/calendar with dates.svg" alt="" />
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Depart - Return</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+
+        <div class="input-box adult">
+          <img src="./resources/assets/img/person solid.svg" alt="" />
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Adult</option>
+            <option value="1">1 adult</option>
+            <option value="2">2 adult</option>
+          </select>
+        </div>
+
+        <div class="serch-btn">Serch</div>
+      </section>
+
+      <section class="section section-card">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h1>Find your next adventure with these flight deals</h1>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-4">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="./resources/assets/img/china_tower.svg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <div class="card-name">
+                    <div class="card-text">The Bund, Shanghai</div>
+                    <div class="card-price">$598</div>
+                  </div>
+                  <p class="card-description">
+                    China’s most international city
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="./resources/assets/img/sydney.svg "
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <div class="card-name">
+                    <div class="card-text">Sydney Opera House, Sydney</div>
+                    <div class="card-price">$981</div>
+                  </div>
+                  <p class="card-description">
+                    Take a stroll along the famous harbor
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="./resources/assets/img/jphouse.svg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <div class="card-name">
+                    <div class="card-text">Kōdaiji Temple, Kyoto</div>
+                    <div class="card-price">$633</div>
+                  </div>
+                  <p class="card-description">
+                    Step back in time in the Gion district
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-large-card">
+        <div class="card mb-3">
+          <img
+            src="./resources/assets/img/tree.svg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <div class="card-name">
+              <h5 class="card-text">Tsavo East National Park, Kenya</h5>
+              <div class="card-price">$1,248</div>
+            </div>
+            <p class="card-description">
+              Named after the Tsavo River, and opened in April 1984, Tsavo East
+              National Park is one of the oldest parks in Kenya. It is located
+              in the semi-arid Taru Desert.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-card">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h1>Explore unique places to stay</h1>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-4">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="./resources/assets/img/Resort_2.svg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <div class="card-name">
+                    <div class="card-text">
+                      Stay among the atolls in Maldives
+                    </div>
+                  </div>
+                  <p class="card-description">
+                    From the 2nd century AD, the islands were known as the
+                    'Money Isles' due to the abundance of cowry shells, a
+                    currency of the early ages.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="./resources/assets/img/hotel_lobby.svg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <div class="card-name">
+                    <div class="card-text">
+                      Experience the Ourika Valley in Morocco
+                    </div>
+                  </div>
+                  <p class="card-description">
+                    Morocco’s Hispano-Moorish architecture blends influences
+                    from Berber culture, Spain, and contemporary artistic
+                    currents in the Middle East.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="./resources/assets/img/camp.svg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <div class="card-name">
+                    <div class="card-text">Live traditionally in Mongolia</div>
+                  </div>
+                  <p class="card-description">
+                    Traditional Mongolian yurts consists of an angled
+                    latticework of wood or bamboo for walls, ribs, and a wheel.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <button class="btn btn-primary" type="submit">Explore more stays</button>
+
+      <section class="section review-section">
+        <div class="section-title">What Travel users are saying</div>
+
+        <div class="review-slider">
+          <div class="wrapper">
+            <div
+              id="carouselExampleControlsNoTouching"
+              class="carousel slide"
+              data-bs-touch="false"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-4">
+                        <div class="slider">
+                          <div class="box">
+                            <img src="./resources/assets/img/girl.svg" alt="" />
+                            <h3>Yifei Chen</h3>
+                            <div class="stars">
+                              <i class="ti-star star"></i>
+                              <i class="ti-star star"></i>
+                              <i class="ti-star star"></i>
+                              <i class="ti-star star"></i>
+                              <i class="ti-star star"></i>
+                            </div>
+                            <p>
+                              What a great experience using Tripma! I booked all
+                              of my flights for my gap year through Tripma and
+                              never had any issues. When I had to cancel a
+                              flight because of an emergency, Tripma support
+                              helped me read more...
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-4">
+                        <div class="slider">
+                          <div class="box">
+                            <img
+                              src="./resources/assets/img/cute_girl.svg"
+                              alt=""
+                            />
+                            <h3>Kaori Yamaguchi</h3>
+                            <div class="stars">
+                              <i class="ti-star star"></i>
+                              <i class="ti-star star"></i>
+                              <i class="ti-star star"></i>
+                              <i class="ti-star star"></i>
+                              <i class="ti-star star"></i>
+                            </div>
+                            <p>
+                              My family and I visit Hawaii every year, and we
+                              usually book our flights using other services.
+                              Tripma was recommened to us by a long time friend,
+                              and I’m so glad we tried it out! The process was
+                              easy and read more...
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-4">
+                        <div class="slider">
+                          <div class="box">
+                            <img src="./resources/assets/img/boi.svg" alt="" />
+                            <h3>Anthony Lewis</h3>
+                            <div class="stars">
+                              <i class="ti-star star"></i>
+                              <i class="ti-star star"></i>
+                              <i class="ti-star star"></i>
+                              <i class="ti-star star"></i>
+                              <i class="ti-star star"></i>
+                            </div>
+                            <p>
+                              When I was looking to book my flight to Berlin
+                              from LAX, Tripma had the best browsing experiece
+                              so I figured I’d give it a try. It was my first
+                              time using Tripma, but I’d definitely recommend it
+                              to a friend and use it for read more...
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-4">
+                        <div class="slider">
+                          <div class="box">
+                            <img
+                              src="./resources/assets/img/cute_girl.svg"
+                              alt=""
+                            />
+                            <h3>Yifei Chen</h3>
+                            <div class="stars">
+                              <i class="ti-star star"></i>
+                              <i class="ti-star star"></i>
+                              <i class="ti-star star"></i>
+                              <i class="ti-star star"></i>
+                              <i class="ti-star star"></i>
+                            </div>
+                            <p>
+                              What a great experience using Tripma! I booked all
+                              of my flights for my gap year through Tripma and
+                              never had any issues. When I had to cancel a
+                              flight because of an emergency, Tripma support
+                              helped me read more...
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-4">
+                        <div class="slider">
+                          <div class="box">
+                            <img src="./resources/assets/img/girl.svg" alt="" />
+                            <h3>Kaori Yamaguchi</h3>
+                            <div class="stars">
+                              <i class="ti-star star"></i>
+                              <i class="ti-star star"></i>
+                              <i class="ti-star star"></i>
+                              <i class="ti-star star"></i>
+                              <i class="ti-star star"></i>
+                            </div>
+                            <p>
+                              My family and I visit Hawaii every year, and we
+                              usually book our flights using other services.
+                              Tripma was recommened to us by a long time friend,
+                              and I’m so glad we tried it out! The process was
+                              easy and read more...
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-4">
+                        <div class="slider">
+                          <div class="box">
+                            <img src="./resources/assets/img/boi.svg" alt="" />
+                            <h3>Anthony Lewis</h3>
+                            <div class="stars">
+                              <i class="ti-star star"></i>
+                              <i class="ti-star star"></i>
+                              <i class="ti-star star"></i>
+                              <i class="ti-star star"></i>
+                              <i class="ti-star star"></i>
+                            </div>
+                            <p>
+                              When I was looking to book my flight to Berlin
+                              from LAX, Tripma had the best browsing experiece
+                              so I figured I’d give it a try. It was my first
+                              time using Tripma, but I’d definitely recommend it
+                              to a friend and use it for read more...
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-4">
+                        <div class="slider">
+                          <div class="box">
+                            <img src="./resources/assets/img/girl.svg" alt="" />
+                            <h3>Yifei Chen</h3>
+                            <div class="stars">
+                              <i class="ti-star star"></i>
+                              <i class="ti-star star"></i>
+                              <i class="ti-star star"></i>
+                              <i class="ti-star star"></i>
+                              <i class="ti-star star"></i>
+                            </div>
+                            <p>
+                              What a great experience using Tripma! I booked all
+                              of my flights for my gap year through Tripma and
+                              never had any issues. When I had to cancel a
+                              flight because of an emergency, Tripma support
+                              helped me read more...
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-4">
+                        <div class="slider">
+                          <div class="box">
+                            <img src="./resources/assets/img/boi.svg" alt="" />
+                            <h3>Kaori Yamaguchi</h3>
+                            <div class="stars">
+                              <i class="ti-star star"></i>
+                              <i class="ti-star star"></i>
+                              <i class="ti-star star"></i>
+                              <i class="ti-star star"></i>
+                              <i class="ti-star star"></i>
+                            </div>
+                            <p>
+                              My family and I visit Hawaii every year, and we
+                              usually book our flights using other services.
+                              Tripma was recommened to us by a long time friend,
+                              and I’m so glad we tried it out! The process was
+                              easy and read more...
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-4">
+                        <div class="slider">
+                          <div class="box">
+                            <img
+                              src="./resources/assets/img/jp_girl.svg"
+                              alt=""
+                            />
+                            <h3>Anthony Lewis</h3>
+                            <div class="stars">
+                              <i class="ti-star star"></i>
+                              <i class="ti-star star"></i>
+                              <i class="ti-star star"></i>
+                              <i class="ti-star star"></i>
+                              <i class="ti-star star"></i>
+                            </div>
+                            <p>
+                              When I was looking to book my flight to Berlin
+                              from LAX, Tripma had the best browsing experiece
+                              so I figured I’d give it a try. It was my first
+                              time using Tripma, but I’d definitely recommend it
+                              to a friend and use it for read more...
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleControlsNoTouching"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleControlsNoTouching"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-3">
+            <div class="row">
+              <div class="col-6">
+                <a class="navbar-brand" href="./index.html">Travel</a>
+              </div>
+              <div class="col-6">
+                <div class="footer-column">
+                  <div class="footer-title">About</div>
+                  <div class="footer-content">About Travel</div>
+                  <div class="footer-content">How it works</div>
+                  <div class="footer-content">Careers</div>
+                  <div class="footer-content">Press</div>
+                  <div class="footer-content">Blog</div>
+                  <div class="footer-content">Forum</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-3">
+            <div class="footer-column">
+              <div class="footer-title">Partner with us</div>
+              <div class="footer-content">Partnership programs</div>
+              <div class="footer-content">Affiliate program</div>
+              <div class="footer-content">Connectivity partners</div>
+              <div class="footer-content">Promotions and events</div>
+              <div class="footer-content">Integrations</div>
+              <div class="footer-content">Community</div>
+              <div class="footer-content">Loyalty program</div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="footer-column">
+              <div class="footer-title">
+                Support
+              </div>
+              <div class="footer-content">
+                Help Center
+              </div>
+              <div class="footer-content">
+                Contact us
+              </div>
+              <div class="footer-content">
+                Privacy policy
+              </div>
+              <div class="footer-content">
+                Terms of service
+              </div>
+              <div class="footer-content">
+                Trust and safety
+              </div>
+              <div class="footer-content">
+                Accessibility
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="footer-column">
+              <div class="footer-title">
+                Get the app
+              </div>
+              <div class="footer-content">
+                Travel for Android
+              </div>
+              <div class="footer-content">
+                Travel for iOS
+              </div>
+              <div class="footer-content">
+                Mobile site
+              </div>
+              <div class="footer-content">
+                <img src="./resources/assets/img/app store.svg" alt="">
+              </div>
+              <div class="footer-content">
+                <img src="./resources/assets/img/google play.svg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./resources/js/index.js"></script>
+  </body>
+</html>
