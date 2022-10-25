@@ -1,7 +1,7 @@
 * {
-  padding: 0 ;
-  margin: 0 ;
-  box-sizing: border-box ;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 /* .container{
   margin: 0 auto ;
@@ -11,53 +11,43 @@ img {
   height: auto;
   vertical-align: middle;
 }
+a {
+  text-decoration: none;
+  color: #605dec;
+}
 body {
   font-family: "Nunito Sans", sans-serif;
 }
+.container {
+  margin: 0 64px !important;
+}
 /* Modal */
-.modal{
-
+.modal {
 }
-.modal-inner{
-
+.modal-inner {
 }
-.modal-header{
-
+.modal-header {
 }
-.modal-close{
-
+.modal-close {
 }
-.modal-body{
-
+.modal-body {
 }
-.modal-description{
-
+.modal-description {
 }
-.modal-form{
-
+.modal-form {
 }
-.form-input{
-  
+.form-input {
 }
-.form-check{
-  
+.form-check {
 }
-.form-check-input{
-  
+.form-check-input {
 }
-.form-check-label{
-  
+.form-check-label {
 }
-.modal-footer{
-
+.modal-footer {
 }
-.modal-btn{
-
+.modal-btn {
 }
-
-
-
-
 
 .header-main {
   width: 100%;
@@ -109,6 +99,9 @@ body {
 .nav-link:hover {
   color: #605dec;
 }
+.nav-link {
+  padding: 0 !important;
+}
 .btn-nav {
   width: 95px;
   height: 48px;
@@ -116,7 +109,6 @@ body {
   border-radius: 4px;
   color: #fff;
   text-align: center;
-  margin-top: 10px !important;
   line-height: 48px;
 }
 .btn-nav:hover {
@@ -124,6 +116,34 @@ body {
   transition: ease-in 0.2s;
 }
 
+/* input */
+.input-box .form-select {
+  height: 48px;
+  padding-left: 52px;
+}
+.input-box {
+  position: relative;
+}
+.input-icon {
+}
+.icon-wrapper {
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  display: flex;
+  align-items: center;
+}
+.departure,.arrival {
+  width: 324px;
+}
+.calendar{
+  width: 252px;
+}
+.adult{
+  width: 200px;
+}
+
+/* homepage */
 .section-homepage {
   height: 700px;
   background: url(../img/background-world-map-1.gif) top center / cover
@@ -160,18 +180,18 @@ body {
   margin-bottom: 1rem;
 }
 
-.review-section .box h3{
+.review-section .box h3 {
   color: #333;
   font-size: 2.5rem;
 }
 
-.review-section .box p{
+.review-section .box p {
   color: #6666;
   font-size: 1.5rem;
   padding: 1rem 0;
 }
 
-.review-section .box .star{
+.review-section .box .star {
   color: #1513a0;
   font-size: 1.7rem;
 }

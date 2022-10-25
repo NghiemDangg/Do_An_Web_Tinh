@@ -31,12 +31,12 @@
       href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@0;1&display=swap"
       rel="stylesheet"
     />
-
+    <!-- Jquery -->
+    <script src="jquery-3.6.0.min.js"></script>
     <!-- css -->
     <link rel="stylesheet" href="./resources/assets/css/style.css" />
   </head>
   <body>
-
     <header class="header-main">
       <div class="header-top">
         <div class="header-top-content">
@@ -63,9 +63,9 @@
             class="collapse navbar-collapse justify-content-end"
             id="navbarSupportedContent"
           >
-            <ul class="navbar-nav">
+            <ul class="navbar-nav align-items-center">
               <li class="nav-item">
-                <a class="nav-link" href="#">Flights</a>
+                <a class="nav-link" href="./flight.html">Flights</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Hotels</a>
@@ -87,53 +87,65 @@
 
     <main class="main">
       <section
-        class="section section-homepage d-flex justify-content-center align-items-center"
+        class="section section-homepage d-flex justify-content-center align-items-center flex-column"
       >
         <div class="homepage-slogan"></div>
+        <div class="input d-flex flex-row">
+          <div class="input-box departure">
+            <div class="icon-wrapper">
+              <img class="input-icon" src="./resources/assets/img/departure.svg" alt="" />
+            </div>
+            <select class="form-select" aria-label="Default select example">
+              <option selected>From where?</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+  
+          <div class="input-box arrival">
+            <div class="icon-wrapper">
+              <img class="input-icon" src="./resources/assets/img/arrival.svg" alt="" />
+            </div>
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Where to?</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+  
+          <div class="input-box calendar">
+            <div class="icon-wrapper">
+              <img class="input-icon" src="./resources/assets/img/calendar with dates.svg" alt="" />
+            </div>
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Depart - Return</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+  
+          <div class="input-box adult">
+            <div class="icon-wrapper">
+              <img class="input-icon" src="./resources/assets/img/person solid.svg" alt="" />
+            </div>
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Adult</option>
+              <option value="1">1 adult</option>
+              <option value="2">2 adult</option>
+            </select>
+          </div>
+  
+          <div class="input-box serch-btn">
+              <div class="icon-wrapper">
+                <a href="./flight.html">Serch</a>
+              </div>
+          </div>
+        </div>
       </section>
 
-      <section class="section section-input">
-        <div class="input-box departure">
-          <img src="./resources/assets/img/departure.svg" alt="" />
-          <select class="form-select" aria-label="Default select example">
-            <option selected>From where?</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-          </select>
-        </div>
-
-        <div class="input-box arrival">
-          <img src="./resources/assets/img/arrival.svg" alt="" />
-          <select class="form-select" aria-label="Default select example">
-            <option selected>Where to?</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-          </select>
-        </div>
-
-        <div class="input-box calendar">
-          <img src="./resources/assets/img/calendar with dates.svg" alt="" />
-          <select class="form-select" aria-label="Default select example">
-            <option selected>Depart - Return</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-          </select>
-        </div>
-
-        <div class="input-box adult">
-          <img src="./resources/assets/img/person solid.svg" alt="" />
-          <select class="form-select" aria-label="Default select example">
-            <option selected>Adult</option>
-            <option value="1">1 adult</option>
-            <option value="2">2 adult</option>
-          </select>
-        </div>
-
-        <div class="serch-btn">Serch</div>
-      </section>
 
       <section class="section section-card">
         <div class="container">
@@ -148,7 +160,7 @@
             <div class="col-4">
               <div class="card" style="width: 18rem">
                 <img
-                  src="./resources/assets/img/china_tower.svg"
+                  src="./resources/assets/img/shanghai.png"
                   class="card-img-top"
                   alt="..."
                 />
@@ -166,7 +178,7 @@
             <div class="col-4">
               <div class="card" style="width: 18rem">
                 <img
-                  src="./resources/assets/img/sydney.svg "
+                  src="./resources/assets/img/sydney.png"
                   class="card-img-top"
                   alt="..."
                 />
@@ -184,7 +196,7 @@
             <div class="col-4">
               <div class="card" style="width: 18rem">
                 <img
-                  src="./resources/assets/img/jphouse.svg"
+                  src="./resources/assets/img/Kyoto.png"
                   class="card-img-top"
                   alt="..."
                 />
@@ -202,11 +214,11 @@
           </div>
         </div>
       </section>
-
+      
       <section class="section section-large-card">
         <div class="card mb-3">
           <img
-            src="./resources/assets/img/tree.svg"
+            src="./resources/assets/img/Kenya.png"
             class="card-img-top"
             alt="..."
           />
@@ -237,7 +249,7 @@
             <div class="col-4">
               <div class="card" style="width: 18rem">
                 <img
-                  src="./resources/assets/img/Resort_2.svg"
+                  src="./resources/assets/img/Maldives.png"
                   class="card-img-top"
                   alt="..."
                 />
@@ -258,7 +270,7 @@
             <div class="col-4">
               <div class="card" style="width: 18rem">
                 <img
-                  src="./resources/assets/img/hotel_lobby.svg"
+                  src="./resources/assets/img/Morocco.png"
                   class="card-img-top"
                   alt="..."
                 />
@@ -279,7 +291,7 @@
             <div class="col-4">
               <div class="card" style="width: 18rem">
                 <img
-                  src="./resources/assets/img/camp.svg"
+                  src="./resources/assets/img/mongolia.png"
                   class="card-img-top"
                   alt="..."
                 />
@@ -317,7 +329,7 @@
                       <div class="col-4">
                         <div class="slider">
                           <div class="box">
-                            <img src="./resources/assets/img/girl.svg" alt="" />
+                            <img src="./resources/assets/img/Yifei Chen.png" alt="" />
                             <h3>Yifei Chen</h3>
                             <div class="stars">
                               <i class="ti-star star"></i>
@@ -341,7 +353,7 @@
                         <div class="slider">
                           <div class="box">
                             <img
-                              src="./resources/assets/img/cute_girl.svg"
+                              src="./resources/assets/img/Kaori Yamaguchi.png"
                               alt=""
                             />
                             <h3>Kaori Yamaguchi</h3>
@@ -366,7 +378,7 @@
                       <div class="col-4">
                         <div class="slider">
                           <div class="box">
-                            <img src="./resources/assets/img/boi.svg" alt="" />
+                            <img src="./resources/assets/img/Anthony Lewis.png" alt="" />
                             <h3>Anthony Lewis</h3>
                             <div class="stars">
                               <i class="ti-star star"></i>
@@ -388,83 +400,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="carousel-item">
-                  <div class="container">
-                    <div class="row">
-                      <div class="col-4">
-                        <div class="slider">
-                          <div class="box">
-                            <img
-                              src="./resources/assets/img/cute_girl.svg"
-                              alt=""
-                            />
-                            <h3>Yifei Chen</h3>
-                            <div class="stars">
-                              <i class="ti-star star"></i>
-                              <i class="ti-star star"></i>
-                              <i class="ti-star star"></i>
-                              <i class="ti-star star"></i>
-                              <i class="ti-star star"></i>
-                            </div>
-                            <p>
-                              What a great experience using Tripma! I booked all
-                              of my flights for my gap year through Tripma and
-                              never had any issues. When I had to cancel a
-                              flight because of an emergency, Tripma support
-                              helped me read more...
-                            </p>
-                          </div>
-                        </div>
-                      </div>
 
-                      <div class="col-4">
-                        <div class="slider">
-                          <div class="box">
-                            <img src="./resources/assets/img/girl.svg" alt="" />
-                            <h3>Kaori Yamaguchi</h3>
-                            <div class="stars">
-                              <i class="ti-star star"></i>
-                              <i class="ti-star star"></i>
-                              <i class="ti-star star"></i>
-                              <i class="ti-star star"></i>
-                              <i class="ti-star star"></i>
-                            </div>
-                            <p>
-                              My family and I visit Hawaii every year, and we
-                              usually book our flights using other services.
-                              Tripma was recommened to us by a long time friend,
-                              and I’m so glad we tried it out! The process was
-                              easy and read more...
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="col-4">
-                        <div class="slider">
-                          <div class="box">
-                            <img src="./resources/assets/img/boi.svg" alt="" />
-                            <h3>Anthony Lewis</h3>
-                            <div class="stars">
-                              <i class="ti-star star"></i>
-                              <i class="ti-star star"></i>
-                              <i class="ti-star star"></i>
-                              <i class="ti-star star"></i>
-                              <i class="ti-star star"></i>
-                            </div>
-                            <p>
-                              When I was looking to book my flight to Berlin
-                              from LAX, Tripma had the best browsing experiece
-                              so I figured I’d give it a try. It was my first
-                              time using Tripma, but I’d definitely recommend it
-                              to a friend and use it for read more...
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
 
                 <div class="carousel-item">
                   <div class="container">
@@ -472,7 +408,7 @@
                       <div class="col-4">
                         <div class="slider">
                           <div class="box">
-                            <img src="./resources/assets/img/girl.svg" alt="" />
+                            <img src="./resources/assets/img/Yifei Chen.png" alt="" />
                             <h3>Yifei Chen</h3>
                             <div class="stars">
                               <i class="ti-star star"></i>
@@ -495,7 +431,10 @@
                       <div class="col-4">
                         <div class="slider">
                           <div class="box">
-                            <img src="./resources/assets/img/boi.svg" alt="" />
+                            <img
+                              src="./resources/assets/img/Kaori Yamaguchi.png"
+                              alt=""
+                            />
                             <h3>Kaori Yamaguchi</h3>
                             <div class="stars">
                               <i class="ti-star star"></i>
@@ -518,10 +457,7 @@
                       <div class="col-4">
                         <div class="slider">
                           <div class="box">
-                            <img
-                              src="./resources/assets/img/jp_girl.svg"
-                              alt=""
-                            />
+                            <img src="./resources/assets/img/Anthony Lewis.png" alt="" />
                             <h3>Anthony Lewis</h3>
                             <div class="stars">
                               <i class="ti-star star"></i>
@@ -543,6 +479,85 @@
                     </div>
                   </div>
                 </div>
+
+                <div class="carousel-item">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-4">
+                        <div class="slider">
+                          <div class="box">
+                            <img src="./resources/assets/img/Yifei Chen.png" alt="" />
+                            <h3>Yifei Chen</h3>
+                            <div class="stars">
+                              <i class="ti-star star"></i>
+                              <i class="ti-star star"></i>
+                              <i class="ti-star star"></i>
+                              <i class="ti-star star"></i>
+                              <i class="ti-star star"></i>
+                            </div>
+                            <p>
+                              What a great experience using Tripma! I booked all
+                              of my flights for my gap year through Tripma and
+                              never had any issues. When I had to cancel a
+                              flight because of an emergency, Tripma support
+                              helped me read more...
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-4">
+                        <div class="slider">
+                          <div class="box">
+                            <img
+                              src="./resources/assets/img/Kaori Yamaguchi.png"
+                              alt=""
+                            />
+                            <h3>Kaori Yamaguchi</h3>
+                            <div class="stars">
+                              <i class="ti-star star"></i>
+                              <i class="ti-star star"></i>
+                              <i class="ti-star star"></i>
+                              <i class="ti-star star"></i>
+                              <i class="ti-star star"></i>
+                            </div>
+                            <p>
+                              My family and I visit Hawaii every year, and we
+                              usually book our flights using other services.
+                              Tripma was recommened to us by a long time friend,
+                              and I’m so glad we tried it out! The process was
+                              easy and read more...
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-4">
+                        <div class="slider">
+                          <div class="box">
+                            <img src="./resources/assets/img/Anthony Lewis.png" alt="" />
+                            <h3>Anthony Lewis</h3>
+                            <div class="stars">
+                              <i class="ti-star star"></i>
+                              <i class="ti-star star"></i>
+                              <i class="ti-star star"></i>
+                              <i class="ti-star star"></i>
+                              <i class="ti-star star"></i>
+                            </div>
+                            <p>
+                              When I was looking to book my flight to Berlin
+                              from LAX, Tripma had the best browsing experiece
+                              so I figured I’d give it a try. It was my first
+                              time using Tripma, but I’d definitely recommend it
+                              to a friend and use it for read more...
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+               
               </div>
               <button
                 class="carousel-control-prev"
@@ -610,48 +625,26 @@
           </div>
           <div class="col-3">
             <div class="footer-column">
-              <div class="footer-title">
-                Support
-              </div>
-              <div class="footer-content">
-                Help Center
-              </div>
-              <div class="footer-content">
-                Contact us
-              </div>
-              <div class="footer-content">
-                Privacy policy
-              </div>
-              <div class="footer-content">
-                Terms of service
-              </div>
-              <div class="footer-content">
-                Trust and safety
-              </div>
-              <div class="footer-content">
-                Accessibility
-              </div>
+              <div class="footer-title">Support</div>
+              <div class="footer-content">Help Center</div>
+              <div class="footer-content">Contact us</div>
+              <div class="footer-content">Privacy policy</div>
+              <div class="footer-content">Terms of service</div>
+              <div class="footer-content">Trust and safety</div>
+              <div class="footer-content">Accessibility</div>
             </div>
           </div>
           <div class="col-3">
             <div class="footer-column">
-              <div class="footer-title">
-                Get the app
+              <div class="footer-title">Get the app</div>
+              <div class="footer-content">Travel for Android</div>
+              <div class="footer-content">Travel for iOS</div>
+              <div class="footer-content">Mobile site</div>
+              <div class="footer-content">
+                <img src="./resources/assets/img/app store.svg" alt="" />
               </div>
               <div class="footer-content">
-                Travel for Android
-              </div>
-              <div class="footer-content">
-                Travel for iOS
-              </div>
-              <div class="footer-content">
-                Mobile site
-              </div>
-              <div class="footer-content">
-                <img src="./resources/assets/img/app store.svg" alt="">
-              </div>
-              <div class="footer-content">
-                <img src="./resources/assets/img/google play.svg" alt="">
+                <img src="./resources/assets/img/google play.svg" alt="" />
               </div>
             </div>
           </div>
