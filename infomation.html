@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Passenger information</title>
+    <!-- boostrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Icon -->
+    <link
+      rel="stylesheet"
+      href="./resources/assets/fonts/themify-icons/themify-icons.css"
+    />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Jquery -->
+    <script src="jquery-3.6.0.min.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="./resources/assets/css/style.css" />
+  </head>
+  <body>
+    <header class="header-main">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">Travel</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav align-items-center">
+              <li class="nav-item">
+                <a class="nav-link" href="./flight.html">Flights</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Hotels</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Packages</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link signin-btn" href="#">Sign in</a>
+              </li>
+              <li class="nav-item btn-nav">
+                <a class="nav-link text-white signup-btn" href="#">Sign up</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-8">
+                    <section class="section section-heading">
+                        <h1 class="heading">Passenger information</h1>
+                        <div class="description">Enter the required information for each traveler and be sure that it exactly matches the government-issued ID presented at the airport.</div>
+                    </section>
+                    <section class="section section-form">
+                        <form action="">
+                            <div class="row">
+                                <div class="col-4">
+                                    <input type="text" class="form-input" placeholder="Firt name*" required>
+                                </div>
+                                <div class="col-4">
+                                    <input type="text" class="form-input" placeholder="Middle">
+                                </div>
+                                <div class="col-4">
+                                    <input type="text" class="form-input" placeholder="Last name*" required>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-4">
+                                    <input type="text" name="suffix" class="form-input" placeholder="Suffix">
+                                </div>
+                                <div class="col-8">
+                                    <input type="text" name="dob" class="form-input" placeholder="Date of birth*" required>
+                                </div>
+                            </div>
+
+
+                            <div class="row">
+                                <div class="col-6">
+                                    <input type="email" class="email form-input" placeholder="Email address*" required>
+                                </div>
+                                <div class="col-6">
+                                    <input type="phone" class="email form-input" placeholder="Phone number*" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <input type="email" class="email form-input" placeholder="Redress number">
+                                </div>
+                                <div class="col-6">
+                                    <input type="phone" class="email form-input" placeholder="Known traveller number*" required>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-12">
+                                    Emergency contact information
+                                </div>
+                            </div>
+
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="">
+                              <label class="form-check-label" for="">
+                                Same as Passenger 1
+                              </label>
+                            </div>
+
+
+                            <div class="row">
+                                <div class="col-6">
+                                    <input type="text" class="email form-input" placeholder="First name*" required>
+                                </div>
+                                <div class="col-6">
+                                    <input type="text" class="email form-input" placeholder="First name*" required>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-6">
+                                    <input type="email" class="email form-input" placeholder="Email address*" required>
+                                </div>
+                                <div class="col-6">
+                                    <input type="phone" class="email form-input" placeholder="Phone number*" required>
+                                </div>
+                            </div>
+
+                            <div class="bag-infomation">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="title">
+                                            Bag information
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="description">
+                                            Each passenger is allowed one free carry-on bag and one personal item. First checked bag for each passenger is also free. Second bag check fees are waived for loyalty program members. See the <a href=""> full bag policy</a>.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="description">Passenger 1</div>
+                                    </div>
+                                    <div class="col-6">Checked bags</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="title">First Last</div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="caculator d-flex">
+                                            <i class="ti-minus"></i> <p class="number">1</p> <i class="ti-plus"></i></div>
+                                        </div>
+                                </div>
+                            </div>
+
+                            <a type="submit" class="btn" >Save and close</a>
+                            <a type="submit" class="btn" href="./seat.html">Select seats</a>
+                        </form>
+                    </section>
+                    
+                </div>
+
+                <div class="col-4">
+                                <!-- table -->
+            <section class="section section-flight-table">
+                <table class="table">
+                  <tbody>
+                    <tr>
+                      <th class="airline-logo" scope="row">
+                        <img
+                          src="./resources/assets/img/airlines-logo/Hawaiian Airlines.svg"
+                          alt=""
+                        />
+                      </th>
+                      <td>
+                        <div class="flight-details">
+                          <div class="first-line">16h 45m</div>
+                          <div class="second-line">Hawaiian Airlines</div>
+                        </div>
+                      </td>
+                      <td><div class="first-line">7:00AM - 4:15PM</div></td>
+                      <td>
+                        <div class="flight-details">
+                          <div class="first-line">1 stop</div>
+                          <div class="second-line">2h 45m in HNL</div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="flight-details">
+                          <div class="first-line">$624</div>
+                          <div class="second-line">round trip</div>
+                        </div>
+                      </td>
+                    </tr>
+  
+                    <tr>
+                      <th class="airline-logo" scope="row">
+                        <img
+                          src="./resources/assets/img/airlines-logo/Japan Airlines.svg"
+                          alt=""
+                        />
+                      </th>
+                      <td>
+                        <div class="flight-details">
+                          <div class="first-line">18h 22m</div>
+                          <div class="second-line">Japan Airlines</div>
+                        </div>
+                      </td>
+                      <td><div class="first-line">7:35 AM - 12:15 PM</div></td>
+                      <td>
+                        <div class="flight-details">
+                          <div class="first-line">1 stop</div>
+                          <div class="second-line">50m in HKG</div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="flight-details">
+                          <div class="first-line">$663</div>
+                          <div class="second-line">round trip</div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+  
+                <div class="payment">
+                    <div class="item-payment d-flex">
+                        <div class="payment-name">Subtotal</div>
+                        <div class="price">$503</div>
+                    </div>
+                    <div class="item-payment d-flex">
+                        <div class="payment-name">Taxes and Fees</div>
+                        <div class="price">$121</div>
+                    </div>
+                    <div class="item-payment d-flex">
+                        <div class="payment-name">Total</div>
+                        <div class="price">$624</div>
+                    </div>
+                </div>
+                <!-- btn -->
+                <div class="btn">
+                  <a href="./seat.html">Select seats</a>
+                </div>
+              </section>
+
+              <section class="section-bag">
+                <img src="./resources/assets/img/Luggage.svg" alt="">
+              </section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-3">
+              <div class="row">
+                <div class="col-6">
+                  <a class="navbar-brand" href="./index.html">Travel</a>
+                </div>
+                <div class="col-6">
+                  <div class="footer-column">
+                    <div class="footer-title">About</div>
+                    <div class="footer-content">About Travel</div>
+                    <div class="footer-content">How it works</div>
+                    <div class="footer-content">Careers</div>
+                    <div class="footer-content">Press</div>
+                    <div class="footer-content">Blog</div>
+                    <div class="footer-content">Forum</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-3">
+              <div class="footer-column">
+                <div class="footer-title">Partner with us</div>
+                <div class="footer-content">Partnership programs</div>
+                <div class="footer-content">Affiliate program</div>
+                <div class="footer-content">Connectivity partners</div>
+                <div class="footer-content">Promotions and events</div>
+                <div class="footer-content">Integrations</div>
+                <div class="footer-content">Community</div>
+                <div class="footer-content">Loyalty program</div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="footer-column">
+                <div class="footer-title">Support</div>
+                <div class="footer-content">Help Center</div>
+                <div class="footer-content">Contact us</div>
+                <div class="footer-content">Privacy policy</div>
+                <div class="footer-content">Terms of service</div>
+                <div class="footer-content">Trust and safety</div>
+                <div class="footer-content">Accessibility</div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="footer-column">
+                <div class="footer-title">Get the app</div>
+                <div class="footer-content">Travel for Android</div>
+                <div class="footer-content">Travel for iOS</div>
+                <div class="footer-content">Mobile site</div>
+                <div class="footer-content">
+                  <img src="./resources/assets/img/app store.svg" alt="" />
+                </div>
+                <div class="footer-content">
+                  <img src="./resources/assets/img/google play.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    <script src="./resources/js/infomation.js"></script>
+  </body>
+</html>
