@@ -1,41 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Select seats</title>
-        <!-- boostrap -->
-        <link
-          href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
-          rel="stylesheet"
-          integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
-          crossorigin="anonymous"
-        />
-        <script
-          src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-          integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-          crossorigin="anonymous"
-        ></script>
-        <!-- Icon -->
-        <link
-          rel="stylesheet"
-          href="./resources/assets/fonts/themify-icons/themify-icons.css"
-        />
-    
-        <!-- Font -->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@0;1&display=swap"
-          rel="stylesheet"
-        />
-        <!-- Jquery -->
-        <script src="jquery-3.6.0.min.js"></script>
-        <!-- css -->
-        <link rel="stylesheet" href="./resources/assets/css/style.css" />
-      </head> 
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Select seats</title>
+    <!-- boostrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Icon -->
+    <link
+      rel="stylesheet"
+      href="./resources/assets/fonts/themify-icons/themify-icons.css"
+    />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Jquery -->
+    <script src="jquery-3.6.0.min.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="./resources/assets/css/style.css" />
+    <link rel="stylesheet" href="./resources/assets/css/seat.css" />
+  </head>
+  <body>
+    <header class="header-main">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-6">
+            <nav class="navbar">
+              <div class="container-fluid" style="justify-content: unset">
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarNavDropdown"
+                  aria-controls="navbarNavDropdown"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                  style="border: 0"
+                >
+                  <img
+                    src="./resources/assets/img/menu.svg"
+                    alt=""
+                    style="width: 50px; height: 50px"
+                  />
+                </button>
+                <a class="navbar-brand" href="#" style="margin-left: 20px"
+                  >Travel</a
+                >
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link" href="./flight.html">Flights</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Hotels</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Packages</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link signin-btn" href="#">Sign in</a>
+                    </li>
+                    <li class="nav-item btn-nav">
+                      <a class="nav-link text-white signup-btn" href="#"
+                        >Sign up</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="row">
+        <div class="col-6">
+          <div class="seat-selector">
+            <img src="./resources/assets/img/Plane.png" alt="" />
+          </div>
+        </div>
+        <div class="col-6">
+          <section class="section section-class">
+            <div class="class-heading d-flex">
+              <div class="local">
+                <div class="local-code">SFO</div>
+                <div class="local-name">California, US</div>
+              </div>
+              <i class="ti-arrow-right"></i>
+              <div class="local">
+                <div class="local-code">NRT</div>
+                <div class="local-name">Tokyo, Japan</div>
+              </div>
+              <div class="time">
+                <div class="date">Feb 25 | 7:00AM</div>
+                <div class="status">Departing</div>
+              </div>
+              <div class="time">
+                <div class="date">Mar 21 | 12:15PM</div>
+                <div class="status">Arriving</div>
+              </div>
+            </div>
+
+            <div class="class-main">
+              <div class="row">
+                <div class="col-6">
+                  <div class="seat-selector">
+                    <div class="seat-class">
+                      <img
+                        src="./resources/assets/img/Economy Seats.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="feature-list">
+                      <div class="feature-name">Economy</div>
+                      <div class="seat-desciption">
+                        Rest and recharge during your flight with extended leg
+                        room, personalized service, and a multi-course meal
+                        service
+                      </div>
+
+                      <div class="line"></div>
+
+                      <div class="feature-list-bullet">
+                        <img
+                          src="./resources/assets/img/point heavy.svg"
+                          alt=""
+                        />
+                        Built-in enter tainment system
+                      </div>
+                      <div class="feature-list-bullet">
+                        <img
+                          src="./resources/assets/img/point heavy.svg"
+                          alt=""
+                        />
+                        Complimentary snacks and drinks
+                      </div>
+                      <div class="feature-list-bullet">
+                        <img
+                          src="./resources/assets/img/point heavy.svg"
+                          alt=""
+                        />
+                        One free carry-on and personal item
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="seat-selector">
+                    <div class="seat-class">
+                      <img
+                        src="./resources/assets/img/Business Seats.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="feature-list">
+                      <div class="feature-name">Business class</div>
+                      <div class="seat-desciption">
+                        Rest and recharge during your flight with extended leg
+                        room, personalized service, and a multi-course meal
+                        service
+                      </div>
+
+                      <div class="line"></div>
+
+                      <div class="feature-list-bullet">
+                        <img
+                          src="./resources/assets/img/Vector 10.svg"
+                          alt=""
+                        />
+                        Extended leg room
+                      </div>
+                      <div class="feature-list-bullet">
+                        <img
+                          src="./resources/assets/img/Vector 10.svg"
+                          alt=""
+                        />
+                        First two checked bags free
+                      </div>
+                      <div class="feature-list-bullet">
+                        <img
+                          src="./resources/assets/img/Vector 10.svg"
+                          alt=""
+                        />
+                        Priority boarding
+                      </div>
+                      <div class="feature-list-bullet">
+                        <img
+                          src="./resources/assets/img/Vector 10.svg"
+                          alt=""
+                        />
+                        Personalized service
+                      </div>
+                      <div class="feature-list-bullet">
+                        <img
+                          src="./resources/assets/img/Vector 10.svg"
+                          alt=""
+                        />
+                        Enhanced food and drink service
+                      </div>
+                      <div class="feature-list-bullet">
+                        <img
+                          src="./resources/assets/img/Vector 10.svg"
+                          alt=""
+                        />
+                        Seats that recline 40% more than economy
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="class-footer">
+                <div class="pasenger-data">
+                    <div class="label">Passenger 1</div>
+                    <div class="name">Sofia Knowles</div>
+                </div>
+                <div class="pasenger-data">
+                    <div class="label">Seat number</div>
+                    <div class="name">--</div> 
+                </div>
+                <a type="btn" class="btn" >Save and close</a>
+                <a type="btn" class="btn" href="./seat.html">Next flight</a>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
