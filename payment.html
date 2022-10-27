@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment method</title>
+    <!-- boostrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Icon -->
+    <link
+      rel="stylesheet"
+      href="./resources/assets/fonts/themify-icons/themify-icons.css"
+    />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Jquery -->
+    <script src="jquery-3.6.0.min.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="./resources/assets/css/style.css" />
+  </head>
+  <body>
+    <header class="header-main">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">Travel</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav align-items-center">
+              <li class="nav-item">
+                <a class="nav-link" href="./flight.html">Flights</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Hotels</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Packages</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link signin-btn" href="#">Sign in</a>
+              </li>
+              <li class="nav-item btn-nav">
+                <a class="nav-link text-white signup-btn" href="#">Sign up</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="col-8">
+            <section class="section section-heading">
+              <h1 class="heading">Passenger information</h1>
+              <div class="description">
+                Enter the required information for each traveler and be sure
+                that it exactly matches the government-issued ID presented at
+                the airport.
+              </div>
+            </section>
+
+            <section class="section section-button-row">
+              <div class="row">
+                <div class="col-3">
+                  <div class="button-payment card-payment">
+                    <img
+                      src="./assets/img/payment-icon/credit card.svg"
+                      alt=""
+                    />
+                    <a class="payment-name">Credit card</a>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="button-payment google">
+                    <img src="./assets/img/payment-icon/google.svg" alt="" />
+                    <a class="payment-name">Google Pay</a>
+                  </div>
+                </div>
+                <div class="col-2">
+                  <div class="button-payment apple">
+                    <img src="./assets/img/payment-icon/apple mac.svg" alt="" />
+                    <a class="payment-name">Apple pay</a>
+                  </div>
+                </div>
+                <div class="col-2">
+                  <div class="button-payment paypal">
+                    <img src="./assets/img/payment-icon/paypal.svg" alt="" />
+                    <a class="payment-name">Paypal</a>
+                  </div>
+                </div>
+                <div class="col-2">
+                  <div class="button-payment crypto">
+                    <img
+                      src="./assets/img/payment-icon/bitcoin money currency crypto.svg"
+                      alt=""
+                    />
+                    <a class="payment-name">Crypto</a>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <div class="row">
+              <div class="col-12">
+                <div class="title">Credit card details</div>
+              </div>
+            </div>
+
+            <section class="section section-form-card">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id=""
+                />
+                <label class="form-check-label" for="">
+                  Billing address is same as Passenger 1
+                </label>
+                <div class="row">
+                  <div class="col-12">
+                    <input
+                      type="text"
+                      class="form-control"
+                      name=""
+                      id=""
+                      aria-describedby="helpId"
+                      placeholder="Name on card"
+                    />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <input
+                      type="text"
+                      class="form-control"
+                      name=""
+                      id=""
+                      aria-describedby="helpId"
+                      placeholder="Card number"
+                    />
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-6">
+                    <div class="mb-3">
+                      <input
+                        type="text"
+                        class="form-control"
+                        name=""
+                        id=""
+                        aria-describedby="helpId"
+                        placeholder="Expiration date"
+                      />
+                      <small id="helpId" class="form-text text-muted"
+                        >MM/YY</small
+                      >
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="mb-3">
+                      <input
+                        type="text"
+                        class="form-control"
+                        name=""
+                        id=""
+                        aria-describedby="helpId"
+                        placeholder="CCV"
+                      />
+                      <div class="icon-border">
+                        <i class="icon ti-info"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <div class="row">
+              <div class="col-12">
+                <div class="title">Create an account</div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-12">
+                <div class="description">
+                  Tripma is free to use as a guest, but if you create an account
+                  today, you can save and view flights, manage your trips, earn
+                  rewards, and more.
+                </div>
+              </div>
+            </div>
+            <section class="section section-login">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id=""
+                />
+                <label class="form-check-label" for="">
+                  Save card and create account for later
+                </label>
+              </div>
+              <form action="" class="modal-form login-form">
+                <input
+                  type="text"
+                  placeholder="Email or phone number"
+                  class="form-input"
+                />
+                <input
+                  type="password"
+                  placeholder="Password"
+                  class="form-input"
+                />
+                <div>or</div>
+
+                <div class="modal-footer login-footer">
+                  <button type="button" class="modal-btn">
+                    <img src="./resources/assets/img/google_icon.svg" alt="" />
+                    Continue with Google
+                  </button>
+                  <button type="button" class="modal-btn">
+                    <img src="./resources/assets/img/apple_icon.svg" alt="" />
+                    Continue with Apple
+                  </button>
+                  <button type="button" class="modal-btn">
+                    <img
+                      src="./resources/assets/img/facebook_icon.svg"
+                      alt=""
+                    />
+                    Continue with Facebook
+                  </button>
+                </div>
+
+                <div class="row">
+                  <div class="col-12">
+                    <div class="title">Cancellation policy</div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-12">
+                    <div class="description">
+                      This flight has a flexible cancellation policy. If you
+                      cancel or change your flight up to 30 days before the
+                      departure date, you are eligible for a free refund. All
+                      flights booked on Tripma are backed by our satisfaction
+                      guarantee, however cancellation policies vary by airline.
+                      See the full <a href="">cancellation policy</a> for this flight.
+                    </div>
+                  </div>
+                </div>
+                <a type="submit" class="btn btn-border">Back to seat select</a>
+                <a type="submit" class="btn btn-full" href="./seat.html">Select seats</a>
+              </form>
+            </section>
+          </div>
+
+          <div class="col-4">
+            <!-- table -->
+            <section class="section section-flight-table">
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <th class="airline-logo" scope="row">
+                      <img
+                        src="./resources/assets/img/airlines-logo/Hawaiian Airlines.svg"
+                        alt=""
+                      />
+                    </th>
+                    <td>
+                      <div class="flight-details">
+                        <div class="first-line">16h 45m</div>
+                        <div class="second-line">Hawaiian Airlines</div>
+                      </div>
+                    </td>
+                    <td><div class="first-line">7:00AM - 4:15PM</div></td>
+                    <td>
+                      <div class="flight-details">
+                        <div class="first-line">1 stop</div>
+                        <div class="second-line">2h 45m in HNL</div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="flight-details">
+                        <div class="first-line">$624</div>
+                        <div class="second-line">round trip</div>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th class="airline-logo" scope="row">
+                      <img
+                        src="./resources/assets/img/airlines-logo/Japan Airlines.svg"
+                        alt=""
+                      />
+                    </th>
+                    <td>
+                      <div class="flight-details">
+                        <div class="first-line">18h 22m</div>
+                        <div class="second-line">Japan Airlines</div>
+                      </div>
+                    </td>
+                    <td><div class="first-line">7:35 AM - 12:15 PM</div></td>
+                    <td>
+                      <div class="flight-details">
+                        <div class="first-line">1 stop</div>
+                        <div class="second-line">50m in HKG</div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="flight-details">
+                        <div class="first-line">$663</div>
+                        <div class="second-line">round trip</div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <div class="payment">
+                <div class="item-payment d-flex">
+                  <div class="payment-name">Subtotal</div>
+                  <div class="price">$503</div>
+                </div>
+                <div class="item-payment d-flex">
+                  <div class="payment-name">Taxes and Fees</div>
+                  <div class="price">$121</div>
+                </div>
+                <div class="item-payment d-flex">
+                  <div class="payment-name">Total</div>
+                  <div class="price">$624</div>
+                </div>
+              </div>
+              <!-- btn -->
+              <div class="btn">
+                <a href="./user.html">Confirm and pay </a>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
