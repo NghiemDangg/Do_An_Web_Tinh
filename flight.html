@@ -81,69 +81,107 @@
 
     <main>
       <div class="container">
-        <div class="row">
-          <div class="col-8">
-            <!-- input -->
-            <div class="input d-flex flex-row">
-              <div class="input-box departure">
-                <div class="icon-wrapper">
-                  <img class="input-icon" src="./resources/assets/img/departure.svg" alt="" />
+        <!-- input -->
+        <section class="section section-input">
+          <div class="row">
+            <div class="col-12">
+              <div class="input d-flex flex-row">
+                <div class="input-box departure">
+                  <div class="icon-wrapper">
+                    <img
+                      class="input-icon"
+                      src="./resources/assets/img/departure.svg"
+                      alt=""
+                    />
+                  </div>
+                  <select
+                    class="form-select first-child"
+                    aria-label="Default select example"
+                  >
+                    <option selected>SFO</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
                 </div>
-                <select class="form-select" aria-label="Default select example">
-                  <option selected>From where?</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </select>
-              </div>
-      
-              <div class="input-box arrival">
-                <div class="icon-wrapper">
-                  <img class="input-icon" src="./resources/assets/img/arrival.svg" alt="" />
+
+                <div class="input-box arrival">
+                  <div class="icon-wrapper">
+                    <img
+                      class="input-icon"
+                      src="./resources/assets/img/arrival.svg"
+                      alt=""
+                    />
+                  </div>
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <option selected>NRT</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
                 </div>
-                <select class="form-select" aria-label="Default select example">
-                  <option selected>Where to?</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </select>
-              </div>
-      
-              <div class="input-box calendar">
-                <div class="icon-wrapper">
-                  <img class="input-icon" src="./resources/assets/img/calendar with dates.svg" alt="" />
+
+                <div class="input-box calendar">
+                  <div class="icon-wrapper">
+                    <img
+                      class="input-icon"
+                      src="./resources/assets/img/calendar with dates.svg"
+                      alt=""
+                    />
+                  </div>
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <option selected>Depart - Return</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
                 </div>
-                <select class="form-select" aria-label="Default select example">
-                  <option selected>Depart - Return</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </select>
-              </div>
-      
-              <div class="input-box adult">
-                <div class="icon-wrapper">
-                  <img class="input-icon" src="./resources/assets/img/person solid.svg" alt="" />
+
+                <div class="input-box adult">
+                  <div class="icon-wrapper">
+                    <img
+                      class="input-icon"
+                      src="./resources/assets/img/person solid.svg"
+                      alt=""
+                    />
+                  </div>
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <option selected>Adult</option>
+                    <option value="1">1 adult</option>
+                    <option value="2">2 adult</option>
+                  </select>
                 </div>
-                <select class="form-select" aria-label="Default select example">
-                  <option selected>Adult</option>
-                  <option value="1">1 adult</option>
-                  <option value="2">2 adult</option>
-                </select>
-              </div>
-      
-              <div class="input-box serch-btn">
+
+                <div class="input-box serch-btn">
                   <div class="icon-wrapper">
                     <a href="./flight.html">Serch</a>
                   </div>
+                </div>
               </div>
             </div>
-            <!-- filter -->
-            <section class="section section-filter">
+          </div>
+        </section>
+        <!-- filter -->
+        <section class="section section-filter">
+          <div class="row">
+            <div class="col-8">
               <div class="row">
                 <div class="col-2">
                   <div class="mb-3">
-                    <select class="form-select form-select-lg" name="" id="">
+                    <select
+                      class="form-select form-select-lg select-filter"
+                      name=""
+                      id=""
+                    >
                       <option selected>Max price</option>
                       <option value="">New Delhi</option>
                       <option value="">Istanbul</option>
@@ -153,7 +191,11 @@
                 </div>
                 <div class="col-2">
                   <div class="mb-3">
-                    <select class="form-select form-select-lg" name="" id="">
+                    <select
+                      class="form-select form-select-lg select-filter"
+                      name=""
+                      id=""
+                    >
                       <option selected>Shops</option>
                       <option value="">New Delhi</option>
                       <option value="">Istanbul</option>
@@ -163,7 +205,11 @@
                 </div>
                 <div class="col-2">
                   <div class="mb-3">
-                    <select class="form-select form-select-lg" name="" id="">
+                    <select
+                      class="form-select form-select-lg select-filter"
+                      name=""
+                      id=""
+                    >
                       <option selected>Times</option>
                       <option value="">New Delhi</option>
                       <option value="">Istanbul</option>
@@ -173,7 +219,11 @@
                 </div>
                 <div class="col-2">
                   <div class="mb-3">
-                    <select class="form-select form-select-lg" name="" id="">
+                    <select
+                      class="form-select form-select-lg select-filter"
+                      name=""
+                      id=""
+                    >
                       <option selected>Airlines</option>
                       <option value="">New Delhi</option>
                       <option value="">Istanbul</option>
@@ -183,7 +233,11 @@
                 </div>
                 <div class="col-2">
                   <div class="mb-3">
-                    <select class="form-select form-select-lg" name="" id="">
+                    <select
+                      class="form-select form-select-lg select-filter"
+                      name=""
+                      id=""
+                    >
                       <option selected>Seat class</option>
                       <option value="">New Delhi</option>
                       <option value="">Istanbul</option>
@@ -193,7 +247,11 @@
                 </div>
                 <div class="col-2">
                   <div class="mb-3">
-                    <select class="form-select form-select-lg" name="" id="">
+                    <select
+                      class="form-select form-select-lg select-filter"
+                      name=""
+                      id=""
+                    >
                       <option selected>More</option>
                       <option value="">New Delhi</option>
                       <option value="">Istanbul</option>
@@ -202,189 +260,210 @@
                   </div>
                 </div>
               </div>
-            </section>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-8">
             <!-- table -->
             <section class="section section-flight-table">
               <div class="row">
                 <div class="col-12">
-                  <div class="table-title">
+                  <div class="section-title">
                     Choose a <a href="">departing</a> flight
                   </div>
                 </div>
               </div>
-              <table class="table">
-                <tbody>
-                  <tr>
-                    <th class="airline-logo" scope="row">
-                      <img
-                        src="./resources/assets/img/airlines-logo/Hawaiian Airlines.svg"
-                        alt=""
-                      />
-                    </th>
-                    <td>
-                      <div class="flight-details">
-                        <div class="first-line">16h 45m</div>
-                        <div class="second-line">Hawaiian Airlines</div>
-                      </div>
-                    </td>
-                    <td><div class="first-line">7:00AM - 4:15PM</div></td>
-                    <td>
-                      <div class="flight-details">
-                        <div class="first-line">1 stop</div>
-                        <div class="second-line">2h 45m in HNL</div>
-                      </div>
-                    </td>
-                    <td>
-                      <div class="flight-details">
-                        <div class="first-line">$624</div>
-                        <div class="second-line">round trip</div>
-                      </div>
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <th class="airline-logo" scope="row">
-                      <img
-                        src="./resources/assets/img/airlines-logo/Japan Airlines.svg"
-                        alt=""
-                      />
-                    </th>
-                    <td>
-                      <div class="flight-details">
-                        <div class="first-line">18h 22m</div>
-                        <div class="second-line">Japan Airlines</div>
-                      </div>
-                    </td>
-                    <td><div class="first-line">7:35 AM - 12:15 PM</div></td>
-                    <td>
-                      <div class="flight-details">
-                        <div class="first-line">1 stop</div>
-                        <div class="second-line">50m in HKG</div>
-                      </div>
-                    </td>
-                    <td>
-                      <div class="flight-details">
-                        <div class="first-line">$663</div>
-                        <div class="second-line">round trip</div>
-                      </div>
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <th class="airline-logo" scope="row">
-                      <img
-                        src="./resources/assets/img/airlines-logo/Hawaiian Airlines.svg"
-                        alt=""
-                      />
-                    </th>
-                    <td>
-                      <div class="flight-details">
-                        <div class="first-line">18h 04m</div>
-                        <div class="second-line">Hawaiian Airlines</div>
-                      </div>
-                    </td>
-                    <td><div class="first-line">8:20 AM - 2:15 PM</div></td>
-                    <td>
-                      <div class="flight-details">
-                        <div class="first-line">1 stop</div>
-                        <div class="second-line">1h 50m in PVG</div>
-                      </div>
-                    </td>
-                    <td>
-                      <div class="flight-details">
-                        <div class="first-line">$690</div>
-                        <div class="second-line">round trip</div>
-                      </div>
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <th class="airline-logo" scope="row">
-                      <img
-                        src="./resources/assets/img/airlines-logo/Delta Airlines.svg"
-                        alt=""
-                      />
-                    </th>
-                    <td>
-                      <div class="flight-details">
-                        <div class="first-line">18h 52m</div>
-                        <div class="second-line">Delta</div>
-                      </div>
-                    </td>
-                    <td><div class="first-line">9:47 AM - 4:15 PM</div></td>
-                    <td>
-                      <div class="flight-details">
-                        <div class="first-line">1 stop</div>
-                        <div class="second-line">4h 05m in ICN</div>
-                      </div>
-                    </td>
-                    <td>
-                      <div class="flight-details">
-                        <div class="first-line">$756</div>
-                        <div class="second-line">round trip</div>
-                      </div>
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <th class="airline-logo" scope="row">
-                      <img
-                        src="./resources/assets/img/airlines-logo/United Airlines.svg"
-                        alt=""
-                      />
-                    </th>
-                    <td>
-                      <div class="flight-details">
-                        <div class="first-line">16h 05m</div>
-                        <div class="second-line">United Airlines</div>
-                      </div>
-                    </td>
-                    <td><div class="first-line">11:15 AM - 7:45 PM</div></td>
-                    <td>
-                      <div class="flight-details">
-                        <div class="first-line">Nonstop</div>
-                      </div>
-                    </td>
-                    <td>
-                      <div class="flight-details">
-                        <div class="first-line">$837</div>
-                        <div class="second-line">round trip</div>
-                      </div>
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <th class="airline-logo" scope="row">
-                      <img
-                        src="./resources/assets/img/airlines-logo/Air France.svg"
-                        alt=""
-                      />
-                    </th>
-                    <td>
-                      <div class="flight-details">
-                        <div class="first-line">15h 45m</div>
-                        <div class="second-line">Air France</div>
-                      </div>
-                    </td>
-                    <td><div class="first-line">10:55 AM - 8:15 PM</div></td>
-                    <td>
-                      <div class="flight-details">
-                        <div class="first-line">Nonstop</div>
-                      </div>
-                    </td>
-                    <td>
-                      <div class="flight-details">
-                        <div class="first-line">$839</div>
-                        <div class="second-line">round trip</div>
-                      </div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-
+              <div class="row">
+                <div class="col-12">
+                  <div class="table-border">
+                    <table class="table">
+                      <tbody>
+                        <tr>
+                          <th class="airline-logo" scope="row">
+                            <img
+                              src="./resources/assets/img/airlines-logo/Hawaiian Airlines.svg"
+                              alt=""
+                            />
+                          </th>
+                          <td>
+                            <div class="flight-details">
+                              <div class="first-line">16h 45m</div>
+                              <div class="second-line">Hawaiian Airlines</div>
+                            </div>
+                          </td>
+                          <td><div class="first-line">7:00AM - 4:15PM</div></td>
+                          <td>
+                            <div class="flight-details">
+                              <div class="first-line">1 stop</div>
+                              <div class="second-line">2h 45m in HNL</div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="flight-details">
+                              <div class="first-line">$624</div>
+                              <div class="second-line">round trip</div>
+                            </div>
+                          </td>
+                        </tr>
+  
+                        <tr>
+                          <th class="airline-logo" scope="row">
+                            <img
+                              src="./resources/assets/img/airlines-logo/Japan Airlines.svg"
+                              alt=""
+                            />
+                          </th>
+                          <td>
+                            <div class="flight-details">
+                              <div class="first-line">18h 22m</div>
+                              <div class="second-line">Japan Airlines</div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="first-line">7:35 AM - 12:15 PM</div>
+                          </td>
+                          <td>
+                            <div class="flight-details">
+                              <div class="first-line">1 stop</div>
+                              <div class="second-line">50m in HKG</div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="flight-details">
+                              <div class="first-line">$663</div>
+                              <div class="second-line">round trip</div>
+                            </div>
+                          </td>
+                        </tr>
+  
+                        <tr>
+                          <th class="airline-logo" scope="row">
+                            <img
+                              src="./resources/assets/img/airlines-logo/Hawaiian Airlines.svg"
+                              alt=""
+                            />
+                          </th>
+                          <td>
+                            <div class="flight-details">
+                              <div class="first-line">18h 04m</div>
+                              <div class="second-line">Hawaiian Airlines</div>
+                            </div>
+                          </td>
+                          <td><div class="first-line">8:20 AM - 2:15 PM</div></td>
+                          <td>
+                            <div class="flight-details">
+                              <div class="first-line">1 stop</div>
+                              <div class="second-line">1h 50m in PVG</div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="flight-details">
+                              <div class="first-line">$690</div>
+                              <div class="second-line">round trip</div>
+                            </div>
+                          </td>
+                        </tr>
+  
+                        <tr>
+                          <th class="airline-logo" scope="row">
+                            <img
+                              src="./resources/assets/img/airlines-logo/Delta Airlines.svg"
+                              alt=""
+                            />
+                          </th>
+                          <td>
+                            <div class="flight-details">
+                              <div class="first-line">18h 52m</div>
+                              <div class="second-line">Delta</div>
+                            </div>
+                          </td>
+                          <td><div class="first-line">9:47 AM - 4:15 PM</div></td>
+                          <td>
+                            <div class="flight-details">
+                              <div class="first-line">1 stop</div>
+                              <div class="second-line">4h 05m in ICN</div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="flight-details">
+                              <div class="first-line">$756</div>
+                              <div class="second-line">round trip</div>
+                            </div>
+                          </td>
+                        </tr>
+  
+                        <tr>
+                          <th class="airline-logo" scope="row">
+                            <img
+                              src="./resources/assets/img/airlines-logo/United Airlines.svg"
+                              alt=""
+                            />
+                          </th>
+                          <td>
+                            <div class="flight-details">
+                              <div class="first-line">16h 05m</div>
+                              <div class="second-line">United Airlines</div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="first-line">11:15 AM - 7:45 PM</div>
+                          </td>
+                          <td>
+                            <div class="flight-details">
+                              <div class="first-line">Nonstop</div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="flight-details">
+                              <div class="first-line">$837</div>
+                              <div class="second-line">round trip</div>
+                            </div>
+                          </td>
+                        </tr>
+  
+                        <tr>
+                          <th class="airline-logo" scope="row">
+                            <img
+                              src="./resources/assets/img/airlines-logo/Air France.svg"
+                              alt=""
+                            />
+                          </th>
+                          <td>
+                            <div class="flight-details">
+                              <div class="first-line">15h 45m</div>
+                              <div class="second-line">Air France</div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="first-line">10:55 AM - 8:15 PM</div>
+                          </td>
+                          <td>
+                            <div class="flight-details">
+                              <div class="first-line">Nonstop</div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="flight-details">
+                              <div class="first-line">$839</div>
+                              <div class="second-line">round trip</div>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
               <!-- btn -->
-              <div class="btn-expand">
-                <a href="">Show all flights</a>
+              <div class="row">
+                <div class="col-12 d-flex justify-content-end">
+                  <div class="btn-expand-fl">
+                    <a href="">Show all flights</a>
+                  </div>
+                </div>
               </div>
             </section>
 
@@ -398,70 +477,75 @@
             <section class="section-price-grid">
               <div class="row">
                 <div class="col-12">
-                  <div class="table-title">Price grid (flexible dates)</div>
+                  <div class="section-title">Price grid (flexible dates)</div>
                 </div>
               </div>
-
-              <div class="table-responsive">
-                <table class="table table-bordered">
-                  <thead>
-                    <tr>
-                      <th scope="col"></th>
-                      <th scope="col">2/12</th>
-                      <th scope="col">2/13</th>
-                      <th scope="col">2/14</th>
-                      <th scope="col">2/15</th>
-                      <th scope="col">2/16</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr class="">
-                      <th scope="row">3/7</th>
-                      <td>$837</td>
-                      <td>$592</td>
-                      <td>$592</td>
-                      <td>$1,308</td>
-                      <td>$837</td>
-                    </tr>
-                    <tr class="">
-                      <th scope="row">3/8</th>
-                      <td>$837</td>
-                      <td>$592</td>
-                      <td>$592</td>
-                      <td>$837</td>
-                      <td>$1,308</td>
-                    </tr>
-                    <tr class="">
-                      <th scope="row">3/9</th>
-                      <td>$624</td>
-                      <td>$592</td>
-                      <td>$624</td>
-                      <td>$592</td>
-                      <td>$592</td>
-                    </tr>
-                    <tr class="">
-                      <th scope="row">3/10</th>
-                      <td>$1,308</td>
-                      <td>$624</td>
-                      <td>$624</td>
-                      <td>$837</td>
-                      <td>$837</td>
-                    </tr>
-                    <tr class="">
-                      <th scope="row">3/11</th>
-                      <td>$592</td>
-                      <td>$624</td>
-                      <td>$1,308</td>
-                      <td>$837</td>
-                      <td>$624</td>
-                    </tr>
-                  </tbody>
-                </table>
+              <div class="row">
+                <div class="col-12">
+                  <div class="table-responsive">
+                    <div class="table-border">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col"></th>
+                            <th scope="col">2/12</th>
+                            <th scope="col">2/13</th>
+                            <th scope="col">2/14</th>
+                            <th scope="col">2/15</th>
+                            <th scope="col">2/16</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="">
+                            <th scope="row">3/7</th>
+                            <td>$837</td>
+                            <td>$592</td>
+                            <td>$592</td>
+                            <td>$1,308</td>
+                            <td>$837</td>
+                          </tr>
+                          <tr class="">
+                            <th scope="row">3/8</th>
+                            <td>$837</td>
+                            <td>$592</td>
+                            <td>$592</td>
+                            <td>$837</td>
+                            <td>$1,308</td>
+                          </tr>
+                          <tr class="">
+                            <th scope="row">3/9</th>
+                            <td>$624</td>
+                            <td>$592</td>
+                            <td>$624</td>
+                            <td>$592</td>
+                            <td>$592</td>
+                          </tr>
+                          <tr class="">
+                            <th scope="row">3/10</th>
+                            <td>$1,308</td>
+                            <td>$624</td>
+                            <td>$624</td>
+                            <td>$837</td>
+                            <td>$837</td>
+                          </tr>
+                          <tr class="">
+                            <th scope="row">3/11</th>
+                            <td>$592</td>
+                            <td>$624</td>
+                            <td>$1,308</td>
+                            <td>$837</td>
+                            <td>$624</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
               </div>
 
               <div class="row">
                 <div class="col-12">
-                  <div class="table-title">Price history</div>
+                  <div class="section-title">Price history</div>
                 </div>
               </div>
 
@@ -472,10 +556,14 @@
 
             <section class="section section-price-rating">
               <div class="row">
-                <div class="col-12">
-                  <div class="table-title">
-                    Price rating
-                    <a href="">Buy soon</a>
+                <div class="col-12 ">
+                  <div class="title-wrapper d-flex align-items-center">
+                    <div class="section-title">
+                      Price rating
+                    </div>
+                    <div class="btn-blue">
+                      <a href="./infomation.html" >Buy soon</a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -483,81 +571,85 @@
                 We recommend booking soon. The average cost of this flight is
                 $750, but could rise 18% to $885 in two weeks.
               </div>
-              <div class="content-commit">
-                Tripma analyzes thousands of flights, prices, and trends to
+              <div class="description">
+                Travel analyzes thousands of flights, prices, and trends to
                 ensure you get the best deal.
               </div>
             </section>
           </div>
         </div>
-
-
-        <section class="section section-place">
-            <div class="row">
-              <div class="col-12">
-                <div class="table-title">
-                  Find <a href="">places to stay</a> in Japan
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-4">
-                <div class="card" style="width: 18rem">
-                  <img
-                    src="./resources/assets/img/Fuji.png"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <a href="">Hotel Kaneyamaen and Bessho SASA</a>
-                    <p class="card-text">
-                      Located at the base of Mount Fuji, Hotel Kaneyamaen is a
-                      traitional japanese ryokan with a modern twist. Enjoy a
-                      private onsen bath and a private multi-course kaiseki dinner.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-4">
-                <div class="card" style="width: 18rem">
-                  <img
-                    src="./resources/assets/img/Osaka.png"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <a href="">Hotel Kaneyamaen and Bessho SASA</a>
-                    <p class="card-text">
-                      Located at the base of Mount Fuji, Hotel Kaneyamaen is a
-                      traitional japanese ryokan with a modern twist. Enjoy a
-                      private onsen bath and a private multi-course kaiseki dinner.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-4">
-                <div class="card" style="width: 18rem">
-                  <img
-                    src="./resources/assets/img/Shinjuku.png"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <a href="">Hotel Kaneyamaen and Bessho SASA</a>
-                    <p class="card-text">
-                      Located at the base of Mount Fuji, Hotel Kaneyamaen is a
-                      traitional japanese ryokan with a modern twist. Enjoy a
-                      private onsen bath and a private multi-course kaiseki dinner.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-        </section>
+      </div>
+      <div class="container">
         <section class="section section-place">
           <div class="row">
             <div class="col-12">
-              <div class="table-title">
+              <div class="section-title">
+                Find <a href="">places to stay</a> in Japan
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-4">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="./resources/assets/img/Fuji.png"
+                  class="card-img-top"
+                  alt="Hotel Kaneyamaen and Bessho SASA"
+                />
+                <div class="card-body">
+                  <a href="" class="title">Hotel Kaneyamaen and Bessho SASA</a>
+                  <p class="description">
+                    Located at the base of Mount Fuji, Hotel Kaneyamaen is a
+                    traitional japanese ryokan with a modern twist. Enjoy a
+                    private onsen bath and a private multi-course kaiseki
+                    dinner.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="./resources/assets/img/Osaka.png"
+                  class="card-img-top"
+                  alt="HOTEL THE FLAG 大阪市"
+                />
+                <div class="card-body">
+                  <a href="" class="title">HOTEL THE FLAG 大阪市</a>
+                  <p class="description">
+                    Make a stop in Osaka and stay at HOTEL THE FLAG, just a few
+                    minutes walk to experience the food culture surrounding
+                    Dontonbori. Just one minute away is the Shinsaibashi
+                    shopping street.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="./resources/assets/img/Shinjuku.png"
+                  class="card-img-top"
+                  alt="9 Hours Shinjuku"
+                />
+                <div class="card-body">
+                  <a href="" class="title">9 Hours Shinjuku</a>
+                  <p class="description">
+                    Experience a truly unique stay in an authentic Japanese
+                    capsule hotel. 9 Hours Shinjuku is minutes from one of
+                    Japan’s busiest train stations. Just take the NEX train from
+                    Narita airport!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section section-place">
+          <div class="row">
+            <div class="col-12">
+              <div class="section-title">
                 People in <a href="">San Francisco</a> also searched for
               </div>
             </div>
@@ -568,16 +660,14 @@
                 <img
                   src="./resources/assets/img/shanghai.png"
                   class="card-img-top"
-                  alt="..."
+                  alt="The Bund, Shanghai"
                 />
                 <div class="card-body">
                   <div class="card-name">
-                    <div class="card-text">The Bund, Shanghai</div>
-                    <div class="card-price">$598</div>
+                    <div class="title">The Bund, <a href="">Shanghai</a></div>
+                    <div class="price">$598</div>
                   </div>
-                  <p class="card-description">
-                    China’s most international city
-                  </p>
+                  <p class="description">China’s most international city</p>
                 </div>
               </div>
             </div>
@@ -586,34 +676,35 @@
                 <img
                   src="./resources/assets/img/Kenya.png"
                   class="card-img-top"
-                  alt="..."
+                  alt="Kenya"
                 />
                 <div class="card-body">
-                  <a href="">Nairobi, Kenya</a>
-                  <p class="card-text">
-                    Located at the base of Mount Fuji, Hotel Kaneyamaen is a
-                    traitional japanese ryokan with a modern twist. Enjoy a
-                    private onsen bath and a private multi-course kaiseki dinner.
+                  <div class="card-name">
+                    <div class="title">Nairobi<a href="">, Kenya</a></div>
+                    <div class="price">$598</div>
+                  </div>
+                  <p class="description">
+                    Dubbed the Safari Capital of the World
                   </p>
-                  <div class="card-price">$598</div>
                 </div>
               </div>
             </div>
             <div class="col-4">
               <div class="card" style="width: 18rem">
                 <img
-                  src="./resources/assets/img/Shinjuku.png"
+                  src="./resources/assets/img/Korea.png"
                   class="card-img-top"
-                  alt="..."
+                  alt="Seoul, South Korea"
                 />
+
                 <div class="card-body">
-                  <a href="">Hotel Kaneyamaen and Bessho SASA</a>
-                  <p class="card-text">
-                    Located at the base of Mount Fuji, Hotel Kaneyamaen is a
-                    traitional japanese ryokan with a modern twist. Enjoy a
-                    private onsen bath and a private multi-course kaiseki dinner.
+                  <div class="card-name">
+                    <div class="title">Seoul, <a href="">South Korea</a></div>
+                    <div class="price">$598</div>
+                  </div>
+                  <p class="description">
+                    This modern city is a traveler’s dream
                   </p>
-                  <div class="card-price">$598</div>
                 </div>
               </div>
             </div>
@@ -625,26 +716,19 @@
     <footer>
       <div class="container">
         <div class="row">
-          <div class="col-3">
-            <div class="row">
-              <div class="col-6">
-                <a class="navbar-brand" href="./index.html">Travel</a>
-              </div>
-              <div class="col-6">
-                <div class="footer-column">
-                  <div class="footer-title">About</div>
-                  <div class="footer-content">About Travel</div>
-                  <div class="footer-content">How it works</div>
-                  <div class="footer-content">Careers</div>
-                  <div class="footer-content">Press</div>
-                  <div class="footer-content">Blog</div>
-                  <div class="footer-content">Forum</div>
-                </div>
-              </div>
+          <div class="col-12 d-flex justify-content-sm-between">
+            <div class="footer-column1">
+              <a class="navbar-brand" href="./index.html">Travel</a>
             </div>
-          </div>
-
-          <div class="col-3">
+            <div class="footer-column">
+              <div class="footer-title">About</div>
+              <div class="footer-content">About Travel</div>
+              <div class="footer-content">How it works</div>
+              <div class="footer-content">Careers</div>
+              <div class="footer-content">Press</div>
+              <div class="footer-content">Blog</div>
+              <div class="footer-content">Forum</div>
+            </div>
             <div class="footer-column">
               <div class="footer-title">Partner with us</div>
               <div class="footer-content">Partnership programs</div>
@@ -655,8 +739,6 @@
               <div class="footer-content">Community</div>
               <div class="footer-content">Loyalty program</div>
             </div>
-          </div>
-          <div class="col-3">
             <div class="footer-column">
               <div class="footer-title">Support</div>
               <div class="footer-content">Help Center</div>
@@ -666,18 +748,22 @@
               <div class="footer-content">Trust and safety</div>
               <div class="footer-content">Accessibility</div>
             </div>
-          </div>
-          <div class="col-3">
             <div class="footer-column">
               <div class="footer-title">Get the app</div>
               <div class="footer-content">Travel for Android</div>
               <div class="footer-content">Travel for iOS</div>
               <div class="footer-content">Mobile site</div>
               <div class="footer-content">
-                <img src="./resources/assets/img/app store.svg" alt="" />
+                <img
+                  src="./resources/assets/img/app store.svg"
+                  alt="app store"
+                />
               </div>
               <div class="footer-content">
-                <img src="./resources/assets/img/google play.svg" alt="" />
+                <img
+                  src="./resources/assets/img/google play.svg"
+                  alt="google play"
+                />
               </div>
             </div>
           </div>

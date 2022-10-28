@@ -1,0 +1,137 @@
+/* header-main */
+.header-main {
+  margin-bottom: 40px;
+}
+
+/* input-form */
+
+.departure,
+.arrival,
+.adult {
+  width: 173.67px;
+}
+.calendar {
+  width: 252px;
+}
+
+.section-input {
+  margin-bottom: 24px;
+}
+
+/* section-filter */
+
+.section-filter {
+  margin-bottom: 48px;
+}
+.select-filter {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  color: #27273f;
+  padding: 8px 12px 8px 16px;
+  width: 120px;
+  height: 38px;
+  border: 1px solid #cbd4e6;
+  border-radius: 4px;
+}
+/* section section-flight-table */
+.section-flight-table {
+  margin-bottom: 48px;
+}
+.section-flight-table table {
+  padding: 32px;
+  margin-bottom: 26px;
+}
+.table-border {
+  border: 1px solid #e9e8fc;
+  border-radius: 12px;
+}
+.section-flight-table table tbody tr {
+  padding: 4px 16px;
+  width: 840px;
+  height: 72px;
+}
+.section-flight-table table tbody tr th {
+  line-height: 50px;
+}
+
+.section-flight-table .airline-logo {
+  width: 50px;
+  height: 50px;
+}
+
+.flight-details {
+}
+.first-line {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #27273f;
+  margin-bottom: 8px;
+}
+.second-line {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #7c8db0;
+}
+/* btn-expand-fl */
+.btn-expand-fl {
+  padding: 12px 20px;
+  color: #605dec;
+  width: 168px;
+  height: 48px;
+  border: 1px solid #605dec;
+  border-radius: 4px;
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+.btn-expand-fl:hover {
+  background-color: #e9e8fc;
+  transition: ease-in 0.2s;
+}
+/* section section-banner */
+.section-banner,
+.section-place {
+  margin-bottom: 80px;
+}
+/* section-price-grid */
+.table-responsive,
+.price-chart {
+  margin-bottom: 40px;
+}
+/* section-price-rating */
+
+.section-price-rating .section-title {
+  margin-bottom: 0;
+}
+.title-wrapper {
+  margin-bottom: 16px;
+}
+.btn-blue {
+  padding: 2px 8px;
+  width: 84px;
+  height: 30px;
+  background: #5cd6c0;
+  border-radius: 4px;
+  text-align: center;
+  margin-left: 16px;
+  transition-duration: 0.5s;
+}
+.btn-blue a {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 28px;
+  color: #ffffff;
+}
+.btn-blue:hover {
+  background-color: #00b292;
+  transition: ease-in 0.2s;
+}
+.content-advice {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #6e7491;
+  margin-bottom: 8px;
+}

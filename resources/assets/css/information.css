@@ -1,0 +1,27 @@
+/* section section-heading */
+
+.section-heading {
+  margin-bottom: 36px;
+}
+
+.heading-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  margin-bottom: 16px;
+}
+
+/* form-input */
+
+.form-input {
+  width: 200px;
+  height: 48px;
+
+  /* True White */
+
+  background: #ffffff;
+  /* Grey / 300 */
+
+  border: 1px solid #a1b0cc;
+  border-radius: 4px;
+}
