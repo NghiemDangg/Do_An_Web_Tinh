@@ -77,14 +77,13 @@
                 <a class="nav-link signin-btn" href="#">Sign in</a>
               </li>
               <li class="nav-item btn-nav">
-                <a class="nav-link text-white signup-btn" href="#">Sign up</a>
+                <a class="nav-link text-white signup-btn " data-bs-toggle="modal" data-bs-target="#staticBackdrop">Sign up</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
-
     <main class="main">
       <!-- home-page input-form -->
       <section
@@ -723,6 +722,139 @@
         </div>
       </div>
     </footer>
+
+    <section class="section section-modal">
+      <div class="modal1">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="modal-inner">
+                <!-- modal-header -->
+                <div class="row">
+                  <div class="col-12">
+                    <div class="modal-header">
+                      <h4 class="title" id="ModalLabel">Sign up for Tripma</h4>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                  </div>
+                </div>
+                <!-- modal-body -->
+                <div class="row">
+                  <div class="col-12">
+                    <div class="modal-body">
+                      <div class="description">
+                        Tripma is totally free to use. Sign up using your email
+                        address or phone number below to get started.
+                      </div>
+                      <form action="" class="modal-form login-form">
+                        <input
+                          type="text"
+                          placeholder="Email or phone number"
+                          class="form-input modal-input"
+                        />
+                        <input
+                          type="password"
+                          placeholder="Password"
+                          class="form-input modal-input"
+                        />
+                        <div class="check-wrapper">
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id=""
+                            />
+                            <label class="form-check-label" for="">
+                              I agree to the
+                              <a href="">terms and conditions</a>
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id=""
+                            />
+                            <label class="form-check-label" for="">
+                              Send me the latest deal alerts
+                            </label>
+                          </div>
+                        </div>
+
+                        <button type="submit" class="btn-form">
+                          Create account
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-12">
+                    <div class="or-wrapper">
+                      <div class="line">
+                        <img src="./resources/assets/img/line.svg" alt="" />
+                      </div>
+                      <div class="or">or</div>
+                      <div class="line">
+                        <img src="./resources/assets/img/line.svg" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- modal-footer -->
+                <div class="row">
+                  <div class="col-12">
+                    <div class="modal-footer login-footer">
+                      <button type="button" class="modal-btn">
+                        <div class="sns-wrapper">
+                          <div class="sns-logo">
+                            <img
+                              src="./resources/assets/img/google_icon.svg"
+                              alt=""
+                            />
+                          </div>
+                          <a href="">Continue with Google</a>
+                        </div>
+                      </button>
+                      <button type="button" class="modal-btn">
+                        <div class="sns-wrapper">
+                          <div class="sns-logo">
+                            <img
+                              src="./resources/assets/img/apple_icon.svg"
+                              alt=""
+                            />
+                          </div>
+                          <a href="">Continue with Apple</a>
+                        </div>
+                      </button>
+                      <button type="button" class="modal-btn">
+                        <div class="sns-wrapper">
+                          <div class="sns-logo">
+                            <img
+                              src="./resources/assets/img/facebook_icon.svg"
+                              alt=""
+                            />
+                          </div>
+                          <a href="">Continue with Facebook</a>
+                        </div>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <script src="./resources/js/index.js"></script>
   </body>
 </html>
