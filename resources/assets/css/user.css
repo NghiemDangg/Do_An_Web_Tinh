@@ -1,0 +1,85 @@
+/* header */
+.user-avt {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #e9e8fc;
+  border-radius: 50%;
+  background: url(../img/Anthony\ Lewis.png) center no-repeat;
+  background-size: cover;
+}
+/* notification */
+.notification {
+  width: 704px;
+  height: 64px;
+  padding: 16px 16px 16px 24px;
+  background: #eafffb;
+  border: 1px solid #007b65;
+  border-radius: 8px;
+  margin-bottom: 40px;
+}
+.noti-content {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #007b65;
+}
+.notification i {
+  margin-left: 8px;
+  color: #52527a33;
+  transition: ease-in-out 0.4s;
+}
+.notification i:hover {
+  color: #1c1c1c;
+  cursor: pointer;
+}
+.title{
+    margin-bottom: 16px !important;
+}
+.title-small {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 25px;
+  color: #6e7491;
+  margin-bottom: 16px;
+}
+/* data-row*/
+.data-row {
+  margin-bottom: 40px;
+}
+.section-flight-table {
+  margin-bottom: 12px !important;
+}
+.table-row {
+  border: unset;
+}
+.data-row small {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #7c8db0;
+}
+/* price-label */
+.section-amout,.credit-card{
+    margin-bottom: 50px;
+}
+.price-label {
+  color: #6e7491;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+}
+.amout-wrapper {
+  border-top: 1px solid #cbd4e6;
+  border-bottom: 1px solid #cbd4e6;
+  height: 50px;
+}
+.amount-label {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  color: #36374a;
+}
+.label-right-item {
+  display: flex;
+  justify-content: flex-end;
+}

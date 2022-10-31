@@ -22,7 +22,10 @@
       rel="stylesheet"
       href="./resources/assets/fonts/themify-icons/themify-icons.css"
     />
-
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -34,6 +37,8 @@
     <script src="jquery-3.6.0.min.js"></script>
     <!-- css -->
     <link rel="stylesheet" href="./resources/assets/css/style.css" />
+    <link rel="stylesheet" href="./resources/assets/css/user.css" />
+    <link rel="stylesheet" href="./resources/assets/css/payment.css" />
   </head>
   <body>
     <header class="header-main">
@@ -70,9 +75,7 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">
-                  <div class="user-avt" style="width: 30px">
-                    <img src="./resources/assets/img/girl.png" alt="" />
-                  </div>
+                  <div class="user-avt"></div>
                 </a>
               </li>
             </ul>
@@ -87,9 +90,13 @@
           <div class="col-8">
             <div class="row">
               <div class="col-12">
-                <div class="notification">
-                  Your flight has been booked successfully! Your confirmation
-                  number is #381029404387
+                <div
+                  class="notification d-flex align-items-center justify-content-center"
+                >
+                  <div class="noti-content">
+                    Your flight has been booked successfully! Your confirmation
+                    number is #381029404387
+                  </div>
 
                   <i class="ti-close"></i>
                 </div>
@@ -98,20 +105,22 @@
 
             <div class="row">
               <div class="col-12">
-                <div class="user-name">Bon voyage, Sophia!</div>
+                <div class="heading title">Bon voyage, Sophia!</div>
               </div>
             </div>
 
             <div class="row">
               <div class="col-12">
-                <div class="title">Confirmation number: #381029404387</div>
+                <div class="title-small">
+                  Confirmation number: #381029404387
+                </div>
               </div>
             </div>
 
             <div class="row">
               <div class="col-12">
                 <div class="description">
-                  Thank you for booking your travel with Tripma! Below is a
+                  Thank you for booking your travel with Travel! Below is a
                   summary of your trip to Narita airport in Tokyo, Japan. We’ve
                   sent a copy of your booking confirmation to your email
                   address. You can also find this page again in
@@ -122,93 +131,100 @@
 
             <div class="row">
               <div class="col-12">
-                <div class="feature-name">Flight summary</div>
+                <div class="title-small">Flight summary</div>
               </div>
             </div>
 
             <div class="row">
               <div class="col-12">
                 <div class="data-flight">
-                  <div class="data-title">Departing February 25th, 2021</div>
+                  <div class="title-small">Departing February 25th, 2021</div>
 
                   <div class="data-row">
-                    <div class="flight-detail">
-                      <table class="table">
-                        <tbody>
-                          <tr>
-                            <th class="airline-logo" scope="row">
+                    <section class="section-flight-table">
+                      <div class="data-table">
+                        <div class="row">
+                          <div class="col-1">
+                            <div class="airline-logo">
                               <img
                                 src="./resources/assets/img/airlines-logo/Hawaiian Airlines.svg"
                                 alt=""
                               />
-                            </th>
-                            <td>
-                              <div class="flight-details">
-                                <div class="first-line">16h 45m</div>
-                                <div class="second-line">Hawaiian Airlines</div>
-                              </div>
-                            </td>
-                            <td>
+                            </div>
+                          </div>
+                          <div class="col-3">
+                            <div class="flight-details">
+                              <div class="first-line">16h 45m</div>
+                              <div class="description">Hawaiian Airlines</div>
+                            </div>
+                          </div>
+                          <div class="col-3">
+                            <div class="flight-details">
                               <div class="first-line">7:00AM - 4:15PM</div>
-                            </td>
-                            <td>
-                              <div class="flight-details">
-                                <div class="first-line">1 stop</div>
-                                <div class="second-line">2h 45m in HNL</div>
-                              </div>
-                            </td>
-                            <td>
-                              <div class="flight-details">
-                                <div class="first-line">$624</div>
-                                <div class="second-line">round trip</div>
-                              </div>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                      <small>Seat 9F (economy, window), 1 checked bag</small>
-                    </div>
+                              <div class="description">value</div>
+                            </div>
+                          </div>
+                          <div class="col-3">
+                            <div class="flight-details">
+                              <div class="first-line">1 stop</div>
+                              <div class="description">2h 45m in HNL</div>
+                            </div>
+                          </div>
+
+                          <div class="col-2">
+                            <div class="flight-details">
+                              <div class="first-line">$624</div>
+                              <div class="description">round trip</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                    <small>Seat 9F (economy, window), 1 checked bag</small>
                   </div>
 
-                  <div class="data-title">Arriving March 21st, 2021</div>
+                  <div class="title-small">Arriving March 21st, 2021</div>
                   <div class="data-row">
-                    <div class="flight-detail">
-                      <table class="table">
-                        <tbody>
-                          <tr>
-                            <th class="airline-logo" scope="row">
+                    <section class="section-flight-table">
+                      <div class="data-table">
+                        <div class="row">
+                          <div class="col-1">
+                            <div class="airline-logo">
                               <img
                                 src="./resources/assets/img/airlines-logo/Hawaiian Airlines.svg"
                                 alt=""
                               />
-                            </th>
-                            <td>
-                              <div class="flight-details">
-                                <div class="first-line">16h 45m</div>
-                                <div class="second-line">Hawaiian Airlines</div>
-                              </div>
-                            </td>
-                            <td>
+                            </div>
+                          </div>
+                          <div class="col-3">
+                            <div class="flight-details">
+                              <div class="first-line">16h 45m</div>
+                              <div class="description">Hawaiian Airlines</div>
+                            </div>
+                          </div>
+                          <div class="col-3">
+                            <div class="flight-details">
                               <div class="first-line">7:00AM - 4:15PM</div>
-                              <div class="second-line">value</div>
-                            </td>
-                            <td>
-                              <div class="flight-details">
-                                <div class="first-line">1 stop</div>
-                                <div class="second-line">2h 45m in HNL</div>
-                              </div>
-                            </td>
-                            <td>
-                              <div class="flight-details">
-                                <div class="first-line">$624</div>
-                                <div class="second-line">round trip</div>
-                              </div>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                      <small>Seat 4F (business, window), 1 checked bag</small>
-                    </div>
+                              <div class="description">value</div>
+                            </div>
+                          </div>
+                          <div class="col-3">
+                            <div class="flight-details">
+                              <div class="first-line">1 stop</div>
+                              <div class="description">2h 45m in HNL</div>
+                            </div>
+                          </div>
+
+                          <div class="col-2">
+                            <div class="flight-details">
+                              <div class="first-line">$624</div>
+                              <div class="description">round trip</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                    <small>Seat 9F (economy, window), 1 checked bag</small>
                   </div>
                 </div>
               </div>
@@ -216,40 +232,45 @@
 
             <div class="row">
               <div class="col-12">
-                <div class="feature-name">Price breakdown</div>
+                <div class="title">Price breakdown</div>
               </div>
             </div>
 
             <div class="row">
-              <div class="col-6">
-                <div class="price-label">Departing Flight</div>
-                <div class="price-label">Arriving Flight</div>
-                <div class="price-label">Baggage fees</div>
-                <div class="price-label">Seat upgrade (business)</div>
-                <div class="price-label">Subtotal</div>
-                <div class="price-label">Taxes (9.4%)</div>
+              <div class="col-7 d-flex justify-content-between align-items-center">
+                <div class="label-left">
+                  <div class="price-label">Departing Flight</div>
+                  <div class="price-label">Arriving Flight</div>
+                  <div class="price-label">Baggage fees</div>
+                  <div class="price-label">Seat upgrade (business)</div>
+                  <div class="price-label">Subtotal</div>
+                  <div class="price-label">Taxes (9.4%)</div>
+                </div>
+                <div class="label-right">
+                <div class="price-label label-right-item">$251.50</div>
+                <div class="price-label label-right-item">$251.50</div>
+                <div class="price-label label-right-item">$0</div>
+                <div class="price-label label-right-item">$199</div>
+                <div class="price-label label-right-item">$702</div>
+                <div class="price-label label-right-item">$66</div>
+                </div>
               </div>
-              <div class="col-6">
-                <div class="price">$251.50</div>
-                <div class="price">$251.50</div>
-                <div class="price">$0</div>
-                <div class="price">$199</div>
-                <div class="price">$702</div>
-                <div class="price">$66</div>
-              </div>
+             
             </div>
-            <div class="row">
-              <div class="col-6">
-                <div class="amount-label">Amount paid</div>
+            <section class="section-amout">
+              <div class="row">
+                <div class="col-7">
+                    <div class="amout-wrapper d-flex justify-content-between align-items-center">
+                    <div class="amount-label">Amount paid</div>
+                    <div class="amount-label">$768</div>
+                  </div>
+                </div>
               </div>
-              <div class="col-6">
-                <div class="amount-label">$768</div>
-              </div>
-            </div>
+            </section>
 
             <div class="row">
               <div class="col-12">
-                <div class="feature-name">Payment method</div>
+                <div class="title">Payment method</div>
               </div>
             </div>
 
@@ -263,7 +284,7 @@
 
             <div class="row">
               <div class="col-12">
-                <div class="feature-name">Share your travel itinerary</div>
+                <div class="title">Share your travel itinerary</div>
               </div>
             </div>
             <div class="row">
@@ -324,7 +345,7 @@
 
             <div class="row">
               <div class="col-12">
-                <div class="feature-name">Flight Route</div>
+                <div class="title">Flight Route</div>
               </div>
             </div>
 
@@ -342,7 +363,7 @@
               <div class="container">
                 <div class="row">
                   <div class="col-12">
-                    <div class="feature-name">Shop <a href="">hotels</a></div>
+                    <div class="title">Shop <a href="">hotels</a></div>
                   </div>
                 </div>
                 <div class="row">
@@ -445,7 +466,7 @@
               <div class="container">
                 <div class="row">
                   <div class="col-12">
-                    <div class="feature-name">
+                    <div class="title">
                       Find unique <a href="">experiences</a>
                     </div>
                   </div>
@@ -512,26 +533,19 @@
     <footer>
       <div class="container">
         <div class="row">
-          <div class="col-3">
-            <div class="row">
-              <div class="col-6">
-                <a class="navbar-brand" href="./index.html">Travel</a>
-              </div>
-              <div class="col-6">
-                <div class="footer-column">
-                  <div class="footer-title">About</div>
-                  <div class="footer-content">About Travel</div>
-                  <div class="footer-content">How it works</div>
-                  <div class="footer-content">Careers</div>
-                  <div class="footer-content">Press</div>
-                  <div class="footer-content">Blog</div>
-                  <div class="footer-content">Forum</div>
-                </div>
-              </div>
+          <div class="col-12 d-flex justify-content-sm-between">
+            <div class="footer-column1">
+              <a class="navbar-brand" href="./index.html">Travel</a>
             </div>
-          </div>
-
-          <div class="col-3">
+            <div class="footer-column">
+              <div class="footer-title">About</div>
+              <div class="footer-content">About Travel</div>
+              <div class="footer-content">How it works</div>
+              <div class="footer-content">Careers</div>
+              <div class="footer-content">Press</div>
+              <div class="footer-content">Blog</div>
+              <div class="footer-content">Forum</div>
+            </div>
             <div class="footer-column">
               <div class="footer-title">Partner with us</div>
               <div class="footer-content">Partnership programs</div>
@@ -542,8 +556,6 @@
               <div class="footer-content">Community</div>
               <div class="footer-content">Loyalty program</div>
             </div>
-          </div>
-          <div class="col-3">
             <div class="footer-column">
               <div class="footer-title">Support</div>
               <div class="footer-content">Help Center</div>
@@ -553,18 +565,22 @@
               <div class="footer-content">Trust and safety</div>
               <div class="footer-content">Accessibility</div>
             </div>
-          </div>
-          <div class="col-3">
             <div class="footer-column">
               <div class="footer-title">Get the app</div>
               <div class="footer-content">Travel for Android</div>
               <div class="footer-content">Travel for iOS</div>
               <div class="footer-content">Mobile site</div>
               <div class="footer-content">
-                <img src="./resources/assets/img/app store.svg" alt="" />
+                <img
+                  src="./resources/assets/img/app store.svg"
+                  alt="app store"
+                />
               </div>
               <div class="footer-content">
-                <img src="./resources/assets/img/google play.svg" alt="" />
+                <img
+                  src="./resources/assets/img/google play.svg"
+                  alt="google play"
+                />
               </div>
             </div>
           </div>
