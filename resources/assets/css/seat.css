@@ -1,31 +1,52 @@
-/* seat-selector */
-.seat-selector{
-
+.plane {
+  
 }
-
 /* section-class */
-.section-class{
-
+.section-class {
+}
+.class-wrapper {
+}
+/* heading */
+.class-heading {
+}
+.local {
+}
+.local-code {
+}
+.class-content {
+}
+.class-icon {
+}
+.time {
+}
+.date {
 }
 
-.class-heading{
-
+.class-content {
 }
-.local{
 
+/* class-main */
+.class-main {
 }
-.local-code{
+.seat-selector {
+}
+.seat-class {
+}
+/* feature-list */
+.feature-list {
+}
+.feature-list-bullet {
+}
+.feature-icon {
+}
 
-}
-.class-content{
+/* class-footer */
 
+.class-footer {
 }
-.class-icon{
-
+.pasenger-data {
 }
-.time{
-
+.name {
 }
-.date{
-    
+.btn-form {
 }

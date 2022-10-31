@@ -143,9 +143,10 @@ body {
   color: #7c8db0;
   margin: 0 10px;
 }
-
+/* header */
 .header-main {
   width: 100%;
+  margin-bottom: 46px;
 }
 .header-top {
   width: 100%;

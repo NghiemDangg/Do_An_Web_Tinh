@@ -1,0 +1,180 @@
+.main {
+}
+.title {
+  color: #6e7491;
+}
+/* section section-heading */
+.section-heading {
+  margin-bottom: 24px;
+}
+.section-heading .description {
+  width: 682px;
+  height: 50px;
+}
+
+.heading {
+  color: #605dec;
+}
+/* section section-button-row */
+.section-button-row {
+  width: 686px;
+  height: 48px;
+  border: 1px solid #605dec;
+  border-radius: 4px;
+  align-items: center;
+  overflow: visible;
+  margin-bottom: 40px;
+}
+.button-payment {
+  display: flex;
+  padding: 12px 20px;
+}
+.button-payment a {
+  cursor: pointer;
+  margin-left: 4px;
+}
+.card-payment {
+  background-color: #605dec;
+  height: 50px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  transition: all 0.4s ease-in-out;
+}
+.card-payment:hover,
+.btn-full:hover {
+  background-color: #1513a0;
+  transition: ease-in 0.2s;
+}
+.card-payment a,
+.card-payment .payment-icon {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  color: #fafafa;
+}
+.payment-icon {
+  cursor: pointer;
+  color: #605dec;
+}
+/* title */
+.title {
+  margin-bottom: 24px;
+}
+/* section section-form-card */
+.section-form-card {
+}
+.check-wrapper {
+  margin-bottom: 24px;
+}
+.form-control {
+  width: 58%;
+  height: 48px;
+  margin-bottom: 24px;
+}
+.form-small {
+  width: 100%;
+  margin-bottom: 8px;
+}
+.form-small-item {
+  position: relative;
+}
+.form-small:last-child {
+  margin-left: 24px;
+}
+.icon-border {
+  width: 18px;
+  height: 18px;
+  border: 1px solid #6e7491;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 18px;
+  position: absolute;
+  top: 20%;
+  right: 14px;
+}
+.form-icon {
+  color: #6e7491;
+  font-size: 10px;
+}
+.form-text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #7c8db0;
+}
+.modal-footer {
+  display: block;
+}
+
+.btn-border {
+  padding: 12px 20px;
+  width: 191px;
+  height: 48px;
+  border: 1px solid #605dec;
+  border-radius: 4px;
+  margin-right: 4%;
+}
+.btn-border:hover {
+  cursor: pointer;
+  background-color: #e9e8fc;
+  transition: all 0.4s ease-in-out;
+}
+.btn-full {
+  padding: 12px 20px;
+  width: 173px;
+  height: 48px;
+  background: #605dec;
+  border-radius: 4px;
+  text-align: center;
+}
+.btn-full a {
+  color: #ffff;
+}
+/* section-flight-table */
+.section-flight-table {
+  padding: 16px;
+  min-width: 400px;
+  height: auto;
+  background: #ffffff;
+  border: 1px solid #e9e8fc;
+  border-radius: 12px;
+  margin-bottom: 40px;
+}
+.table-row:first-child {
+  border-bottom: 1px solid #e9e8fc;
+}
+.table-row {
+  padding: 8px;
+  width: auto;
+  height: auto;
+}
+.airline-logo {
+  margin-right: 8px;
+}
+.details .flight-details {
+  text-align: end;
+}
+.first-line {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  color: #27273f;
+}
+
+/* section-payment */
+.section-payment {
+  margin-bottom: 40px;
+}
+.payment {
+
+}
+.payment-item {
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+.payment-name {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #27273F;
+}

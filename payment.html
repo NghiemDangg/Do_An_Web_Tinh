@@ -22,7 +22,10 @@
       rel="stylesheet"
       href="./resources/assets/fonts/themify-icons/themify-icons.css"
     />
-
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -34,6 +37,7 @@
     <script src="jquery-3.6.0.min.js"></script>
     <!-- css -->
     <link rel="stylesheet" href="./resources/assets/css/style.css" />
+    <link rel="stylesheet" href="./resources/assets/css/payment.css" />
   </head>
   <body>
     <header class="header-main">
@@ -69,66 +73,72 @@
                 <a class="nav-link signin-btn" href="#">Sign in</a>
               </li>
               <li class="nav-item btn-nav">
-                <a class="nav-link text-white signup-btn" href="#">Sign up</a>
+                <a
+                  class="nav-link text-white signup-btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#staticBackdrop"
+                  >Sign up</a
+                >
               </li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
-    <main>
+    <main class="main">
       <div class="container">
         <div class="row">
           <div class="col-8">
             <section class="section section-heading">
-              <h1 class="heading">Passenger information</h1>
+              <h1 class="heading title">Payment method</h1>
               <div class="description">
-                Enter the required information for each traveler and be sure
-                that it exactly matches the government-issued ID presented at
-                the airport.
+                Select a payment method below. Tripma processes your payment
+                securely with end-to-end encryption.
               </div>
             </section>
 
-            <section class="section section-button-row">
-              <div class="row">
-                <div class="col-3">
+            <div class="row align-items-center">
+              <div class="col-12">
+                <section
+                  class="section section-button-row d-flex justify-content-between"
+                >
                   <div class="button-payment card-payment">
-                    <img
-                      src="./assets/img/payment-icon/credit card.svg"
-                      alt=""
-                    />
+                    <div class="payment-icon">
+                      <i class="bi bi-credit-card"></i>
+                    </div>
                     <a class="payment-name">Credit card</a>
                   </div>
-                </div>
-                <div class="col-3">
+
                   <div class="button-payment google">
-                    <img src="./assets/img/payment-icon/google.svg" alt="" />
+                    <div class="payment-icon">
+                      <i class="bi bi-google"></i>
+                    </div>
                     <a class="payment-name">Google Pay</a>
                   </div>
-                </div>
-                <div class="col-2">
+
                   <div class="button-payment apple">
-                    <img src="./assets/img/payment-icon/apple mac.svg" alt="" />
+                    <div class="payment-icon">
+                      <i class="bi bi-apple"></i>
+                    </div>
                     <a class="payment-name">Apple pay</a>
                   </div>
-                </div>
-                <div class="col-2">
+
                   <div class="button-payment paypal">
-                    <img src="./assets/img/payment-icon/paypal.svg" alt="" />
+                    <div class="payment-icon">
+                      <i class="bi bi-paypal"></i>
+                    </div>
                     <a class="payment-name">Paypal</a>
                   </div>
-                </div>
-                <div class="col-2">
+
                   <div class="button-payment crypto">
-                    <img
-                      src="./assets/img/payment-icon/bitcoin money currency crypto.svg"
-                      alt=""
-                    />
+                    <div class="payment-icon">
+                      <i class="bi bi-currency-bitcoin"></i>
+                    </div>
                     <a class="payment-name">Crypto</a>
                   </div>
-                </div>
+                </section>
               </div>
-            </section>
+            </div>
             <div class="row">
               <div class="col-12">
                 <div class="title">Credit card details</div>
@@ -136,16 +146,20 @@
             </div>
 
             <section class="section section-form-card">
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value=""
-                  id=""
-                />
-                <label class="form-check-label" for="">
-                  Billing address is same as Passenger 1
-                </label>
+              <form action="">
+                <div class="check-wrapper">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id=""
+                    />
+                    <label class="form-check-label" for="">
+                      Billing address is same as Passenger 1
+                    </label>
+                  </div>
+                </div>
                 <div class="row">
                   <div class="col-12">
                     <input
@@ -170,41 +184,42 @@
                     />
                   </div>
                 </div>
-
                 <div class="row">
-                  <div class="col-6">
-                    <div class="mb-3">
-                      <input
-                        type="text"
-                        class="form-control"
-                        name=""
-                        id=""
-                        aria-describedby="helpId"
-                        placeholder="Expiration date"
-                      />
-                      <small id="helpId" class="form-text text-muted"
-                        >MM/YY</small
-                      >
-                    </div>
-                  </div>
-                  <div class="col-6">
-                    <div class="mb-3">
-                      <input
-                        type="text"
-                        class="form-control"
-                        name=""
-                        id=""
-                        aria-describedby="helpId"
-                        placeholder="CCV"
-                      />
-                      <div class="icon-border">
-                        <i class="icon ti-info"></i>
+                  <div class="col-12">
+                    <div class="form-small-wrapper d-flex">
+                      <div class="mb-3">
+                        <input
+                          type="text"
+                          class="form-control form-small"
+                          name=""
+                          id=""
+                          aria-describedby="helpId"
+                          placeholder="Expiration date"
+                        />
+                        <small id="helpId" class="form-text text-muted"
+                          >MM/YY</small
+                        >
+                      </div>
+
+                      <div class="mb-3 form-small-item">
+                        <input
+                          type="text"
+                          class="form-control form-small"
+                          name=""
+                          id=""
+                          aria-describedby="helpId"
+                          placeholder="CCV"
+                        />
+                        <div class="icon-border">
+                          <i class="icon ti-info form-icon"></i>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
+              </form>
             </section>
+
             <div class="row">
               <div class="col-12">
                 <div class="title">Create an account</div>
@@ -214,7 +229,7 @@
             <div class="row">
               <div class="col-12">
                 <div class="description">
-                  Tripma is free to use as a guest, but if you create an account
+                  Travel is free to use as a guest, but if you create an account
                   today, you can save and view flights, manage your trips, earn
                   rewards, and more.
                 </div>
@@ -232,35 +247,108 @@
                   Save card and create account for later
                 </label>
               </div>
-              <form action="" class="modal-form login-form">
-                <input
-                  type="text"
-                  placeholder="Email or phone number"
-                  class="form-input"
-                />
-                <input
-                  type="password"
-                  placeholder="Password"
-                  class="form-input"
-                />
-                <div>or</div>
 
-                <div class="modal-footer login-footer">
-                  <button type="button" class="modal-btn">
-                    <img src="./resources/assets/img/google_icon.svg" alt="" />
-                    Continue with Google
-                  </button>
-                  <button type="button" class="modal-btn">
-                    <img src="./resources/assets/img/apple_icon.svg" alt="" />
-                    Continue with Apple
-                  </button>
-                  <button type="button" class="modal-btn">
-                    <img
-                      src="./resources/assets/img/facebook_icon.svg"
-                      alt=""
-                    />
-                    Continue with Facebook
-                  </button>
+              <form action="" class="modal-form login-form">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="modal-body">
+                      <form action="" class="modal-form login-form">
+                        <input
+                          type="text"
+                          placeholder="Email or phone number"
+                          class="form-input modal-input"
+                        />
+                        <input
+                          type="password"
+                          placeholder="Password"
+                          class="form-input modal-input"
+                        />
+                        <div class="check-wrapper">
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id=""
+                            />
+                            <label class="form-check-label" for="">
+                              I agree to the
+                              <a href="">terms and conditions</a>
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id=""
+                            />
+                            <label class="form-check-label" for="">
+                              Send me the latest deal alerts
+                            </label>
+                          </div>
+                        </div>
+
+                        <button type="submit" class="btn-form">
+                          Create account
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-12">
+                    <div class="or-wrapper">
+                      <div class="line">
+                        <img src="./resources/assets/img/line.svg" alt="" />
+                      </div>
+                      <div class="or">or</div>
+                      <div class="line">
+                        <img src="./resources/assets/img/line.svg" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- modal-footer -->
+                <div class="row">
+                  <div class="col-12">
+                    <div class="modal-footer login-footer">
+                      <button type="button" class="modal-btn">
+                        <div class="sns-wrapper">
+                          <div class="sns-logo">
+                            <img
+                              src="./resources/assets/img/google_icon.svg"
+                              alt=""
+                            />
+                          </div>
+                          <a href="">Continue with Google</a>
+                        </div>
+                      </button>
+                      <button type="button" class="modal-btn">
+                        <div class="sns-wrapper">
+                          <div class="sns-logo">
+                            <img
+                              src="./resources/assets/img/apple_icon.svg"
+                              alt=""
+                            />
+                          </div>
+                          <a href="">Continue with Apple</a>
+                        </div>
+                      </button>
+                      <button type="button" class="modal-btn">
+                        <div class="sns-wrapper">
+                          <div class="sns-logo">
+                            <img
+                              src="./resources/assets/img/facebook_icon.svg"
+                              alt=""
+                            />
+                          </div>
+                          <a href="">Continue with Facebook</a>
+                        </div>
+                      </button>
+                    </div>
+                  </div>
                 </div>
 
                 <div class="row">
@@ -277,12 +365,17 @@
                       departure date, you are eligible for a free refund. All
                       flights booked on Tripma are backed by our satisfaction
                       guarantee, however cancellation policies vary by airline.
-                      See the full <a href="">cancellation policy</a> for this flight.
+                      See the full <a href="">cancellation policy</a> for this
+                      flight.
                     </div>
                   </div>
                 </div>
-                <a type="submit" class="btn btn-border">Back to seat select</a>
-                <a type="submit" class="btn btn-full" href="./seat.html">Select seats</a>
+                <btn type="submit" class="btn-border"
+                  ><a href=""> Back to seat select</a>
+                </btn>
+                <btn type="submit" class="btn-full">
+                  <a href="./seat.html">Select seats</a>
+                </btn>
               </form>
             </section>
           </div>
@@ -290,88 +383,155 @@
           <div class="col-4">
             <!-- table -->
             <section class="section section-flight-table">
-              <table class="table">
-                <tbody>
-                  <tr>
-                    <th class="airline-logo" scope="row">
+              <div class="table-row">
+                <div class="row">
+                  <div class="col-7 d-flex">
+                    <div class="airline-logo">
                       <img
                         src="./resources/assets/img/airlines-logo/Hawaiian Airlines.svg"
                         alt=""
                       />
-                    </th>
-                    <td>
+                    </div>
+                    <div class="flight-details">
+                      <div class="first-line">Hawaiian Airlines</div>
+                      <div class="description">FIG4312</div>
+                    </div>
+                  </div>
+                  <div class="col-5">
+                    <div class="details">
                       <div class="flight-details">
-                        <div class="first-line">16h 45m</div>
-                        <div class="second-line">Hawaiian Airlines</div>
+                        <div class="first-line">16h 45m(+1d)</div>
+                        <div class="first-line">7:00 AM - 4:15 PM</div>
+                        <div class="description">2h 45m in HNL</div>
                       </div>
-                    </td>
-                    <td><div class="first-line">7:00AM - 4:15PM</div></td>
-                    <td>
-                      <div class="flight-details">
-                        <div class="first-line">1 stop</div>
-                        <div class="second-line">2h 45m in HNL</div>
-                      </div>
-                    </td>
-                    <td>
-                      <div class="flight-details">
-                        <div class="first-line">$624</div>
-                        <div class="second-line">round trip</div>
-                      </div>
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <th class="airline-logo" scope="row">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="table-row">
+                <div class="row">
+                  <div class="col-7 d-flex">
+                    <div class="airline-logo">
                       <img
                         src="./resources/assets/img/airlines-logo/Japan Airlines.svg"
                         alt=""
                       />
-                    </th>
-                    <td>
-                      <div class="flight-details">
-                        <div class="first-line">18h 22m</div>
-                        <div class="second-line">Japan Airlines</div>
-                      </div>
-                    </td>
-                    <td><div class="first-line">7:35 AM - 12:15 PM</div></td>
-                    <td>
-                      <div class="flight-details">
-                        <div class="first-line">1 stop</div>
-                        <div class="second-line">50m in HKG</div>
-                      </div>
-                    </td>
-                    <td>
-                      <div class="flight-details">
-                        <div class="first-line">$663</div>
-                        <div class="second-line">round trip</div>
-                      </div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+                    </div>
 
-              <div class="payment">
-                <div class="item-payment d-flex">
-                  <div class="payment-name">Subtotal</div>
-                  <div class="price">$503</div>
+                    <div class="flight-details">
+                      <div class="first-line">Japan Airlines</div>
+                      <div class="description">FIG4312</div>
+                    </div>
+                  </div>
+                  <div class="col-5">
+                    <div class="details">
+                      <div class="flight-details">
+                        <div class="first-line">16h 45m(+1d)</div>
+                        <div class="first-line">7:00 AM - 4:15 PM</div>
+                        <div class="description">2h 45m in HNL</div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="item-payment d-flex">
-                  <div class="payment-name">Taxes and Fees</div>
-                  <div class="price">$121</div>
-                </div>
-                <div class="item-payment d-flex">
-                  <div class="payment-name">Total</div>
-                  <div class="price">$624</div>
-                </div>
-              </div>
-              <!-- btn -->
-              <div class="btn">
-                <a href="./user.html">Confirm and pay </a>
               </div>
             </section>
+            <section class="section-payment">
+              <div class="container-fluid">
+                <div class="row justify-content-end">
+                  <div class="col-6">
+                    <div class="payment">
+                      <div class="payment-item d-flex">
+                        <div class="payment-name">Subtotal</div>
+                        <div class="payment-name">$702</div>
+                      </div>
+                      <div class="payment-item d-flex">
+                        <div class="payment-name">Taxes and Fees</div>
+                        <div class="payment-name">$66</div>
+                      </div>
+                      <div class="payment-item d-flex">
+                        <div class="payment-name">Total</div>
+                        <div class="payment-name">$768</div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- btn -->
+            <div class="container">
+              <div class="row">
+                <div class="col-12">
+                  <div class="btn-wrapper d-flex justify-content-end">
+                    <div class="btn-full d-flex justify-content-center ">
+                      <a href="./user.html">Confirm and pay </a>
+                    </div>
+      
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </main>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 d-flex justify-content-sm-between">
+            <div class="footer-column1">
+              <a class="navbar-brand" href="./index.html">Travel</a>
+            </div>
+            <div class="footer-column">
+              <div class="footer-title">About</div>
+              <div class="footer-content">About Travel</div>
+              <div class="footer-content">How it works</div>
+              <div class="footer-content">Careers</div>
+              <div class="footer-content">Press</div>
+              <div class="footer-content">Blog</div>
+              <div class="footer-content">Forum</div>
+            </div>
+            <div class="footer-column">
+              <div class="footer-title">Partner with us</div>
+              <div class="footer-content">Partnership programs</div>
+              <div class="footer-content">Affiliate program</div>
+              <div class="footer-content">Connectivity partners</div>
+              <div class="footer-content">Promotions and events</div>
+              <div class="footer-content">Integrations</div>
+              <div class="footer-content">Community</div>
+              <div class="footer-content">Loyalty program</div>
+            </div>
+            <div class="footer-column">
+              <div class="footer-title">Support</div>
+              <div class="footer-content">Help Center</div>
+              <div class="footer-content">Contact us</div>
+              <div class="footer-content">Privacy policy</div>
+              <div class="footer-content">Terms of service</div>
+              <div class="footer-content">Trust and safety</div>
+              <div class="footer-content">Accessibility</div>
+            </div>
+            <div class="footer-column">
+              <div class="footer-title">Get the app</div>
+              <div class="footer-content">Travel for Android</div>
+              <div class="footer-content">Travel for iOS</div>
+              <div class="footer-content">Mobile site</div>
+              <div class="footer-content">
+                <img
+                  src="./resources/assets/img/app store.svg"
+                  alt="app store"
+                />
+              </div>
+              <div class="footer-content">
+                <img
+                  src="./resources/assets/img/google play.svg"
+                  alt="google play"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
