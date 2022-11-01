@@ -147,9 +147,10 @@ body {
 .header-main {
   width: 100%;
   margin-bottom: 46px;
-  position: fixed;
+  /* position: fixed;
   top: 0;
   left: 0;
+  z-index: 2; */
 }
 .header-top {
   width: 100%;

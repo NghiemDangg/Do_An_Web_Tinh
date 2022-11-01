@@ -3,7 +3,12 @@
 .section-heading {
   margin-bottom: 36px;
 }
-
+.description {
+  font-size: 18px;
+}
+.last-child-ds {
+  margin-bottom: 36px;
+}
 .heading-title {
   font-weight: 700;
   font-size: 24px;
@@ -14,14 +19,58 @@
 /* form-input */
 
 .form-input {
-  width: 200px;
-  height: 48px;
-
-  /* True White */
-
   background: #ffffff;
-  /* Grey / 300 */
-
   border: 1px solid #a1b0cc;
   border-radius: 4px;
+}
+
+.input-small {
+  width: 30%;
+  margin-bottom: 24px;
+}
+.dob-input {
+  width: 40%;
+  margin-left: 5%;
+}
+.input-wrapper {
+  margin-bottom: 46px;
+}
+.larger-input {
+  width: 47%;
+  margin-bottom: 24px;
+}
+.check-row {
+  margin-bottom: 24px;
+}
+.data-label{
+  margin-bottom: 0 !important;
+}
+
+.caculator {
+}
+.number {
+  color: #6e7491;
+  margin: 0 16px;
+}
+.caculator-btn {
+  width: 32px;
+  height: 32px;
+  background: #fafafa;
+  border-radius: 4px;
+  text-align: center;
+  line-height: 32px;
+  cursor: pointer;
+  transition: ease-in-out .4s;
+}
+.caculator-btn:hover{
+  background-color: #E9E8FC;
+}
+.caculator-btn i {
+  color: #605dec;
+}
+.btn-wrapper{
+  margin-top: 60px;
+}
+.section-bag{
+  margin-top: 200px;
 }

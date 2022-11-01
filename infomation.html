@@ -34,7 +34,8 @@
     <script src="jquery-3.6.0.min.js"></script>
     <!-- css -->
     <link rel="stylesheet" href="./resources/assets/css/style.css" />
-   <link rel="stylesheet" href="./resources/assets/css/information.css"> 
+    <link rel="stylesheet" href="./resources/assets/css/information.css" />
+    <link rel="stylesheet" href="./resources/assets/css/payment.css" />
   </head>
   <body>
     <header class="header-main">
@@ -70,7 +71,12 @@
                 <a class="nav-link signin-btn" href="#">Sign in</a>
               </li>
               <li class="nav-item btn-nav">
-                <a class="nav-link text-white signup-btn" href="#">Sign up</a>
+                <a
+                  class="nav-link text-white signup-btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#staticBackdrop"
+                  >Sign up</a
+                >
               </li>
             </ul>
           </div>
@@ -83,8 +89,10 @@
         <div class="row">
           <div class="col-8">
             <section class="section section-heading">
-              <h1 class="heading-title"><a href="">Passenger information</a> </h1>
-              <div class="description ">
+              <h1 class="heading-title">
+                <a href="">Passenger information</a>
+              </h1>
+              <div class="description">
                 Enter the required information for each traveler and be sure
                 that it exactly matches the government-issued ID presented at
                 the airport.
@@ -93,85 +101,80 @@
             <section class="section section-form">
               <div class="title">Passenger 1 (Adult)</div>
               <form action="">
-                <div class="row">
-                  <div class="col-4">
-                    <input
-                      type="text"
-                      class="form-input"
-                      placeholder="Firt name*"
-                      required
-                    />
-                  </div>
-                  <div class="col-4">
-                    <input
-                      type="text"
-                      class="form-input"
-                      placeholder="Middle"
-                    />
-                  </div>
-                  <div class="col-4">
-                    <input
-                      type="text"
-                      class="form-input"
-                      placeholder="Last name*"
-                      required
-                    />
-                  </div>
-                </div>
+                <div class="input-wrapper">
+                  <div class="row">
+                    <div class="col-9 d-flex justify-content-between">
+                      <input
+                        type="text"
+                        class="form-input input-small"
+                        placeholder="Firt name*"
+                        required
+                      />
 
-                <div class="row">
-                  <div class="col-4">
-                    <input
-                      type="text"
-                      name="suffix"
-                      class="form-input"
-                      placeholder="Suffix"
-                    />
-                  </div>
-                  <div class="col-8">
-                    <input
-                      type="text"
-                      name="dob"
-                      class="form-input"
-                      placeholder="Date of birth*"
-                      required
-                    />
-                  </div>
-                </div>
+                      <input
+                        type="text"
+                        class="form-input input-small"
+                        placeholder="Middle"
+                      />
 
-                <div class="row">
-                  <div class="col-6">
-                    <input
-                      type="email"
-                      class="email form-input"
-                      placeholder="Email address*"
-                      required
-                    />
+                      <input
+                        type="text"
+                        class="form-input input-small"
+                        placeholder="Last name*"
+                        required
+                      />
+                    </div>
                   </div>
-                  <div class="col-6">
-                    <input
-                      type="phone"
-                      class="email form-input"
-                      placeholder="Phone number*"
-                      required
-                    />
+
+                  <div class="row">
+                    <div class="col-9 d-flex">
+                      <input
+                        type="text"
+                        name="suffix"
+                        class="form-input input-small"
+                        placeholder="Suffix"
+                      />
+                      <input
+                        type="text"
+                        name="dob"
+                        class="form-input dob-input"
+                        placeholder="Date of birth*"
+                        required
+                      />
+                    </div>
                   </div>
                 </div>
-                <div class="row">
-                  <div class="col-6">
-                    <input
-                      type="email"
-                      class="email form-input"
-                      placeholder="Redress number"
-                    />
+                <div class="input-wrapper">
+                  <div class="row">
+                    <div class="col-9 d-flex justify-content-between">
+                      <input
+                        type="email"
+                        class="email form-input larger-input"
+                        placeholder="Email address*"
+                        required
+                      />
+                      <input
+                        type="phone"
+                        class="email form-input larger-input"
+                        placeholder="Phone number*"
+                        required
+                      />
+                    </div>
                   </div>
-                  <div class="col-6">
-                    <input
-                      type="phone"
-                      class="email form-input"
-                      placeholder="Known traveller number*"
-                      required
-                    />
+                  <div class="row">
+                    <div class="col-9 d-flex justify-content-between">
+                      <input
+                        type="email"
+                        class="email form-input larger-input"
+                        placeholder="Redress number"
+                      />
+                      <input
+                        type="phone"
+                        class="email form-input larger-input"
+                        placeholder="Known traveller number*"
+                        required
+                      />
+                    </div>
                   </div>
                 </div>
 
@@ -181,7 +184,7 @@
                   </div>
                 </div>
 
-                <div class="form-check">
+                <div class="form-check check-row">
                   <input
                     class="form-check-input"
                     type="checkbox"
@@ -192,42 +195,39 @@
                     Same as Passenger 1
                   </label>
                 </div>
+                <div class="input-wrapper">
+                  <div class="row">
+                    <div class="col-9 d-flex justify-content-between">
+                      <input
+                        type="text"
+                        class="email form-input larger-input"
+                        placeholder="First name*"
+                        required
+                      />
+                      <input
+                        type="text"
+                        class="email form-input larger-input"
+                        placeholder="First name*"
+                        required
+                      />
+                    </div>
+                  </div>
 
-                <div class="row">
-                  <div class="col-6">
-                    <input
-                      type="text"
-                      class="email form-input"
-                      placeholder="First name*"
-                      required
-                    />
-                  </div>
-                  <div class="col-6">
-                    <input
-                      type="text"
-                      class="email form-input"
-                      placeholder="First name*"
-                      required
-                    />
-                  </div>
-                </div>
-
-                <div class="row">
-                  <div class="col-6">
-                    <input
-                      type="email"
-                      class="email form-input"
-                      placeholder="Email address*"
-                      required
-                    />
-                  </div>
-                  <div class="col-6">
-                    <input
-                      type="phone"
-                      class="email form-input"
-                      placeholder="Phone number*"
-                      required
-                    />
+                  <div class="row">
+                    <div class="col-9 d-flex justify-content-between">
+                      <input
+                        type="email"
+                        class="email form-input larger-input"
+                        placeholder="Email address*"
+                        required
+                      />
+                      <input
+                        type="phone"
+                        class="email form-input larger-input"
+                        placeholder="Phone number*"
+                        required
+                      />
+                    </div>
                   </div>
                 </div>
 
@@ -239,8 +239,8 @@
                   </div>
 
                   <div class="row">
-                    <div class="col-12">
-                      <div class="description">
+                    <div class="col-9">
+                      <div class="description last-child-ds">
                         Each passenger is allowed one free carry-on bag and one
                         personal item. First checked bag for each passenger is
                         also free. Second bag check fees are waived for loyalty
@@ -250,27 +250,38 @@
                     </div>
                   </div>
                   <div class="row">
-                    <div class="col-6">
+                    <div
+                      class="col-7 d-flex justify-content-between align-items-center"
+                    >
                       <div class="description">Passenger 1</div>
+                      <div class="description">Checked bags</div>
                     </div>
-                    <div class="col-6">Checked bags</div>
                   </div>
                   <div class="row">
-                    <div class="col-6">
-                      <div class="title">First Last</div>
-                    </div>
-                    <div class="col-6">
-                      <div class="caculator d-flex">
-                        <i class="ti-minus"></i>
-                        <p class="number">1</p>
-                        <i class="ti-plus"></i>
+                    <div
+                      class="col-7 d-flex justify-content-between align-items-center"
+                    >
+                      <div class="title data-label">Sophia Knowles</div>
+                      <div class="caculator d-flex align-items-center">
+                        <div class="caculator-btn">
+                          <i class="ti-minus"></i>
+                        </div>
+                        <div class="number description">1</div>
+                        <div class="caculator-btn">
+                          <i class="ti-plus"></i>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-
-                <a type="submit" class="btn">Save and close</a>
-                <a type="submit" class="btn" href="./seat.html">Select seats</a>
+                <div class="btn-wrapper d-flex">
+                  <div type="button" class="btn-border text-center">
+                    <a href="./payment.html"> Save and close</a>
+                  </div>
+                  <div type="button" class="btn-full">
+                    <a href="./seat.html">Select seats</a>
+                  </div>
+                </div>
               </form>
             </section>
           </div>
@@ -278,86 +289,92 @@
           <div class="col-4">
             <!-- table -->
             <section class="section section-flight-table">
-              <table class="table">
-                <tbody>
-                  <tr>
-                    <th class="airline-logo" scope="row">
+              <div class="table-row">
+                <div class="row">
+                  <div class="col-7 d-flex">
+                    <div class="airline-logo">
                       <img
                         src="./resources/assets/img/airlines-logo/Hawaiian Airlines.svg"
                         alt=""
                       />
-                    </th>
-                    <td>
+                    </div>
+                    <div class="flight-details">
+                      <div class="first-line">Hawaiian Airlines</div>
+                      <div class="description">FIG4312</div>
+                    </div>
+                  </div>
+                  <div class="col-5">
+                    <div class="details">
                       <div class="flight-details">
-                        <div class="first-line">16h 45m</div>
-                        <div class="second-line">Hawaiian Airlines</div>
+                        <div class="first-line">16h 45m(+1d)</div>
+                        <div class="first-line">7:00 AM - 4:15 PM</div>
+                        <div class="description">2h 45m in HNL</div>
                       </div>
-                    </td>
-                    <td><div class="first-line">7:00AM - 4:15PM</div></td>
-                    <td>
-                      <div class="flight-details">
-                        <div class="first-line">1 stop</div>
-                        <div class="second-line">2h 45m in HNL</div>
-                      </div>
-                    </td>
-                    <td>
-                      <div class="flight-details">
-                        <div class="first-line">$624</div>
-                        <div class="second-line">round trip</div>
-                      </div>
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <th class="airline-logo" scope="row">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="table-row">
+                <div class="row">
+                  <div class="col-7 d-flex">
+                    <div class="airline-logo">
                       <img
                         src="./resources/assets/img/airlines-logo/Japan Airlines.svg"
                         alt=""
                       />
-                    </th>
-                    <td>
-                      <div class="flight-details">
-                        <div class="first-line">18h 22m</div>
-                        <div class="second-line">Japan Airlines</div>
-                      </div>
-                    </td>
-                    <td><div class="first-line">7:35 AM - 12:15 PM</div></td>
-                    <td>
-                      <div class="flight-details">
-                        <div class="first-line">1 stop</div>
-                        <div class="second-line">50m in HKG</div>
-                      </div>
-                    </td>
-                    <td>
-                      <div class="flight-details">
-                        <div class="first-line">$663</div>
-                        <div class="second-line">round trip</div>
-                      </div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+                    </div>
 
-              <div class="payment">
-                <div class="item-payment d-flex">
-                  <div class="payment-name">Subtotal</div>
-                  <div class="price">$503</div>
+                    <div class="flight-details">
+                      <div class="first-line">Japan Airlines</div>
+                      <div class="description">FIG4312</div>
+                    </div>
+                  </div>
+                  <div class="col-5">
+                    <div class="details">
+                      <div class="flight-details">
+                        <div class="first-line">16h 45m(+1d)</div>
+                        <div class="first-line">7:00 AM - 4:15 PM</div>
+                        <div class="description">2h 45m in HNL</div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="item-payment d-flex">
-                  <div class="payment-name">Taxes and Fees</div>
-                  <div class="price">$121</div>
-                </div>
-                <div class="item-payment d-flex">
-                  <div class="payment-name">Total</div>
-                  <div class="price">$624</div>
-                </div>
-              </div>
-              <!-- btn -->
-              <div class="btn">
-                <a href="./seat.html">Select seats</a>
               </div>
             </section>
-
+            <section class="section-payment">
+              <div class="container-fluid">
+                <div class="row justify-content-end">
+                  <div class="col-6">
+                    <div class="payment">
+                      <div class="payment-item d-flex">
+                        <div class="payment-name">Subtotal</div>
+                        <div class="payment-name">$702</div>
+                      </div>
+                      <div class="payment-item d-flex">
+                        <div class="payment-name">Taxes and Fees</div>
+                        <div class="payment-name">$66</div>
+                      </div>
+                      <div class="payment-item d-flex">
+                        <div class="payment-name">Total</div>
+                        <div class="payment-name">$768</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- btn -->
+            <div class="container">
+              <div class="row">
+                <div class="col-12">
+                  <div class="btn-payment-wrapper d-flex justify-content-end">
+                    <div class="btn-full d-flex justify-content-center">
+                      <a href="./seat.html">Select seats</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
             <section class="section-bag">
               <img src="./resources/assets/img/Luggage.svg" alt="" />
             </section>
@@ -369,26 +386,19 @@
     <footer>
       <div class="container">
         <div class="row">
-          <div class="col-3">
-            <div class="row">
-              <div class="col-6">
-                <a class="navbar-brand" href="./index.html">Travel</a>
-              </div>
-              <div class="col-6">
-                <div class="footer-column">
-                  <div class="footer-title">About</div>
-                  <div class="footer-content">About Travel</div>
-                  <div class="footer-content">How it works</div>
-                  <div class="footer-content">Careers</div>
-                  <div class="footer-content">Press</div>
-                  <div class="footer-content">Blog</div>
-                  <div class="footer-content">Forum</div>
-                </div>
-              </div>
+          <div class="col-12 d-flex justify-content-sm-between">
+            <div class="footer-column1">
+              <a class="navbar-brand" href="./index.html">Travel</a>
             </div>
-          </div>
-
-          <div class="col-3">
+            <div class="footer-column">
+              <div class="footer-title">About</div>
+              <div class="footer-content">About Travel</div>
+              <div class="footer-content">How it works</div>
+              <div class="footer-content">Careers</div>
+              <div class="footer-content">Press</div>
+              <div class="footer-content">Blog</div>
+              <div class="footer-content">Forum</div>
+            </div>
             <div class="footer-column">
               <div class="footer-title">Partner with us</div>
               <div class="footer-content">Partnership programs</div>
@@ -399,8 +409,6 @@
               <div class="footer-content">Community</div>
               <div class="footer-content">Loyalty program</div>
             </div>
-          </div>
-          <div class="col-3">
             <div class="footer-column">
               <div class="footer-title">Support</div>
               <div class="footer-content">Help Center</div>
@@ -410,18 +418,22 @@
               <div class="footer-content">Trust and safety</div>
               <div class="footer-content">Accessibility</div>
             </div>
-          </div>
-          <div class="col-3">
             <div class="footer-column">
               <div class="footer-title">Get the app</div>
               <div class="footer-content">Travel for Android</div>
               <div class="footer-content">Travel for iOS</div>
               <div class="footer-content">Mobile site</div>
               <div class="footer-content">
-                <img src="./resources/assets/img/app store.svg" alt="" />
+                <img
+                  src="./resources/assets/img/app store.svg"
+                  alt="app store"
+                />
               </div>
               <div class="footer-content">
-                <img src="./resources/assets/img/google play.svg" alt="" />
+                <img
+                  src="./resources/assets/img/google play.svg"
+                  alt="google play"
+                />
               </div>
             </div>
           </div>

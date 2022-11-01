@@ -1,3 +1,11 @@
+.header-main {
+  width: 100%;
+  margin-bottom: 46px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
 .bg-main {
   background: url(../img/Plane.png) right no-repeat;
   background-size: 150%;
@@ -12,7 +20,7 @@
 .section-class {
   position: fixed;
   width: 50%;
-  height: 100vh;
+  /* height: 100vh; */
   top: 0;
   right: 0;
   background: rgba(255, 255, 255, 0.5);
@@ -27,7 +35,6 @@
   height: 88px;
   background: #27273f;
   color: #fafafa;
-  margin-bottom: 50px;
 }
 .local-wrapper {
   border-right: 1px solid #6e7491;
@@ -80,29 +87,52 @@
 }
 .seat-class {
   width: 320px;
-  height: 180px;
+  height: 150px;
+
   margin-bottom: 8px;
 }
 /* feature-list */
 .feature-list {
-    padding: 18px;
+  padding: 18px;
 }
-.feature-name{
-    margin-bottom: 16px;
+.feature-name {
+  margin-bottom: 8px;
 }
 .feature-list-bullet {
 }
 .feature-icon {
-    margin-right: 10px;
+  margin-right: 10px;
 }
-
+.title {
+  font-size: 16px;
+}
+.description {
+  font-size: 10px;
+  margin-bottom: 4px;
+}
 /* class-footer */
 
 .class-footer {
+  min-height: 96px;
+  border-top: 1px solid #6e7491;
+  padding: 16px;
 }
 .pasenger-data {
+  flex: 4;
 }
-.name {
+.btn-wrapper {
+  display: flex;
+  flex: 6;
 }
-.btn-form {
+.btn-full {
+  color: #fafafa !important;
+}
+.btn-full,
+.btn-border {
+  width: 148px !important;
+}
+.btn-border a {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
 }
