@@ -70,7 +70,7 @@ body {
   border: 1px solid #a1b0cc;
   border-radius: 4px;
 }
-.form-input:focus{
+.form-input:focus {
   border: 1px solid #605dec;
   outline: none;
   transition: all 0.4s ease-in-out;
@@ -147,6 +147,9 @@ body {
 .header-main {
   width: 100%;
   margin-bottom: 46px;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 .header-top {
   width: 100%;
@@ -307,12 +310,12 @@ body {
 }
 
 /* card */
-.card:hover .card-img-top {
+.card:hover .card-img-top img {
   transition: all 0.4s ease-in-out;
   transform: scale(1.1);
 }
 .card {
-  width: 410px !important;
+  width: 100% !important;
   height: auto;
   box-shadow: 0px 2px 4px rgba(28, 5, 77, 0.1),
     0px 12px 32px rgba(0, 0, 0, 0.05);

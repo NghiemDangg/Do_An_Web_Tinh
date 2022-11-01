@@ -71,12 +71,15 @@
   height: 48px;
   margin-bottom: 24px;
 }
+.form-small-wrapper{
+  width: 58%;
+}
 .form-small {
   width: 100%;
   margin-bottom: 8px;
 }
 .form-small-item {
-  position: relative;
+  width: 48%;
 }
 .form-small:last-child {
   margin-left: 24px;
@@ -88,9 +91,6 @@
   border-radius: 50%;
   text-align: center;
   line-height: 18px;
-  position: absolute;
-  top: 20%;
-  right: 14px;
 }
 .form-icon {
   color: #6e7491;
@@ -166,15 +166,14 @@
   margin-bottom: 40px;
 }
 .payment {
-
 }
 .payment-item {
   justify-content: space-between;
   margin-bottom: 8px;
 }
 .payment-name {
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 22px;
-    color: #27273F;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #27273f;
 }

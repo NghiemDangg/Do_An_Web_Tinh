@@ -1,43 +1,99 @@
+.bg-main {
+  background: url(../img/Plane.png) right no-repeat;
+  background-size: 150%;
+  width: 100%;
+  height: 2500px;
+  margin-top: 30px;
+}
+
 .plane {
-  
 }
 /* section-class */
 .section-class {
+  position: fixed;
+  width: 50%;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(12px);
+  border-left: 1px solid #cbd4e6;
 }
 .class-wrapper {
 }
 /* heading */
 .class-heading {
+  width: 100%;
+  height: 88px;
+  background: #27273f;
+  color: #fafafa;
+  margin-bottom: 50px;
 }
-.local {
+.local-wrapper {
+  border-right: 1px solid #6e7491;
+  padding: 20px;
+  flex: 4;
 }
+
 .local-code {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 33px;
+  color: #fafafa;
 }
 .class-content {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #e9e8fc;
 }
 .class-icon {
+  font-size: 25px;
+  font-weight: 600;
+  margin: 0 20px;
+}
+.first-child {
+  border-right: 1px solid #6e7491;
 }
 .time {
+  flex: 3;
+  padding: 25px;
 }
 .date {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .class-content {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #e9e8fc;
 }
 
 /* class-main */
 .class-main {
 }
 .seat-selector {
+  padding: 26px;
 }
 .seat-class {
+  width: 320px;
+  height: 180px;
+  margin-bottom: 8px;
 }
 /* feature-list */
 .feature-list {
+    padding: 18px;
+}
+.feature-name{
+    margin-bottom: 16px;
 }
 .feature-list-bullet {
 }
 .feature-icon {
+    margin-right: 10px;
 }
 
 /* class-footer */

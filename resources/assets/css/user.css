@@ -32,8 +32,8 @@
   color: #1c1c1c;
   cursor: pointer;
 }
-.title{
-    margin-bottom: 16px !important;
+.title {
+  margin-bottom: 16px !important;
 }
 .title-small {
   font-weight: 600;
@@ -42,6 +42,7 @@
   color: #6e7491;
   margin-bottom: 16px;
 }
+
 /* data-row*/
 .data-row {
   margin-bottom: 40px;
@@ -58,15 +59,21 @@
   line-height: 22px;
   color: #7c8db0;
 }
+/* form-control */
+.form-control {
+  width: 84% !important;
+}
 /* price-label */
-.section-amout,.credit-card{
-    margin-bottom: 50px;
+.section-amout,
+.credit-card {
+  margin-bottom: 50px;
 }
 .price-label {
   color: #6e7491;
   font-weight: 400;
   font-size: 18px;
   line-height: 25px;
+  margin-bottom: 8px;
 }
 .amout-wrapper {
   border-top: 1px solid #cbd4e6;
@@ -82,4 +89,40 @@
 .label-right-item {
   display: flex;
   justify-content: flex-end;
+}
+/* button-wrapper */
+.button-wrapper {
+  margin-bottom: 56px;
+}
+.btn-full {
+  border: none;
+  color: #fff;
+}
+.btn-border {
+  background-color: #fff;
+  color: #605dec;
+}
+/* section-map */
+.section-map {
+  background: url(../img/Map.png) center no-repeat;
+  background-size: cover;
+  width: 756px;
+  height: 400px;
+}
+
+
+/* right */
+.section-card{
+  margin-top: 0px;
+  margin-bottom: 60px;
+}
+.card-img-top{
+  height: 247px !important;
+}
+.card{
+  margin-bottom: 30px;
+}
+.btn-wrapper{
+  width: 100%;
+  text-align: center;
 }
