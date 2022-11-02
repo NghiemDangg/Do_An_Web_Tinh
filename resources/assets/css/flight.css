@@ -38,29 +38,29 @@
 .section-flight-table {
   margin-bottom: 48px;
 }
-.section-flight-table table {
-  padding: 32px;
-  margin-bottom: 26px;
-}
-.table-border {
+.table-wrapper {
+  height: 456px;
+  padding: 16px;
   border: 1px solid #e9e8fc;
   border-radius: 12px;
+  overflow-y: scroll;
+  margin-bottom: 24px;
 }
-.section-flight-table table tbody tr {
-  padding: 4px 16px;
-  width: 840px;
-  height: 72px;
+.table-wrapper::-webkit-scrollbar {
+  display: none;
 }
-.section-flight-table table tbody tr th {
-  line-height: 50px;
+.table-row {
+  padding: 16px;
+  border-bottom: 1px solid #e9e8fc;
 }
-
-.section-flight-table .airline-logo {
-  width: 50px;
-  height: 50px;
+.airline-logo {
+  flex: 1;
 }
-
 .flight-details {
+  flex: 2;
+}
+.second-line {
+  font-weight: 400 !important;
 }
 .first-line {
   font-weight: 600;
@@ -96,9 +96,39 @@
   margin-bottom: 80px;
 }
 /* section-price-grid */
-.table-responsive,
-.price-chart {
+.table-border {
   margin-bottom: 40px;
+}
+.price-table {
+  border: 1px solid #e9e8fc;
+  border-radius: 12px;
+  width: 397px;
+  height: 247px;
+  overflow: hidden;
+}
+.date-row,
+.date-cell {
+  font-weight: 700;
+  font-size: 12px;
+  line-height:40px;
+  text-align: center;
+  color: #52556f;
+}
+.price-row .cell-price {
+  font-weight: 400;
+  font-size: 14px;
+  line-height:40px;
+  text-align: center;
+  color: #6e7491;
+}
+.date-row,
+.price-row {
+  height: 17%;
+}
+.cell {
+  width: 18%;
+  border: 1px solid #e9e8fc;
+  cursor: pointer;
 }
 /* section-price-rating */
 
