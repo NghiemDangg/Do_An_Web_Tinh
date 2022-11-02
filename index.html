@@ -31,12 +31,11 @@
       href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@0;1&display=swap"
       rel="stylesheet"
     />
-    <!-- Jquery -->
-    <script src="jquery-3.6.0.min.js"></script>
     <!-- css -->
     <link rel="stylesheet" href="./resources/assets/css/style.css" />
   </head>
   <body>
+    
     <header class="header-main">
       <div class="header-top">
         <div class="header-top-content">
@@ -77,12 +76,14 @@
                 <a class="nav-link signin-btn" href="#">Sign in</a>
               </li>
               <li class="nav-item btn-nav">
-                <a
+                <div
+                  type="button"
                   class="nav-link text-white signup-btn"
                   data-bs-toggle="modal"
-                  data-bs-target="#staticBackdrop"
-                  >Sign up</a
+                  data-bs-target="#exampleModal"
                 >
+                  Sign up
+                </div>
               </li>
             </ul>
           </div>
@@ -191,7 +192,7 @@
                     class="card-img-top"
                   />
                 </div>
-                  <div class="card-body">
+                <div class="card-body">
                   <div class="card-name">
                     <div class="title">The Bund, <a href="">Shanghai</a></div>
                     <div class="price">$598</div>
@@ -233,9 +234,7 @@
                 </div>
                 <div class="card-body">
                   <div class="card-name">
-                    <div class="title">
-                      Seoul,<a href="">South Korea</a>
-                    </div>
+                    <div class="title">Seoul,<a href="">South Korea</a></div>
                     <div class="price">$681</div>
                   </div>
                   <p class="description">
@@ -244,7 +243,6 @@
                 </div>
               </div>
             </div>
-            
           </div>
         </div>
       </section>
@@ -256,10 +254,10 @@
               <div class="card card-large mb-3">
                 <div class="card-img-top">
                   <img
-                  src="./resources/assets/img/Kenya.png"
-                  class="card-large-img card-img-top"
-                  alt="Tsavo East National Park, Kenya"
-                />
+                    src="./resources/assets/img/Kenya.png"
+                    class="card-large-img card-img-top"
+                    alt="Tsavo East National Park, Kenya"
+                  />
                 </div>
                 <div class="card-body">
                   <div class="card-name">
@@ -275,8 +273,6 @@
                   </p>
                 </div>
               </div>
-
-              
             </div>
           </div>
         </div>
@@ -298,12 +294,12 @@
               <div class="card" style="width: 18rem">
                 <div class="card-img-top">
                   <img
-                  src="./resources/assets/img/Maldives.png"
-                  class="card-img-top"
-                  alt="tay among the atolls in Maldives"
-                />
+                    src="./resources/assets/img/Maldives.png"
+                    class="card-img-top"
+                    alt="tay among the atolls in Maldives"
+                  />
                 </div>
-                
+
                 <div class="card-body">
                   <div class="card-name">
                     <div class="title">
@@ -321,13 +317,12 @@
             </div>
             <div class="col-4">
               <div class="card" style="width: 18rem">
-               
                 <div class="card-img-top">
                   <img
-                  src="./resources/assets/img/Morocco.png"
-                  class="card-img-top"
-                  alt="Experience the Ourika Valley in Morocco"
-                />
+                    src="./resources/assets/img/Morocco.png"
+                    class="card-img-top"
+                    alt="Experience the Ourika Valley in Morocco"
+                  />
                 </div>
                 <div class="card-body">
                   <div class="card-name">
@@ -346,14 +341,12 @@
             </div>
             <div class="col-4">
               <div class="card" style="width: 18rem">
-                
-
                 <div class="card-img-top">
                   <img
-                  src="./resources/assets/img/mongolia.png"
-                  class="card-img-top"
-                  alt="Live traditionally in Mongolia"
-                />
+                    src="./resources/assets/img/mongolia.png"
+                    class="card-img-top"
+                    alt="Live traditionally in Mongolia"
+                  />
                 </div>
                 <div class="card-body">
                   <div class="card-name">
@@ -749,137 +742,106 @@
       </div>
     </footer>
 
-    <section class="section section-modal">
-      <div class="modal1">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <div class="modal-inner">
-                <!-- modal-header -->
-                <div class="row">
-                  <div class="col-12">
-                    <div class="modal-header">
-                      <h4 class="title" id="ModalLabel">Sign up for Tripma</h4>
-                      <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                      ></button>
-                    </div>
-                  </div>
+    <section class="modal-wrapper">
+      <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-inner">
+        <div class="modal-content">
+          <!-- modal-header -->
+          <div class="modal-header">
+            <h4 class="title" id="ModalLabel">Sign up for Tripma</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <!-- modal-body -->
+          <div class="modal-body">
+            <div class="description">
+              Tripma is totally free to use. Sign up using your email address or
+              phone number below to get started.
+            </div>
+            <form action="" class="modal-form login-form">
+              <input
+                type="text"
+                placeholder="Email or phone number"
+                class="form-input modal-input"
+              />
+              <input
+                type="password"
+                placeholder="Password"
+                class="form-input modal-input"
+              />
+              <div class="check-wrapper">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id=""
+                  />
+                  <label class="form-check-label" for="">
+                    I agree to the
+                    <a href="">terms and conditions</a>
+                  </label>
                 </div>
-                <!-- modal-body -->
-                <div class="row">
-                  <div class="col-12">
-                    <div class="modal-body">
-                      <div class="description">
-                        Tripma is totally free to use. Sign up using your email
-                        address or phone number below to get started.
-                      </div>
-                      <form action="" class="modal-form login-form">
-                        <input
-                          type="text"
-                          placeholder="Email or phone number"
-                          class="form-input modal-input"
-                        />
-                        <input
-                          type="password"
-                          placeholder="Password"
-                          class="form-input modal-input"
-                        />
-                        <div class="check-wrapper">
-                          <div class="form-check">
-                            <input
-                              class="form-check-input"
-                              type="checkbox"
-                              value=""
-                              id=""
-                            />
-                            <label class="form-check-label" for="">
-                              I agree to the
-                              <a href="">terms and conditions</a>
-                            </label>
-                          </div>
-                          <div class="form-check">
-                            <input
-                              class="form-check-input"
-                              type="checkbox"
-                              value=""
-                              id=""
-                            />
-                            <label class="form-check-label" for="">
-                              Send me the latest deal alerts
-                            </label>
-                          </div>
-                        </div>
-
-                        <button type="submit" class="btn-form">
-                          Create account
-                        </button>
-                      </form>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="row">
-                  <div class="col-12">
-                    <div class="or-wrapper">
-                      <div class="line">
-                        <img src="./resources/assets/img/line.svg" alt="" />
-                      </div>
-                      <div class="or">or</div>
-                      <div class="line">
-                        <img src="./resources/assets/img/line.svg" alt="" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- modal-footer -->
-                <div class="row">
-                  <div class="col-12">
-                    <div class="modal-footer login-footer">
-                      <button type="button" class="modal-btn">
-                        <div class="sns-wrapper">
-                          <div class="sns-logo">
-                            <img
-                              src="./resources/assets/img/google_icon.svg"
-                              alt=""
-                            />
-                          </div>
-                          <a href="">Continue with Google</a>
-                        </div>
-                      </button>
-                      <button type="button" class="modal-btn">
-                        <div class="sns-wrapper">
-                          <div class="sns-logo">
-                            <img
-                              src="./resources/assets/img/apple_icon.svg"
-                              alt=""
-                            />
-                          </div>
-                          <a href="">Continue with Apple</a>
-                        </div>
-                      </button>
-                      <button type="button" class="modal-btn">
-                        <div class="sns-wrapper">
-                          <div class="sns-logo">
-                            <img
-                              src="./resources/assets/img/facebook_icon.svg"
-                              alt=""
-                            />
-                          </div>
-                          <a href="">Continue with Facebook</a>
-                        </div>
-                      </button>
-                    </div>
-                  </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id=""
+                  />
+                  <label class="form-check-label" for="">
+                    Send me the latest deal alerts
+                  </label>
                 </div>
               </div>
+
+              <button type="submit" class="btn-form">Create account</button>
+            </form>
+          </div>
+          <div class="or-wrapper">
+            <div class="line">
+              <img src="./resources/assets/img/line.svg" alt="" />
             </div>
+            <div class="or">or</div>
+            <div class="line">
+              <img src="./resources/assets/img/line.svg" alt="" />
+            </div>
+          </div>
+          <!-- modal-footer -->
+          <div class="modal-footer login-footer">
+            <button type="button" class="modal-btn">
+              <div class="sns-wrapper">
+                <div class="sns-logo">
+                  <img src="./resources/assets/img/google_icon.svg" alt="" />
+                </div>
+                <a href="">Continue with Google</a>
+              </div>
+            </button>
+            <button type="button" class="modal-btn">
+              <div class="sns-wrapper">
+                <div class="sns-logo">
+                  <img src="./resources/assets/img/apple_icon.svg" alt="" />
+                </div>
+                <a href="">Continue with Apple</a>
+              </div>
+            </button>
+            <button type="button" class="modal-btn">
+              <div class="sns-wrapper">
+                <div class="sns-logo">
+                  <img src="./resources/assets/img/facebook_icon.svg" alt="" />
+                </div>
+                <a href="">Continue with Facebook</a>
+              </div>
+            </button>
           </div>
         </div>
       </div>
+    </div>
     </section>
     <script src="./resources/js/index.js"></script>
   </body>
