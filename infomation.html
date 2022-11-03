@@ -34,9 +34,9 @@
     <script src="jquery-3.6.0.min.js"></script>
     <!-- css -->
     <link rel="stylesheet" href="./resources/assets/css/style.css" />
-    <link rel="stylesheet" href="./resources/assets/css/information.css" />
     <link rel="stylesheet" href="./resources/assets/css/payment.css" />
-    <link rel="stylesheet" href="./resources/assets/css/responsive.css">
+    <link rel="stylesheet" href="./resources/assets/css/information.css" />
+    <link rel="stylesheet" href="./resources/assets/css/responsive.css" />
   </head>
   <body>
     <header class="header-main">
@@ -72,12 +72,14 @@
                 <a class="nav-link signin-btn" href="#">Sign in</a>
               </li>
               <li class="nav-item btn-nav">
-                <a
+                <div
+                  type="button"
                   class="nav-link text-white signup-btn"
                   data-bs-toggle="modal"
-                  data-bs-target="#staticBackdrop"
-                  >Sign up</a
+                  data-bs-target="#exampleModal"
                 >
+                  Sign up
+                </div>
               </li>
             </ul>
           </div>
@@ -88,7 +90,7 @@
     <main>
       <div class="container">
         <div class="row">
-          <div class="col-8">
+          <div class="col-xl-8 col-lg-12">
             <section class="section section-heading">
               <h1 class="heading-title">
                 <a href="">Passenger information</a>
@@ -104,7 +106,9 @@
               <form action="">
                 <div class="input-wrapper">
                   <div class="row">
-                    <div class="col-9 d-flex justify-content-between">
+                    <div
+                      class="col-xl-9 col-lg-12 d-flex justify-content-between"
+                    >
                       <input
                         type="text"
                         class="form-input input-small"
@@ -128,7 +132,7 @@
                   </div>
 
                   <div class="row">
-                    <div class="col-9 d-flex">
+                    <div class="col-xl-9 col-lg-12 d-flex">
                       <input
                         type="text"
                         name="suffix"
@@ -147,7 +151,9 @@
                 </div>
                 <div class="input-wrapper">
                   <div class="row">
-                    <div class="col-9 d-flex justify-content-between">
+                    <div
+                      class="col-xl-9 col-lg-12 d-flex justify-content-between"
+                    >
                       <input
                         type="email"
                         class="email form-input larger-input"
@@ -163,7 +169,9 @@
                     </div>
                   </div>
                   <div class="row">
-                    <div class="col-9 d-flex justify-content-between">
+                    <div
+                      class="col-xl-9 col-lg-12 d-flex justify-content-between"
+                    >
                       <input
                         type="email"
                         class="email form-input larger-input"
@@ -198,7 +206,9 @@
                 </div>
                 <div class="input-wrapper">
                   <div class="row">
-                    <div class="col-9 d-flex justify-content-between">
+                    <div
+                      class="col-xl-9 col-lg-12 d-flex justify-content-between"
+                    >
                       <input
                         type="text"
                         class="email form-input larger-input"
@@ -215,7 +225,9 @@
                   </div>
 
                   <div class="row">
-                    <div class="col-9 d-flex justify-content-between">
+                    <div
+                      class="col-xl-9 col-lg-12 d-flex justify-content-between"
+                    >
                       <input
                         type="email"
                         class="email form-input larger-input"
@@ -240,7 +252,7 @@
                   </div>
 
                   <div class="row">
-                    <div class="col-9">
+                    <div class="col-12 col-xl-9 col-lg-12">
                       <div class="description last-child-ds">
                         Each passenger is allowed one free carry-on bag and one
                         personal item. First checked bag for each passenger is
@@ -287,64 +299,66 @@
             </section>
           </div>
 
-          <div class="col-4">
-            <!-- table -->
-            <section class="section section-flight-table">
-              <div class="table-row">
-                <div class="row">
-                  <div class="col-7 d-flex">
-                    <div class="airline-logo">
-                      <img
-                        src="./resources/assets/img/airlines-logo/Hawaiian Airlines.svg"
-                        alt=""
-                      />
-                    </div>
-                    <div class="flight-details">
-                      <div class="first-line">Hawaiian Airlines</div>
-                      <div class="description">FIG4312</div>
-                    </div>
-                  </div>
-                  <div class="col-5">
-                    <div class="details">
+          <div class="col-xl-4 col-lg-12">
+            <div class="flight-data">
+              <section class="section section-flight-table">
+                <div class="table-row">
+                  <div class="row">
+                    <div class="col-7 d-flex">
+                      <div class="airline-logo">
+                        <img
+                          src="./resources/assets/img/airlines-logo/Hawaiian Airlines.svg"
+                          alt=""
+                        />
+                      </div>
                       <div class="flight-details">
-                        <div class="first-line">16h 45m(+1d)</div>
-                        <div class="first-line">7:00 AM - 4:15 PM</div>
-                        <div class="description">2h 45m in HNL</div>
+                        <div class="first-line">Hawaiian Airlines</div>
+                        <div class="description">FIG4312</div>
+                      </div>
+                    </div>
+                    <div class="col-5">
+                      <div class="details">
+                        <div class="flight-details">
+                          <div class="first-line">16h 45m(+1d)</div>
+                          <div class="first-line">7:00 AM - 4:15 PM</div>
+                          <div class="description">2h 45m in HNL</div>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="table-row">
-                <div class="row">
-                  <div class="col-7 d-flex">
-                    <div class="airline-logo">
-                      <img
-                        src="./resources/assets/img/airlines-logo/Japan Airlines.svg"
-                        alt=""
-                      />
-                    </div>
+                <div class="table-row">
+                  <div class="row">
+                    <div class="col-7 d-flex">
+                      <div class="airline-logo">
+                        <img
+                          src="./resources/assets/img/airlines-logo/Japan Airlines.svg"
+                          alt=""
+                        />
+                      </div>
 
-                    <div class="flight-details">
-                      <div class="first-line">Japan Airlines</div>
-                      <div class="description">FIG4312</div>
-                    </div>
-                  </div>
-                  <div class="col-5">
-                    <div class="details">
                       <div class="flight-details">
-                        <div class="first-line">16h 45m(+1d)</div>
-                        <div class="first-line">7:00 AM - 4:15 PM</div>
-                        <div class="description">2h 45m in HNL</div>
+                        <div class="first-line">Japan Airlines</div>
+                        <div class="description">FIG4312</div>
+                      </div>
+                    </div>
+                    <div class="col-5">
+                      <div class="details">
+                        <div class="flight-details">
+                          <div class="first-line">16h 45m(+1d)</div>
+                          <div class="first-line">7:00 AM - 4:15 PM</div>
+                          <div class="description">2h 45m in HNL</div>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </section>
-            <section class="section-payment">
-              <div class="container-fluid">
-                <div class="row justify-content-end">
+              </section>
+              <section class="section-payment">
+                <div class="row justify-content-xl-end justify-content-lg-center
+                 justify-content-md-center
+                 justify-content-sm-center
+                 justify-content-center">
                   <div class="col-6">
                     <div class="payment">
                       <div class="payment-item d-flex">
@@ -362,15 +376,15 @@
                     </div>
                   </div>
                 </div>
-              </div>
-            </section>
-            <!-- btn -->
-            <div class="container">
-              <div class="row">
-                <div class="col-12">
-                  <div class="btn-payment-wrapper d-flex justify-content-end">
-                    <div class="btn-full d-flex justify-content-center">
-                      <a href="./seat.html">Select seats</a>
+              </section>
+              <!-- btn -->
+              <div class="container">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="btn-payment-wrapper d-flex justify-content-end">
+                      <div class="btn-full d-flex justify-content-center">
+                        <a href="./seat.html">Select seats</a>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -446,7 +460,115 @@
         </div>
       </div>
     </footer>
+    <section class="modal-wrapper">
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-inner">
+          <div class="modal-content">
+            <!-- modal-header -->
+            <div class="modal-header">
+              <h4 class="title" id="ModalLabel">Sign up for Tripma</h4>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <!-- modal-body -->
+            <div class="modal-body">
+              <div class="description">
+                Tripma is totally free to use. Sign up using your email address
+                or phone number below to get started.
+              </div>
+              <form action="" class="modal-form login-form">
+                <input
+                  type="text"
+                  placeholder="Email or phone number"
+                  class="form-input modal-input"
+                />
+                <input
+                  type="password"
+                  placeholder="Password"
+                  class="form-input modal-input"
+                />
+                <div class="check-wrapper">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id=""
+                    />
+                    <label class="form-check-label" for="">
+                      I agree to the
+                      <a href="">terms and conditions</a>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id=""
+                    />
+                    <label class="form-check-label" for="">
+                      Send me the latest deal alerts
+                    </label>
+                  </div>
+                </div>
 
+                <button type="submit" class="btn-form">Create account</button>
+              </form>
+            </div>
+            <div class="or-wrapper">
+              <div class="line">
+                <img src="./resources/assets/img/line.svg" alt="" />
+              </div>
+              <div class="or">or</div>
+              <div class="line">
+                <img src="./resources/assets/img/line.svg" alt="" />
+              </div>
+            </div>
+            <!-- modal-footer -->
+            <div class="modal-footer login-footer">
+              <button type="button" class="modal-btn">
+                <div class="sns-wrapper">
+                  <div class="sns-logo">
+                    <img src="./resources/assets/img/google_icon.svg" alt="" />
+                  </div>
+                  <a href="">Continue with Google</a>
+                </div>
+              </button>
+              <button type="button" class="modal-btn">
+                <div class="sns-wrapper">
+                  <div class="sns-logo">
+                    <img src="./resources/assets/img/apple_icon.svg" alt="" />
+                  </div>
+                  <a href="">Continue with Apple</a>
+                </div>
+              </button>
+              <button type="button" class="modal-btn">
+                <div class="sns-wrapper">
+                  <div class="sns-logo">
+                    <img
+                      src="./resources/assets/img/facebook_icon.svg"
+                      alt=""
+                    />
+                  </div>
+                  <a href="">Continue with Facebook</a>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <script src="./resources/js/infomation.js"></script>
   </body>
 </html>

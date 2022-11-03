@@ -22,37 +22,79 @@
   .btn-responsive {
     width: 20%;
   }
- 
+  .section-title {
+    text-align: center;
+  }
+  /* payment page */
+
+  .section-form-card {
+  }
+  .form-larger-wrapper {
+    width: 50%;
+  }
+  .form-larger-wrapper .form-control {
+    width: 98%;
+    margin-bottom: 48px;
+  }
+  .form-small-item {
+    width: 98%;
+  }
+  .section-login .form-control {
+    width: 100%;
+  }
+  .section-login .modal-btn {
+    width: 100%;
+  }
+  .or-wrapper {
+    justify-content: center;
+  }
+  .section-login .btn-wrapper {
+    justify-content: center;
+  }
 }
 
 @media (max-width: 960px) {
   .section-homepage {
     height: 60vh;
-
   }
   .homepage-slogan {
   }
 
-  .footer-column1{
+  .footer-column1 {
     width: 10%;
   }
   .footer-column {
     width: 40%;
     margin-bottom: 10px;
   }
-  .margin-tablet{
+  .margin-tablet {
     margin-left: 15%;
+  }
+  /* payment page */
+  .payment-name {
+    font-size: 13px;
+    line-height: 21px;
+  }
+  .card-payment a {
+    line-height: 20px;
+  }
+  .form-larger-wrapper {
+    width: 100%;
+    margin-bottom: 48px;
+  }
+  .form-small-wrapper {
+    width: 100%;
   }
 }
 
 @media (max-width: 720px) {
-    .header-top-content{
-        font-size: 12px;
-        line-height: 20px;
-    }
-    .mt-xs-3{
-        margin-top: 16px;
-    }
+  .header-top-content {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .mt-xs-3 {
+    margin-top: 16px;
+  }
   .input {
     flex-wrap: wrap;
   }
@@ -73,7 +115,7 @@
     width: 30%;
   }
 
-  .footer-column1{
+  .footer-column1 {
     text-align: center;
     width: 100%;
     margin-bottom: 10px;
@@ -83,7 +125,7 @@
     width: 100%;
     margin-bottom: 10px;
   }
-  .margin-tablet{
+  .margin-tablet {
     margin-left: 0px;
   }
 }

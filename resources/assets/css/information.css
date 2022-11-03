@@ -68,9 +68,37 @@
 .caculator-btn i {
   color: #605dec;
 }
+.payment{
+  width: 100%;
+}
 .btn-wrapper{
   margin-top: 60px;
 }
 .section-bag{
   margin-top: 200px;
+}
+
+@media (max-width: 1204px) {
+.section-bag{
+  display: none;
+}
+.btn-wrapper{
+  margin-bottom: 40px;
+  justify-content: center;
+}
+.btn-payment-wrapper{
+  justify-content: center !important;
+}
+.payment{
+  justify-content: center !important;
+}
+.title{
+  text-align: center;
+}
+.description{
+  text-align: center;
+}
+.heading-title{
+  text-align: center;
+}
 }

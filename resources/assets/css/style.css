@@ -65,7 +65,7 @@ body {
     0px 24px 60px rgba(6, 47, 125, 0.05), 0px 12px 24px rgba(27, 59, 119, 0.05);
   border-radius: 12px;
   position: relative;
-  margin-top: 65px !important;
+  margin-top: 20px !important;
 }
 .modal-header {
 }
@@ -256,6 +256,7 @@ body {
 /* input */
 .input-box .form-select {
   height: 48px;
+  width: 100%;
   padding-left: 52px;
   border-radius: 0px;
   font-size: 18px;
@@ -279,7 +280,7 @@ body {
 }
 .input-box {
   position: relative;
-  width: 90% !important;
+  width: 90% ;
 }
 .input-icon {
 }
@@ -308,16 +309,16 @@ body {
 }
 .departure,
 .arrival {
-  width: 27% !important;
+  width: 27% ;
 }
 .calendar {
-  width: 21% !important;
+  width: 21% ;
 }
 .adult {
-  width: 16% !important;
+  width: 16% ;
 }
 .btn-responsive {
-  width: 9% !important;
+  width: 9% ;
 }
 
 /* homepage */
@@ -437,6 +438,7 @@ body {
 }
 .section-review {
   margin-top: 100px;
+  margin-bottom: 50px;
 }
 .section-review .review-slider {
   padding-bottom: 2rem;
@@ -470,7 +472,7 @@ body {
 
 /* footer */
 footer {
-  margin-top: 50px;
+  /* margin-top: 50px; */
   padding: 80px;
   height: 415px;
 }

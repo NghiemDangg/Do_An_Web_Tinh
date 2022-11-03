@@ -79,9 +79,14 @@
                       <a class="nav-link signin-btn" href="#">Sign in</a>
                     </li>
                     <li class="nav-item btn-nav">
-                      <a class="nav-link text-white signup-btn" href="#"
-                        >Sign up</a
+                      <div
+                        type="button"
+                        class="nav-link text-white signup-btn"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"
                       >
+                        Sign up
+                      </div>
                     </li>
                   </ul>
                 </div>
@@ -103,10 +108,8 @@
           <div class="row">
             <div class="col-12">
               <div class="class-wrapper">
-                <div
-                  class="class-heading d-flex align-items-center "
-                >
-                  <div class="local-wrapper d-flex align-items-center ">
+                <div class="class-heading d-flex align-items-center">
+                  <div class="local-wrapper d-flex align-items-center">
                     <div class="local">
                       <div class="local-code">SFO</div>
                       <div class="class-content">California, US</div>
@@ -146,7 +149,10 @@
                           </div>
 
                           <div class="line">
-                            <img src="./resources/assets/img/payment-icon/purple.png" alt="">
+                            <img
+                              src="./resources/assets/img/payment-icon/purple.png"
+                              alt=""
+                            />
                           </div>
 
                           <div class="feature-list-bullet d-flex">
@@ -202,7 +208,10 @@
                           </div>
 
                           <div class="line">
-                            <img src="./resources/assets/img/payment-icon/green.png" alt="">
+                            <img
+                              src="./resources/assets/img/payment-icon/green.png"
+                              alt=""
+                            />
                           </div>
 
                           <div class="feature-list-bullet d-flex">
@@ -282,10 +291,10 @@
                   </div>
                   <div class="btn-wrapper">
                     <button type="button" class="btn-border">
-                      <a href="./payment.html"> Save and close</a>
+                      <a href="./index.html"> Save and close</a>
                     </button>
                     <button type="button" class="btn-full">
-                      <a href="./flight.html">Next flight</a>
+                      <a href="./payment.html">Payment method</a>
                     </button>
                   </div>
                 </div>
@@ -294,6 +303,119 @@
           </div>
         </section>
       </div>
+
+      <section class="modal-wrapper">
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-inner">
+            <div class="modal-content">
+              <!-- modal-header -->
+              <div class="modal-header">
+                <h4 class="title" id="ModalLabel">Sign up for Tripma</h4>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <!-- modal-body -->
+              <div class="modal-body">
+                <div class="description">
+                  Tripma is totally free to use. Sign up using your email
+                  address or phone number below to get started.
+                </div>
+                <form action="" class="modal-form login-form">
+                  <input
+                    type="text"
+                    placeholder="Email or phone number"
+                    class="form-input modal-input"
+                  />
+                  <input
+                    type="password"
+                    placeholder="Password"
+                    class="form-input modal-input"
+                  />
+                  <div class="check-wrapper">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id=""
+                      />
+                      <label class="form-check-label" for="">
+                        I agree to the
+                        <a href="">terms and conditions</a>
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id=""
+                      />
+                      <label class="form-check-label" for="">
+                        Send me the latest deal alerts
+                      </label>
+                    </div>
+                  </div>
+
+                  <button type="submit" class="btn-form">Create account</button>
+                </form>
+              </div>
+              <div class="or-wrapper">
+                <div class="line">
+                  <img src="./resources/assets/img/line.svg" alt="" />
+                </div>
+                <div class="or">or</div>
+                <div class="line">
+                  <img src="./resources/assets/img/line.svg" alt="" />
+                </div>
+              </div>
+              <!-- modal-footer -->
+              <div class="modal-footer login-footer">
+                <button type="button" class="modal-btn">
+                  <div class="sns-wrapper">
+                    <div class="sns-logo">
+                      <img
+                        src="./resources/assets/img/google_icon.svg"
+                        alt=""
+                      />
+                    </div>
+                    <a href="">Continue with Google</a>
+                  </div>
+                </button>
+                <button type="button" class="modal-btn">
+                  <div class="sns-wrapper">
+                    <div class="sns-logo">
+                      <img src="./resources/assets/img/apple_icon.svg" alt="" />
+                    </div>
+                    <a href="">Continue with Apple</a>
+                  </div>
+                </button>
+                <button type="button" class="modal-btn">
+                  <div class="sns-wrapper">
+                    <div class="sns-logo">
+                      <img
+                        src="./resources/assets/img/facebook_icon.svg"
+                        alt=""
+                      />
+                    </div>
+                    <a href="">Continue with Facebook</a>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   </body>
 </html>

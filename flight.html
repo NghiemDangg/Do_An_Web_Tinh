@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flight</title>
-   
+
     <!-- boostrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
@@ -23,7 +23,10 @@
       rel="stylesheet"
       href="./resources/assets/fonts/themify-icons/themify-icons.css"
     />
-
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -38,14 +41,14 @@
       href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
     />
 
-     <!-- css -->
-     <link rel="stylesheet" href="./resources/assets/css/style.css" />
-     <link rel="stylesheet" href="./resources/assets/css/flight.css" />
-     <link rel="stylesheet" href="./resources/assets/css/responsive.css">
+    <!-- css -->
+    <link rel="stylesheet" href="./resources/assets/css/style.css" />
+    <link rel="stylesheet" href="./resources/assets/css/flight.css" />
+    <link rel="stylesheet" href="./resources/assets/css/responsive.css" />
   </head>
   <body>
     <header class="header-main">
-      <nav class="navbar navbar-expand-lg ">
+      <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
           <a class="navbar-brand" href="./index.html">Travel</a>
           <button
@@ -97,7 +100,7 @@
         <!-- input -->
         <section class="section section-input">
           <div class="row">
-            <div class="col-9">
+            <div class="col-xl-9 col-lg-12 col-md-12 col-sm-12 col-12">
               <div class="input d-flex flex-row">
                 <div class="input-box departure">
                   <div class="icon-wrapper">
@@ -192,11 +195,11 @@
           </div>
         </section>
         <!-- filter -->
-        <section class="section section-filter">
-          <div class="row">
-            <div class="col-8">
+        <section class="section-filter">
+          <div class="row d-flex">
+            <div class="col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12">
               <div class="row">
-                <div class="col-2">
+                <div class="col-xl-2 col-lg-4 col-md-4 col-sm-4 col-4">
                   <div class="mb-3">
                     <select
                       class="form-select form-select-lg select-filter"
@@ -210,7 +213,7 @@
                     </select>
                   </div>
                 </div>
-                <div class="col-2">
+                <div class="col-xl-2 col-lg-4 col-md-4 col-sm-4 col-4">
                   <div class="mb-3">
                     <select
                       class="form-select form-select-lg select-filter"
@@ -224,7 +227,7 @@
                     </select>
                   </div>
                 </div>
-                <div class="col-2">
+                <div class="col-xl-2 col-lg-4 col-md-4 col-sm-4 col-4">
                   <div class="mb-3">
                     <select
                       class="form-select form-select-lg select-filter"
@@ -238,7 +241,7 @@
                     </select>
                   </div>
                 </div>
-                <div class="col-2">
+                <div class="col-xl-2 col-lg-4 col-md-4 col-sm-4 col-4">
                   <div class="mb-3">
                     <select
                       class="form-select form-select-lg select-filter"
@@ -252,7 +255,7 @@
                     </select>
                   </div>
                 </div>
-                <div class="col-2">
+                <div class="col-xl-2 col-lg-4 col-md-4 col-sm-4 col-4">
                   <div class="mb-3">
                     <select
                       class="form-select form-select-lg select-filter"
@@ -266,7 +269,7 @@
                     </select>
                   </div>
                 </div>
-                <div class="col-2">
+                <div class="col-xl-2 col-lg-4 col-md-4 col-sm-4 col-4">
                   <div class="mb-3">
                     <select
                       class="form-select form-select-lg select-filter"
@@ -498,7 +501,9 @@
               </div>
               <!-- btn -->
               <div class="row">
-                <div class="col-12 d-flex justify-content-end">
+                <div
+                  class="col-12 d-flex justify-content-xl-end justify-content-lg-center justify-content-md-center justify-content-sm-center justify-content-center"
+                >
                   <div class="btn-expand-fl">
                     <a href="">Show all flights</a>
                   </div>
@@ -532,7 +537,7 @@
                           <div class="cell">2/15</div>
                           <div class="cell">2/16</div>
                         </div>
-  
+
                         <div class="price-row d-flex">
                           <div class="date-cell cell">3/7</div>
                           <div class="cell cell-price">$837</div>
@@ -577,18 +582,18 @@
                     </div>
                   </div>
                 </div>
-  
+
                 <div class="row">
                   <div class="col-12">
                     <div class="section-title">Price history</div>
                   </div>
                 </div>
-  
+
                 <div class="price-chart">
                   <img src="./resources/assets/img/Price History.svg" alt="" />
                 </div>
               </section>
-  
+
               <section class="section section-price-rating">
                 <div class="row">
                   <div class="col-12">
@@ -609,6 +614,96 @@
                   ensure you get the best deal.
                 </div>
               </section>
+            </div>
+
+            <div class="flight-data d-none">
+              <section class="section section-flight-table">
+                <div class="table-row">
+                  <div class="row">
+                    <div class="col-7 d-flex">
+                      <div class="airline-logo">
+                        <img
+                          src="./resources/assets/img/airlines-logo/Hawaiian Airlines.svg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="flight-details">
+                        <div class="first-line">Hawaiian Airlines</div>
+                        <div class="description">FIG4312</div>
+                      </div>
+                    </div>
+                    <div class="col-5">
+                      <div class="details">
+                        <div class="flight-details">
+                          <div class="first-line">16h 45m(+1d)</div>
+                          <div class="first-line">7:00 AM - 4:15 PM</div>
+                          <div class="description">2h 45m in HNL</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="table-row">
+                  <div class="row">
+                    <div class="col-7 d-flex">
+                      <div class="airline-logo">
+                        <img
+                          src="./resources/assets/img/airlines-logo/Japan Airlines.svg"
+                          alt=""
+                        />
+                      </div>
+
+                      <div class="flight-details">
+                        <div class="first-line">Japan Airlines</div>
+                        <div class="description">FIG4312</div>
+                      </div>
+                    </div>
+                    <div class="col-5">
+                      <div class="details">
+                        <div class="flight-details">
+                          <div class="first-line">16h 45m(+1d)</div>
+                          <div class="first-line">7:00 AM - 4:15 PM</div>
+                          <div class="description">2h 45m in HNL</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section class="section-payment">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-6 col-lg-12">
+                      <div class="payment d-flex justify-content-end">
+                        <div class="payment-item d-flex">
+                          <div class="payment-name">Subtotal</div>
+                          <div class="payment-name">$702</div>
+                        </div>
+                        <div class="payment-item d-flex">
+                          <div class="payment-name">Taxes and Fees</div>
+                          <div class="payment-name">$66</div>
+                        </div>
+                        <div class="payment-item d-flex">
+                          <div class="payment-name">Total</div>
+                          <div class="payment-name">$768</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <!-- btn -->
+              <div class="container">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="btn-payment-wrapper d-flex justify-content-end">
+                      <div class="btn-full d-flex justify-content-center">
+                        <a href="./seat.html">Select seats</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -822,7 +917,7 @@
         </div>
       </div>
     </footer>
-    
+
     <section class="modal-wrapper">
       <div
         class="modal fade"

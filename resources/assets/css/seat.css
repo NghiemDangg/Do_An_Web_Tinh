@@ -28,6 +28,7 @@
   border-left: 1px solid #cbd4e6;
 }
 .class-wrapper {
+  height: 100vh;
 }
 /* heading */
 .class-heading {
@@ -38,7 +39,7 @@
 }
 .local-wrapper {
   border-right: 1px solid #6e7491;
-  padding: 20px;
+  padding: 2%;
   flex: 4;
 }
 
@@ -64,7 +65,7 @@
 }
 .time {
   flex: 3;
-  padding: 25px;
+  padding: 3%;
 }
 .date {
   font-weight: 400;
@@ -86,9 +87,6 @@
   padding: 26px;
 }
 .seat-class {
-  width: 320px;
-  height: 150px;
-
   margin-bottom: 8px;
 }
 /* feature-list */
@@ -133,6 +131,11 @@
 }
 .btn-border a {
   font-weight: 400;
-  font-size: 15px;
+  font-size: 14px;
+  line-height: 22px;
+}
+.btn-full a{
+  font-weight: 400;
+  font-size: 14px;
   line-height: 22px;
 }
