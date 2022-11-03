@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flight</title>
-
+   
     <!-- boostrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
@@ -31,15 +31,21 @@
       href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@0;1&display=swap"
       rel="stylesheet"
     />
-    <!-- Jquery -->
-    <script src="jquery-3.6.0.min.js"></script>
-    <!-- css -->
-    <link rel="stylesheet" href="./resources/assets/css/style.css" />
-    <link rel="stylesheet" href="./resources/assets/css/flight.css" />
+
+    <!-- flatpickr -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
+
+     <!-- css -->
+     <link rel="stylesheet" href="./resources/assets/css/style.css" />
+     <link rel="stylesheet" href="./resources/assets/css/flight.css" />
+     <link rel="stylesheet" href="./resources/assets/css/responsive.css">
   </head>
   <body>
     <header class="header-main">
-      <nav class="navbar navbar-expand-lg">
+      <nav class="navbar navbar-expand-lg ">
         <div class="container-fluid">
           <a class="navbar-brand" href="./index.html">Travel</a>
           <button
@@ -71,7 +77,14 @@
                 <a class="nav-link signin-btn" href="#">Sign in</a>
               </li>
               <li class="nav-item btn-nav">
-                <a class="nav-link text-white signup-btn" href="#">Sign up</a>
+                <div
+                  type="button"
+                  class="nav-link text-white signup-btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  Sign up
+                </div>
               </li>
             </ul>
           </div>
@@ -84,7 +97,7 @@
         <!-- input -->
         <section class="section section-input">
           <div class="row">
-            <div class="col-12">
+            <div class="col-9">
               <div class="input d-flex flex-row">
                 <div class="input-box departure">
                   <div class="icon-wrapper">
@@ -98,10 +111,16 @@
                     class="form-select first-child"
                     aria-label="Default select example"
                   >
-                    <option selected>SFO</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
+                    <option value="1">SFO</option>
+                    <option value="2">ATL</option>
+                    <option value="3">LAX</option>
+                    <option value="4">SLT</option>
+                    <option value="5">PVG</option>
+                    <option value="6">MSP</option>
+                    <option value="7">NRT</option>
+                    <option value="8">IFK</option>
+                    <option value="9">LAX</option>
+                    <option value="10">LAX</option>
                   </select>
                 </div>
 
@@ -117,10 +136,16 @@
                     class="form-select"
                     aria-label="Default select example"
                   >
-                    <option selected>NRT</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
+                    <option value="1">NRT</option>
+                    <option value="2">ATL</option>
+                    <option value="3">LAX</option>
+                    <option value="4">SLT</option>
+                    <option value="5">PVG</option>
+                    <option value="6">MSP</option>
+                    <option value="7">NRT</option>
+                    <option value="8">IFK</option>
+                    <option value="9">LAX</option>
+                    <option value="10">LAX</option>
                   </select>
                 </div>
 
@@ -132,15 +157,11 @@
                       alt=""
                     />
                   </div>
-                  <select
+                  <input
                     class="form-select"
-                    aria-label="Default select example"
-                  >
-                    <option selected>Depart - Return</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
+                    placeholder="Depart - Return"
+                    id="myID"
+                  />
                 </div>
 
                 <div class="input-box adult">
@@ -161,9 +182,9 @@
                   </select>
                 </div>
 
-                <div class="input-box serch-btn">
+                <div class="input-box search-btn">
                   <div class="icon-wrapper">
-                    <a href="./flight.html">Serch</a>
+                    <a href="./flight.html">Search</a>
                   </div>
                 </div>
               </div>
@@ -266,7 +287,7 @@
       </div>
       <div class="container">
         <div class="row">
-          <div class="col-8">
+          <div class="col-xl-8 col-lg-12">
             <!-- table -->
             <section class="section section-flight-table">
               <div class="row">
@@ -382,7 +403,7 @@
 
                       <div class="flight-details text-end">
                         <div class="first-line">1 stop</div>
-                            <div class="second-line">4h 05m in ICN</div>
+                        <div class="second-line">4h 05m in ICN</div>
                       </div>
 
                       <div class="flight-details text-end">
@@ -394,9 +415,9 @@
                     <div class="table-row d-flex justify-content-between">
                       <div class="airline-logo">
                         <img
-                            src="./resources/assets/img/airlines-logo/United Airlines.svg"
-                            alt=""
-                          />
+                          src="./resources/assets/img/airlines-logo/United Airlines.svg"
+                          alt=""
+                        />
                       </div>
 
                       <div class="flight-details">
@@ -418,18 +439,17 @@
                       </div>
                     </div>
 
-
                     <div class="table-row d-flex justify-content-between">
                       <div class="airline-logo">
-                       <img
-                            src="./resources/assets/img/airlines-logo/Air France.svg"
-                            alt=""
-                          />
+                        <img
+                          src="./resources/assets/img/airlines-logo/Air France.svg"
+                          alt=""
+                        />
                       </div>
 
                       <div class="flight-details">
                         <div class="first-line">15h 45m</div>
-                            <div class="second-line">Air France</div>
+                        <div class="second-line">Air France</div>
                       </div>
 
                       <div class="flight-details text-center">
@@ -442,21 +462,21 @@
 
                       <div class="flight-details text-end">
                         <div class="first-line">$839</div>
-                            <div class="second-line">round trip</div>
+                        <div class="second-line">round trip</div>
                       </div>
                     </div>
 
                     <div class="table-row d-flex justify-content-between">
                       <div class="airline-logo">
-                       <img
-                            src="./resources/assets/img/airlines-logo/Air China.svg"
-                            alt=""
-                          />
+                        <img
+                          src="./resources/assets/img/airlines-logo/Air China.svg"
+                          alt=""
+                        />
                       </div>
 
                       <div class="flight-details">
                         <div class="first-line">10h 40m</div>
-                            <div class="second-line">Air China</div>
+                        <div class="second-line">Air China</div>
                       </div>
 
                       <div class="flight-details text-center">
@@ -465,12 +485,12 @@
 
                       <div class="flight-details text-end">
                         <div class="first-line">1 stop</div>
-                            <div class="second-line">4h 05m in ICN</div>
+                        <div class="second-line">4h 05m in ICN</div>
                       </div>
 
                       <div class="flight-details text-end">
                         <div class="first-line">$840</div>
-                            <div class="second-line">round trip</div>
+                        <div class="second-line">round trip</div>
                       </div>
                     </div>
                   </div>
@@ -492,104 +512,104 @@
             </section>
           </div>
 
-          <div class="col-4">
-            <section class="section-price-grid">
-              <div class="row">
-                <div class="col-12">
-                  <div class="section-title">Price grid (flexible dates)</div>
+          <div class="col-xl-4 col-lg-12">
+            <div class="price-wrapper">
+              <section class="section-price-grid">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="section-title">Price grid (flexible dates)</div>
+                  </div>
                 </div>
-              </div>
-              <div class="row">
-                <div class="col-12">
+                <div class="row">
+                  <div class="col-12">
                     <div class="table-border">
                       <div class="price-table">
                         <div class="date-row d-flex">
-                            <div class="cell" ></div>
-                            <div class="cell" >2/12</div>
-                            <div class="cell" >2/13</div>
-                            <div class="cell" >2/14</div>
-                            <div class="cell" >2/15</div>
-                            <div class="cell" >2/16</div>
+                          <div class="cell"></div>
+                          <div class="cell">2/12</div>
+                          <div class="cell">2/13</div>
+                          <div class="cell">2/14</div>
+                          <div class="cell">2/15</div>
+                          <div class="cell">2/16</div>
                         </div>
-
-                          <div class="price-row d-flex">
-                            <div class = "date-cell cell">3/7</div>
-                            <div class="cell cell-price">$837</div>
-                            <div class="cell cell-price">$592</div>
-                            <div class="cell cell-price">$592</div>
-                            <div class="cell cell-price">$1,308</div>
-                            <div class="cell cell-price">$837</div>
-                          </div>
-                          <div class="price-row d-flex" >
-                            <div class = "date-cell cell">3/8</div>
-                            <div class="cell cell-price">$837</div>
-                            <div class="cell cell-price">$592</div>
-                            <div class="cell cell-price">$592</div>
-                            <div class="cell cell-price">$837</div>
-                            <div class="cell cell-price">$1,308</div>
-                          </div>
-                          <div class="price-row d-flex" >
-                            <div class = "date-cell cell">3/9</div>
-                            <div class="cell cell-price">$624</div>
-                            <div class="cell cell-price">$592</div>
-                            <div class="cell cell-price">$624</div>
-                            <div class="cell cell-price">$592</div>
-                            <div class="cell cell-price">$592</div>
-                          </div>
-                          <div class="price-row d-flex" >
-                            <div class = "date-cell cell">3/10</div>
-                            <div class="cell cell-price">$1,308</div>
-                            <div class="cell cell-price">$624</div>
-                            <div class="cell cell-price">$624</div>
-                            <div class="cell cell-price">$837</div>
-                            <div class="cell cell-price">$837</div>
-                          </div>
-                          <div class="price-row d-flex" >
-                            <div class = "date-cell cell">3/11</div>
-                            <div class="cell cell-price">$592</div>
-                            <div class="cell cell-price">$624</div>
-                            <div class="cell cell-price">$1,308</div>
-                            <div class="cell cell-price">$837</div>
-                            <div class="cell cell-price">$624</div>
-                          </div>
-
+  
+                        <div class="price-row d-flex">
+                          <div class="date-cell cell">3/7</div>
+                          <div class="cell cell-price">$837</div>
+                          <div class="cell cell-price">$592</div>
+                          <div class="cell cell-price">$592</div>
+                          <div class="cell cell-price">$1,308</div>
+                          <div class="cell cell-price">$837</div>
+                        </div>
+                        <div class="price-row d-flex">
+                          <div class="date-cell cell">3/8</div>
+                          <div class="cell cell-price">$837</div>
+                          <div class="cell cell-price">$592</div>
+                          <div class="cell cell-price">$592</div>
+                          <div class="cell cell-price">$837</div>
+                          <div class="cell cell-price">$1,308</div>
+                        </div>
+                        <div class="price-row d-flex">
+                          <div class="date-cell cell">3/9</div>
+                          <div class="cell cell-price">$624</div>
+                          <div class="cell cell-price">$592</div>
+                          <div class="cell cell-price">$624</div>
+                          <div class="cell cell-price">$592</div>
+                          <div class="cell cell-price">$592</div>
+                        </div>
+                        <div class="price-row d-flex">
+                          <div class="date-cell cell">3/10</div>
+                          <div class="cell cell-price">$1,308</div>
+                          <div class="cell cell-price">$624</div>
+                          <div class="cell cell-price">$624</div>
+                          <div class="cell cell-price">$837</div>
+                          <div class="cell cell-price">$837</div>
+                        </div>
+                        <div class="price-row d-flex">
+                          <div class="date-cell cell">3/11</div>
+                          <div class="cell cell-price">$592</div>
+                          <div class="cell cell-price">$624</div>
+                          <div class="cell cell-price">$1,308</div>
+                          <div class="cell cell-price">$837</div>
+                          <div class="cell cell-price">$624</div>
+                        </div>
                       </div>
-                    </div>
-                  
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col-12">
-                  <div class="section-title">Price history</div>
-                </div>
-              </div>
-
-              <div class="price-chart">
-                <img src="./resources/assets/img/Price History.svg" alt="" />
-              </div>
-            </section>
-
-            <section class="section section-price-rating">
-              <div class="row">
-                <div class="col-12">
-                  <div class="title-wrapper d-flex align-items-center">
-                    <div class="section-title">Price rating</div>
-                    <div class="btn-blue">
-                      <a href="./infomation.html">Buy soon</a>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="content-advice">
-                We recommend booking soon. The average cost of this flight is
-                $750, but could rise 18% to $885 in two weeks.
-              </div>
-              <div class="description">
-                Travel analyzes thousands of flights, prices, and trends to
-                ensure you get the best deal.
-              </div>
-            </section>
+  
+                <div class="row">
+                  <div class="col-12">
+                    <div class="section-title">Price history</div>
+                  </div>
+                </div>
+  
+                <div class="price-chart">
+                  <img src="./resources/assets/img/Price History.svg" alt="" />
+                </div>
+              </section>
+  
+              <section class="section section-price-rating">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="title-wrapper d-flex align-items-center">
+                      <div class="section-title">Price rating</div>
+                      <div class="btn-blue">
+                        <a href="./infomation.html">Buy soon</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="content-advice">
+                  We recommend booking soon. The average cost of this flight is
+                  $750, but could rise 18% to $885 in two weeks.
+                </div>
+                <div class="description">
+                  Travel analyzes thousands of flights, prices, and trends to
+                  ensure you get the best deal.
+                </div>
+              </section>
+            </div>
           </div>
         </div>
       </div>
@@ -603,7 +623,7 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-4">
+            <div class="col-xl-4 col-md-6">
               <div class="card" style="width: 18rem">
                 <div class="card-img-top">
                   <img
@@ -623,7 +643,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-4">
+            <div class="col-xl-4 col-md-6 mt-xs-3">
               <div class="card" style="width: 18rem">
                 <div class="card-img-top">
                   <img
@@ -643,7 +663,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-4">
+            <div class="col-xl-4 mt-xs-3 mt-sm-3 mt-xl-0">
               <div class="card" style="width: 18rem">
                 <div class="card-img-top">
                   <img
@@ -675,7 +695,7 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-4">
+            <div class="col-xl-4 col-md-6">
               <div class="card" style="width: 18rem">
                 <div class="card-img-top">
                   <img
@@ -693,7 +713,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-4">
+            <div class="col-xl-4 col-md-6 mt-xs-3">
               <div class="card" style="width: 18rem">
                 <div class="card-img-top">
                   <img
@@ -715,7 +735,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-4">
+            <div class="col-xl-4 mt-xs-3 mt-sm-3 mt-xl-0">
               <div class="card" style="width: 18rem">
                 <div class="card-img-top">
                   <img
@@ -743,59 +763,184 @@
     <footer>
       <div class="container">
         <div class="row">
-          <div class="col-12 d-flex justify-content-sm-between">
-            <div class="footer-column1">
-              <a class="navbar-brand" href="./index.html">Travel</a>
-            </div>
-            <div class="footer-column">
-              <div class="footer-title">About</div>
-              <div class="footer-content">About Travel</div>
-              <div class="footer-content">How it works</div>
-              <div class="footer-content">Careers</div>
-              <div class="footer-content">Press</div>
-              <div class="footer-content">Blog</div>
-              <div class="footer-content">Forum</div>
-            </div>
-            <div class="footer-column">
-              <div class="footer-title">Partner with us</div>
-              <div class="footer-content">Partnership programs</div>
-              <div class="footer-content">Affiliate program</div>
-              <div class="footer-content">Connectivity partners</div>
-              <div class="footer-content">Promotions and events</div>
-              <div class="footer-content">Integrations</div>
-              <div class="footer-content">Community</div>
-              <div class="footer-content">Loyalty program</div>
-            </div>
-            <div class="footer-column">
-              <div class="footer-title">Support</div>
-              <div class="footer-content">Help Center</div>
-              <div class="footer-content">Contact us</div>
-              <div class="footer-content">Privacy policy</div>
-              <div class="footer-content">Terms of service</div>
-              <div class="footer-content">Trust and safety</div>
-              <div class="footer-content">Accessibility</div>
-            </div>
-            <div class="footer-column">
-              <div class="footer-title">Get the app</div>
-              <div class="footer-content">Travel for Android</div>
-              <div class="footer-content">Travel for iOS</div>
-              <div class="footer-content">Mobile site</div>
-              <div class="footer-content">
-                <img
-                  src="./resources/assets/img/app store.svg"
-                  alt="app store"
-                />
+          <div class="col-12">
+            <div
+              class="footer-wrapper d-flex justify-content-between flex-wrap"
+            >
+              <div class="footer-column1">
+                <a class="navbar-brand" href="./index.html">Travel</a>
               </div>
-              <div class="footer-content">
-                <img
-                  src="./resources/assets/img/google play.svg"
-                  alt="google play"
-                />
+              <div class="footer-column">
+                <div class="footer-title">About</div>
+                <div class="footer-content">About Travel</div>
+                <div class="footer-content">How it works</div>
+                <div class="footer-content">Careers</div>
+                <div class="footer-content">Press</div>
+                <div class="footer-content">Blog</div>
+                <div class="footer-content">Forum</div>
+              </div>
+
+              <div class="footer-column">
+                <div class="footer-title">Partner with us</div>
+                <div class="footer-content">Partnership programs</div>
+                <div class="footer-content">Affiliate program</div>
+                <div class="footer-content">Connectivity partners</div>
+                <div class="footer-content">Promotions and events</div>
+                <div class="footer-content">Integrations</div>
+                <div class="footer-content">Community</div>
+                <div class="footer-content">Loyalty program</div>
+              </div>
+              <div class="footer-column margin-tablet">
+                <div class="footer-title">Support</div>
+                <div class="footer-content">Help Center</div>
+                <div class="footer-content">Contact us</div>
+                <div class="footer-content">Privacy policy</div>
+                <div class="footer-content">Terms of service</div>
+                <div class="footer-content">Trust and safety</div>
+                <div class="footer-content">Accessibility</div>
+              </div>
+              <div class="footer-column">
+                <div class="footer-title">Get the app</div>
+                <div class="footer-content">Travel for Android</div>
+                <div class="footer-content">Travel for iOS</div>
+                <div class="footer-content">Mobile site</div>
+                <div class="footer-content">
+                  <img
+                    src="./resources/assets/img/app store.svg"
+                    alt="app store"
+                  />
+                </div>
+                <div class="footer-content">
+                  <img
+                    src="./resources/assets/img/google play.svg"
+                    alt="google play"
+                  />
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </footer>
+    
+    <section class="modal-wrapper">
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-inner">
+          <div class="modal-content">
+            <!-- modal-header -->
+            <div class="modal-header">
+              <h4 class="title" id="ModalLabel">Sign up for Tripma</h4>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <!-- modal-body -->
+            <div class="modal-body">
+              <div class="description">
+                Tripma is totally free to use. Sign up using your email address
+                or phone number below to get started.
+              </div>
+              <form action="" class="modal-form login-form">
+                <input
+                  type="text"
+                  placeholder="Email or phone number"
+                  class="form-input modal-input"
+                />
+                <input
+                  type="password"
+                  placeholder="Password"
+                  class="form-input modal-input"
+                />
+                <div class="check-wrapper">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id=""
+                    />
+                    <label class="form-check-label" for="">
+                      I agree to the
+                      <a href="">terms and conditions</a>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id=""
+                    />
+                    <label class="form-check-label" for="">
+                      Send me the latest deal alerts
+                    </label>
+                  </div>
+                </div>
+
+                <button type="submit" class="btn-form">Create account</button>
+              </form>
+            </div>
+            <div class="or-wrapper">
+              <div class="line">
+                <img src="./resources/assets/img/line.svg" alt="" />
+              </div>
+              <div class="or">or</div>
+              <div class="line">
+                <img src="./resources/assets/img/line.svg" alt="" />
+              </div>
+            </div>
+            <!-- modal-footer -->
+            <div class="modal-footer login-footer">
+              <button type="button" class="modal-btn">
+                <div class="sns-wrapper">
+                  <div class="sns-logo">
+                    <img src="./resources/assets/img/google_icon.svg" alt="" />
+                  </div>
+                  <a href="">Continue with Google</a>
+                </div>
+              </button>
+              <button type="button" class="modal-btn">
+                <div class="sns-wrapper">
+                  <div class="sns-logo">
+                    <img src="./resources/assets/img/apple_icon.svg" alt="" />
+                  </div>
+                  <a href="">Continue with Apple</a>
+                </div>
+              </button>
+              <button type="button" class="modal-btn">
+                <div class="sns-wrapper">
+                  <div class="sns-logo">
+                    <img
+                      src="./resources/assets/img/facebook_icon.svg"
+                      alt=""
+                    />
+                  </div>
+                  <a href="">Continue with Facebook</a>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- flatpickr -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+    <script>
+      flatpickr("#myID", {
+        altInput: true,
+        altFormat: "F j, Y",
+        dateFormat: "Y-m-d",
+      });
+    </script>
   </body>
 </html>

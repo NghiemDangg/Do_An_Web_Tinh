@@ -71,7 +71,7 @@
   height: 48px;
   margin-bottom: 24px;
 }
-.form-small-wrapper{
+.form-small-wrapper {
   width: 58%;
 }
 .form-small {
@@ -80,6 +80,7 @@
 }
 .form-small-item {
   width: 48%;
+  position: relative;
 }
 .form-small:last-child {
   margin-left: 24px;
@@ -91,6 +92,9 @@
   border-radius: 50%;
   text-align: center;
   line-height: 18px;
+  position: absolute;
+  right: 6%;
+  top: 20%;
 }
 .form-icon {
   color: #6e7491;

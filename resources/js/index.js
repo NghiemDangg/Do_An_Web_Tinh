@@ -1,10 +1,25 @@
-// open-close MODAL
+// close header-top
+const btn_close = document.querySelector(".header-top-icon");
+const headertop = document.querySelector(".header-top");
+btn_close.addEventListener("click", () => {
+    headertop.style.display = 'none';
+  });
 
-// const signup_btn = document.querySelector(".signup-btn");
-// const modal = document.querySelector(".section-modal");
-// const btn_close = document.querySelector(".btn-close");
-// // open modal
+  // slider
 
-// signup_btn.addEventListener("click", () => {
-//   console.log("show");
-// });
+  $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            items:3
+        }
+    }
+})

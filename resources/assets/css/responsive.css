@@ -1,0 +1,92 @@
+@media (max-width: 1140px) {
+  .section-homepage {
+    height: 70vh;
+  }
+  /* input */
+  .input {
+    flex-wrap: wrap;
+  }
+  .input-box {
+    margin-bottom: 8px;
+  }
+  .departure,
+  .arrival {
+    width: 50%;
+  }
+  .calendar {
+    width: 50%;
+  }
+  .adult {
+    width: 30%;
+  }
+  .btn-responsive {
+    width: 20%;
+  }
+ 
+}
+
+@media (max-width: 960px) {
+  .section-homepage {
+    height: 60vh;
+
+  }
+  .homepage-slogan {
+  }
+
+  .footer-column1{
+    width: 10%;
+  }
+  .footer-column {
+    width: 40%;
+    margin-bottom: 10px;
+  }
+  .margin-tablet{
+    margin-left: 15%;
+  }
+}
+
+@media (max-width: 720px) {
+    .header-top-content{
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .mt-xs-3{
+        margin-top: 16px;
+    }
+  .input {
+    flex-wrap: wrap;
+  }
+  .input-box {
+    margin-bottom: 4px;
+  }
+  .departure,
+  .arrival {
+    width: 100%;
+  }
+  .calendar {
+    width: 100%;
+  }
+  .adult {
+    width: 70%;
+  }
+  .btn-responsive {
+    width: 30%;
+  }
+
+  .footer-column1{
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .footer-column {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .margin-tablet{
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 540px) {
+}

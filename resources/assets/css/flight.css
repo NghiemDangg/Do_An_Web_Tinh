@@ -4,20 +4,24 @@
 }
 
 /* input-form */
-
+.input{
+  width: 100%;
+}
 .departure,
 .arrival,
 .adult {
-  width: 173.67px;
+  width: 20% !important;
 }
 .calendar {
-  width: 252px;
+  width: 28% !important;
 }
 
 .section-input {
   margin-bottom: 24px;
 }
-
+.search-btn{
+  width: 12% !important;
+}
 /* section-filter */
 
 .section-filter {
@@ -52,6 +56,12 @@
 .table-row {
   padding: 16px;
   border-bottom: 1px solid #e9e8fc;
+  transition-duration: 0.5s;
+}
+.table-row:hover {
+  background-color: #f6f6fe;
+  cursor: pointer;
+  transition: ease-in 0.2s;
 }
 .airline-logo {
   flex: 1;
@@ -110,14 +120,14 @@
 .date-cell {
   font-weight: 700;
   font-size: 12px;
-  line-height:40px;
+  line-height: 40px;
   text-align: center;
   color: #52556f;
 }
 .price-row .cell-price {
   font-weight: 400;
   font-size: 14px;
-  line-height:40px;
+  line-height: 40px;
   text-align: center;
   color: #6e7491;
 }
@@ -130,13 +140,15 @@
   border: 1px solid #e9e8fc;
   cursor: pointer;
 }
-/* section-price-rating */
+/* table hover */
 
-.section-price-rating .section-title {
-  margin-bottom: 0;
-}
+/* section-price-rating */
+.price-chart,
 .title-wrapper {
-  margin-bottom: 16px;
+  margin-bottom: 24px;
+}
+.title-wrapper .section-title {
+  margin: 0;
 }
 .btn-blue {
   padding: 2px 8px;
