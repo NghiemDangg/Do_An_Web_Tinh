@@ -85,6 +85,11 @@
   .form-small-wrapper {
     width: 100%;
   }
+  /* payment page */
+  .icon-border{
+    top: 30%;
+    right: 4%;
+  }
 }
 
 @media (max-width: 720px) {
@@ -131,4 +136,19 @@
 }
 
 @media (max-width: 540px) {
+  .icon-border{
+    top: 27%;
+  }
+  .google,.apple{
+    border-bottom: 1px solid #605dec;
+  }
+  .paypal{
+    margin-left: 24%;
+  }
+  .crypto{
+    margin-right: 24%;
+  }
+  .card-payment{
+    border-radius: 0px;
+  }
 }
