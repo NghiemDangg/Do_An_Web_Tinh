@@ -43,6 +43,14 @@ const data = [
     description: 'Step back in time in the Gion district' ,
     price: '$681',
   },
+  {
+    slug: '#',
+    cover: './resources/assets/img/Korea.png',
+    title: 'Kōdaiji Temple',
+    city: 'Kyoto',
+    description: 'Step back in time in the Gion district' ,
+    price: '$681',
+  },
 ];
 
 function createCard(item) {

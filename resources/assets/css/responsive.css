@@ -2,6 +2,14 @@
   .section-homepage {
     height: 70vh;
   }
+
+  /* modal */
+  .modal-inner .description {
+    display: none;
+  }
+  .modal-header {
+    margin-bottom: 5%;
+  }
   /* input */
   .input {
     flex-wrap: wrap;
@@ -86,9 +94,14 @@
     width: 100%;
   }
   /* payment page */
-  .icon-border{
+  .icon-border {
     top: 30%;
     right: 4%;
+  }
+  /* modal */
+  .modal-inner {
+    width: 64%;
+    /* margin-top: 50px !important; */
   }
 }
 
@@ -133,22 +146,28 @@
   .margin-tablet {
     margin-left: 0px;
   }
+  /* modal */
+
+  .modal-inner {
+    width: 90%;
+  }
 }
 
 @media (max-width: 540px) {
-  .icon-border{
+  .icon-border {
     top: 27%;
   }
-  .google,.apple{
+  .google,
+  .apple {
     border-bottom: 1px solid #605dec;
   }
-  .paypal{
+  .paypal {
     margin-left: 24%;
   }
-  .crypto{
+  .crypto {
     margin-right: 24%;
   }
-  .card-payment{
+  .card-payment {
     border-radius: 0px;
   }
 }
