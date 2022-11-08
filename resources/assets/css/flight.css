@@ -54,7 +54,7 @@
 .table-wrapper::-webkit-scrollbar {
   display: none;
 }
-.table-row {
+.section-flight-table .table-row {
   padding: 16px;
   border-bottom: 1px solid #e9e8fc;
   transition-duration: 0.5s;
@@ -64,7 +64,13 @@
   cursor: pointer;
   transition: ease-in 0.2s;
 }
-.airline-logo {
+.table-row-focus {
+  background-color: #f6f6fe;
+  transition: ease-in 0.2s;
+  border: 1px solid #605dec !important;
+  border-radius: 4px;
+}
+.section-flight-table .airline-logo {
   flex: 1;
 }
 .flight-details {
@@ -107,7 +113,8 @@
   margin-bottom: 80px;
 }
 /* section-price-grid */
-.table-border {
+.table-border,
+.flight-data {
   margin-bottom: 40px;
 }
 .price-table {
@@ -182,19 +189,90 @@
   .search-btn {
     width: 20%;
   }
-  .section-flight-table, .section-title,.price-chart{
+  .section-flight-table,
+  .section-title,
+  .price-chart {
     text-align: center;
   }
-  .section-banner img{
+  .section-banner img {
     width: 100%;
   }
-  .price-table{
+  .price-table {
     margin: 0 auto;
   }
-  .title-wrapper{
+  .title-wrapper {
     justify-content: center;
   }
 }
+/* section-flight-table */
+.section-flight-table-small {
+  padding: 16px;
+  margin-top: 15%;
+  margin-bottom: 15%;
+  min-width: 400px;
+  height: auto;
+  background: #ffffff;
+  border: 1px solid #e9e8fc;
+  border-radius: 12px;
+}
+.section-flight-table-small .table-row {
+  padding: 8px;
+  width: auto;
+  height: auto;
+}
+.section-flight-table-small .airline-logo {
+  margin-right: 8px;
+}
+.section-flight-table-small .details .flight-details {
+  text-align: end;
+}
+
+/* section-payment */
+.section-payment {
+  margin-bottom: 40px;
+}
+.payment {
+}
+.payment-item {
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+.payment-name {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #27273f;
+}
+.btn-full {
+  padding: 12px 20px;
+  height: 48px;
+  background: #605dec;
+  border-radius: 4px;
+  text-align: center;
+}
+.btn-full a {
+  color: #ffff;
+}
+.btn-full:hover {
+  background-color: #1513a0;
+  transition: ease-in 0.2s;
+}
+
+@media (max-width: 1204px) {
+  .btn-payment-wrapper {
+    justify-content: center !important;
+  }
+  .payment {
+    justify-content: center !important;
+  }
+  .title {
+    text-align: center;
+  }
+  .heading-title {
+    text-align: center;
+  }
+}
+
 @media (max-width: 720px) {
   .search-btn {
     width: 30%;

@@ -1,25 +1,77 @@
 // close header-top
-const btn_close = document.querySelector(".header-top-icon");
-const headertop = document.querySelector(".header-top");
-btn_close.addEventListener("click", () => {
-    headertop.style.display = 'none';
+$(document).ready(function(){
+  $(".header-top-icon").click(function(){
+    $(".header-top").slideUp();
   });
+});
 
-  // slider
+// sticky header
 
-  $('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:true,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:2
-        },
-        1000:{
-            items:3
-        }
-    }
-})
+$(window).scroll(function(){
+  const sticky = $('.header-main'),
+      scroll = $(window).scrollTop();
+
+  if (scroll >= 10) sticky.addClass('sticky');
+  else sticky.removeClass('sticky');
+});
+
+// slider
+
+// data
+const data = [
+  {
+    slug: '#',
+    cover: './resources/assets/img/shanghai.png',
+    title: 'The Bund',
+    city: 'Shanghai',
+    description: 'China’s most international city',
+    price: '$598',
+  },
+  {
+    slug: '#',
+    cover: './resources/assets/img/sydney.png',
+    title: 'Sydney Opera House',
+    city: 'Sydney',
+    description: 'Sydney Opera House, Sydney',
+    price: '$981',
+  },
+  {
+    slug: '#',
+    cover: './resources/assets/img/Kyoto.png',
+    title: 'Kōdaiji Temple',
+    city: 'Kyoto',
+    description: 'Step back in time in the Gion district' ,
+    price: '$681',
+  },
+];
+
+function createCard(item) {
+    return `
+    <div class="item">
+    <div class="card" style="width: 18rem">
+      <div class="card-img-top">
+        <img
+          src="${item.cover}"
+          alt="${item.city}"
+          class="card-img-top"
+        />
+      </div>
+      <div class="card-body">
+        <div class="card-name">
+          <div class="title">
+            ${item.title}, <a href="">${item.city}</a>
+          </div>
+          <div class="price">${item.price}</div>
+        </div>
+        <p class="description">${item.description}</p>
+      </div>
+    </div>
+  </div>
+  
+    `;
+}
+
+data.map(createCard);
+document.querySelector(".owl-carousel").innerHTML = data
+  .map(createCard) 
+  .join("");

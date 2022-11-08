@@ -8,7 +8,7 @@
   margin-bottom: 24px;
 }
 .section-heading .description {
-  width: 100%;
+  width: 80%;
 }
 
 .heading {
@@ -132,10 +132,13 @@
 .btn-full a {
   color: #ffff;
 }
-.section-login{
+.section-login {
   margin-bottom: 50px;
 }
 /* section-flight-table */
+.flight-data {
+  margin-top: 35%;
+}
 .section-flight-table {
   padding: 16px;
   min-width: 400px;
@@ -184,22 +187,22 @@
 }
 
 @media (max-width: 1204px) {
-  .btn-payment-wrapper{
+  .btn-payment-wrapper {
     justify-content: center !important;
   }
-  .payment{
+  .payment {
     justify-content: center !important;
   }
-  .title{
+  .title {
     text-align: center;
   }
-  .description{
+  .description {
     text-align: center;
   }
-  .flight-details .description{
+  .flight-details .description {
     text-align: end;
   }
-  .heading-title{
+  .heading-title {
     text-align: center;
   }
-  }
+}

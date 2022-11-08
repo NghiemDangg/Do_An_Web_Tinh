@@ -12,6 +12,11 @@
       integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
       crossorigin="anonymous"
     />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
     <!-- owlcarousel -->
     <link
       rel="stylesheet"
@@ -214,66 +219,8 @@
           </div>
         </div>
         <div class="container">
-          <div class="row">
-            <div class="col-xl-4 col-md-6">
-              <div class="card" style="width: 18rem">
-                <div class="card-img-top">
-                  <img
-                    src="./resources/assets/img/shanghai.png"
-                    alt="The Bund, Shanghai"
-                    class="card-img-top"
-                  />
-                </div>
-                <div class="card-body">
-                  <div class="card-name">
-                    <div class="title">The Bund, <a href="">Shanghai</a></div>
-                    <div class="price">$598</div>
-                  </div>
-                  <p class="description">China’s most international city</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-4 col-md-6 mt-xs-3">
-              <div class="card" style="width: 18rem">
-                <div class="card-img-top">
-                  <img
-                    src="./resources/assets/img/sydney.png"
-                    alt="Sydney Opera House"
-                    class="card-img-top"
-                  />
-                </div>
-                <div class="card-body">
-                  <div class="card-name">
-                    <div class="title">
-                      Sydney Opera House,<a href="">Sydney</a>
-                    </div>
-                    <div class="price">$981</div>
-                  </div>
-                  <p class="description">
-                    Take a stroll along the famous harbor
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-4 mt-xs-3 mt-sm-3 mt-xl-0">
-              <div class="card" style="width: 18rem">
-                <div class="card-img-top">
-                  <img
-                    src="./resources/assets/img/Korea.png"
-                    alt="Seoul, South Korea"
-                    class="card-img-top"
-                  />
-                </div>
-                <div class="card-body">
-                  <div class="card-name">
-                    <div class="title">Seoul,<a href="">South Korea</a></div>
-                    <div class="price">$681</div>
-                  </div>
-                  <p class="description">
-                    This modern city is a traveler’s dream
-                  </p>
-                </div>
-              </div>
+          <div class="list-card">
+            <div class="owl-carousel owl-theme row">
             </div>
           </div>
         </div>
@@ -716,21 +663,12 @@
         </div>
       </div>
     </section>
+
     <!-- jquery -->
-    <script
-      src="https://code.jquery.com/jquery-3.6.1.min.js"
-      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./resources/js/index.js"></script>
     <!-- owlcarousel -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <!-- boostrap -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-      crossorigin="anonymous"
-    ></script>
-
     <!-- flatpickr -->
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script>
@@ -739,9 +677,25 @@
         altFormat: "F j, Y",
         dateFormat: "Y-m-d",
       });
+
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 2,
+          },
+          1000: {
+            items: 3,
+          },
+        },
+      });
     </script>
 
     <!-- js -->
-    <script src="./resources/js/index.js"></script>
   </body>
 </html>

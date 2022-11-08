@@ -42,7 +42,7 @@
 .check-row {
   margin-bottom: 24px;
 }
-.data-label{
+.data-label {
   margin-bottom: 0 !important;
 }
 
@@ -51,7 +51,11 @@
 .number {
   color: #6e7491;
   margin: 0 16px;
+  border: 0px !important;
+  text-align: center;
+  width: 10%;
 }
+
 .caculator-btn {
   width: 32px;
   height: 32px;
@@ -60,45 +64,45 @@
   text-align: center;
   line-height: 32px;
   cursor: pointer;
-  transition: ease-in-out .4s;
+  transition: ease-in-out 0.4s;
 }
-.caculator-btn:hover{
-  background-color: #E9E8FC;
+.caculator-btn:hover {
+  background-color: #e9e8fc;
 }
 .caculator-btn i {
   color: #605dec;
 }
-.payment{
+.payment {
   width: 100%;
 }
-.btn-wrapper{
+.btn-wrapper {
   margin-top: 60px;
 }
-.section-bag{
+.section-bag {
   margin-top: 200px;
 }
 
 @media (max-width: 1204px) {
-.section-bag{
-  display: none;
-}
-.btn-wrapper{
-  margin-bottom: 40px;
-  justify-content: center;
-}
-.btn-payment-wrapper{
-  justify-content: center !important;
-}
-.payment{
-  justify-content: center !important;
-}
-.title{
-  text-align: center;
-}
-.description{
-  text-align: center;
-}
-.heading-title{
-  text-align: center;
-}
+  .section-bag {
+    display: none;
+  }
+  .btn-wrapper {
+    margin-bottom: 40px;
+    justify-content: center;
+  }
+  .btn-payment-wrapper {
+    justify-content: center !important;
+  }
+  .payment {
+    justify-content: center !important;
+  }
+  .title {
+    text-align: center;
+  }
+  .description {
+    text-align: center;
+  }
+  .heading-title {
+    text-align: center;
+  }
 }

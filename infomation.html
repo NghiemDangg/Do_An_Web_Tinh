@@ -30,8 +30,6 @@
       href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@0;1&display=swap"
       rel="stylesheet"
     />
-    <!-- Jquery -->
-    <script src="jquery-3.6.0.min.js"></script>
     <!-- css -->
     <link rel="stylesheet" href="./resources/assets/css/style.css" />
     <link rel="stylesheet" href="./resources/assets/css/payment.css" />
@@ -275,12 +273,19 @@
                       class="col-7 d-flex justify-content-between align-items-center"
                     >
                       <div class="title data-label">Sophia Knowles</div>
-                      <div class="caculator d-flex align-items-center">
-                        <div class="caculator-btn">
+                      <div
+                        class="caculator d-flex align-items-center justify-content-end"
+                      >
+                        <div class="caculator-btn minus-btn">
                           <i class="ti-minus"></i>
                         </div>
-                        <div class="number description">1</div>
-                        <div class="caculator-btn">
+                        <input
+                          class="counter number"
+                          type="text"
+                          placeholder="value..."
+                          value="1"
+                        />
+                        <div class="caculator-btn plus-btn">
                           <i class="ti-plus"></i>
                         </div>
                       </div>
@@ -355,10 +360,9 @@
                 </div>
               </section>
               <section class="section-payment">
-                <div class="row justify-content-xl-end justify-content-lg-center
-                 justify-content-md-center
-                 justify-content-sm-center
-                 justify-content-center">
+                <div
+                  class="row justify-content-xl-end justify-content-lg-center justify-content-md-center justify-content-sm-center justify-content-center"
+                >
                   <div class="col-6">
                     <div class="payment">
                       <div class="payment-item d-flex">
@@ -569,6 +573,8 @@
         </div>
       </div>
     </section>
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./resources/js/infomation.js"></script>
   </body>
 </html>
