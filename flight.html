@@ -34,13 +34,6 @@
       href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@0;1&display=swap"
       rel="stylesheet"
     />
-
-    <!-- flatpickr -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
-    />
-
     <!-- css -->
     <link rel="stylesheet" href="./resources/assets/css/style.css" />
     <link rel="stylesheet" href="./resources/assets/css/flight.css" />
@@ -60,7 +53,7 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+          <span class="navbar-icon"><img src="./resources/assets/img/menu.svg" alt=""></span>
           </button>
           <div
             class="collapse navbar-collapse justify-content-end"
@@ -899,7 +892,7 @@
           <div class="modal-content">
             <!-- modal-header -->
             <div class="modal-header">
-              <h4 class="title" id="ModalLabel">Sign up for Tripma</h4>
+              <h4 class="title" id="ModalLabel">Sign up for Travel</h4>
               <button
                 type="button"
                 class="btn-close"
@@ -910,7 +903,7 @@
             <!-- modal-body -->
             <div class="modal-body">
               <div class="description">
-                Tripma is totally free to use. Sign up using your email address
+                Travel is totally free to use. Sign up using your email address
                 or phone number below to get started.
               </div>
               <form action="" class="modal-form login-form">
@@ -998,16 +991,6 @@
     </section>
      <!-- jquery -->
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <!-- flatpickr -->
-    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-
-    <script>
-      flatpickr("#myID", {
-        altInput: true,
-        altFormat: "F j, Y",
-        dateFormat: "Y-m-d",
-      });
-    </script>
     <script src="./resources/js/flight.js"></script>
     <script src="./resources/js/index.js"></script>
   </body>

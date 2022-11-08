@@ -42,17 +42,6 @@
       href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@0;1&display=swap"
       rel="stylesheet"
     />
-    <!-- flatpickr -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
-    />
-    <!-- boostrap -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-      crossorigin="anonymous"
-    ></script>
     <!-- css -->
     <link rel="stylesheet" href="./resources/assets/css/style.css" />
     <!-- responsive -->
@@ -79,7 +68,7 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-icon"><img src="./resources/assets/img/menu.svg" alt=""></span>
           </button>
           <div
             class="collapse navbar-collapse justify-content-end"
@@ -376,7 +365,7 @@
                       </div>
                       <p class="description">
                         What a great experience using Travel! I booked all of my
-                        flights for my gap year through Tripma and never had any
+                        flights for my gap year through Travel and never had any
                         issues. When I had to cancel a flight because of an
                         emergency, Travel support helped me
                         <a href="">read more...</a>
@@ -566,7 +555,7 @@
           <div class="modal-content">
             <!-- modal-header -->
             <div class="modal-header">
-              <h4 class="title" id="ModalLabel">Sign up for Tripma</h4>
+              <h4 class="title" id="ModalLabel">Sign up for Travel</h4>
               <button
                 type="button"
                 class="btn-close"
@@ -577,7 +566,7 @@
             <!-- modal-body -->
             <div class="modal-body">
               <div class="description">
-                Tripma is totally free to use. Sign up using your email address
+                Travel is totally free to use. Sign up using your email address
                 or phone number below to get started.
               </div>
               <form action="" class="modal-form login-form">
@@ -669,15 +658,8 @@
     <script src="./resources/js/index.js"></script>
     <!-- owlcarousel -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <!-- flatpickr -->
-    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+   
     <script>
-      flatpickr("#myID", {
-        altInput: true,
-        altFormat: "F j, Y",
-        dateFormat: "Y-m-d",
-      });
-
       $(".owl-carousel").owlCarousel({
         loop: true,
         margin: 10,

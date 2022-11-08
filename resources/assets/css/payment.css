@@ -107,7 +107,9 @@
 .modal-footer {
   display: block;
 }
-
+.modal-btn{
+  width: 58%;
+}
 .btn-border {
   padding: 12px 20px;
   width: 191px;

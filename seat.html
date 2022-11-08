@@ -35,6 +35,7 @@
     <link rel="stylesheet" href="./resources/assets/css/seat.css" />
     <link rel="stylesheet" href="./resources/assets/css/user.css" />
     <link rel="stylesheet" href="./resources/assets/css/payment.css" />
+    <link rel="stylesheet" href="./resources/assets/css/responsive.css">
   </head>
   <body>
     <header class="header-main">
@@ -59,7 +60,7 @@
                     style="width: 50px; height: 50px"
                   />
                 </button>
-                <a class="navbar-brand" href="#" style="margin-left: 20px"
+                <a class="navbar-brand" href="./index.html" style="margin-left: 20px"
                   >Travel</a
                 >
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -139,7 +140,10 @@
                           />
                         </div>
                         <div class="feature-list">
-                          <div class="title feature-name">Economy</div>
+                          <div class="feature-data d-flex">
+                            <div class="title feature-name">Economy</div>
+                            <div class="selected-btn">Selected</div>
+                          </div>
                           <div class="description">
                             Rest and recharge during your flight with extended
                             leg room, personalized service, and a multi-course
@@ -198,7 +202,11 @@
                           />
                         </div>
                         <div class="feature-list">
-                          <div class="title feature-name">Business class</div>
+                          <div class="feature-data d-flex">
+                            <div class="title feature-name">Business class</div>
+                            <div class="selected-btn business-class d-none">Selected</div>
+                          </div>
+                          
                           <div class="description">
                             Rest and recharge during your flight with extended
                             leg room, personalized service, and a multi-course
@@ -314,7 +322,7 @@
             <div class="modal-content">
               <!-- modal-header -->
               <div class="modal-header">
-                <h4 class="title" id="ModalLabel">Sign up for Tripma</h4>
+                <h4 class="title" id="ModalLabel">Sign up for Travel</h4>
                 <button
                   type="button"
                   class="btn-close"
@@ -325,7 +333,7 @@
               <!-- modal-body -->
               <div class="modal-body">
                 <div class="description">
-                  Tripma is totally free to use. Sign up using your email
+                  Travel is totally free to use. Sign up using your email
                   address or phone number below to get started.
                 </div>
                 <form action="" class="modal-form login-form">
@@ -418,5 +426,6 @@
 
     <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./resources/js/seat.js"></script>
   </body>
 </html>

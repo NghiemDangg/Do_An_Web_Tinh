@@ -1,18 +1,18 @@
 // close header-top
-$(document).ready(function(){
-  $(".header-top-icon").click(function(){
+$(document).ready(function () {
+  $(".header-top-icon").click(function () {
     $(".header-top").slideUp();
   });
 });
 
 // sticky header
 
-$(window).scroll(function(){
-  const sticky = $('.header-main'),
-      scroll = $(window).scrollTop();
+$(window).scroll(function () {
+  const sticky = $(".header-main"),
+    scroll = $(window).scrollTop();
 
-  if (scroll >= 10) sticky.addClass('sticky');
-  else sticky.removeClass('sticky');
+  if (scroll >= 10) sticky.addClass("sticky");
+  else sticky.removeClass("sticky");
 });
 
 // slider
@@ -20,41 +20,41 @@ $(window).scroll(function(){
 // data
 const data = [
   {
-    slug: '#',
-    cover: './resources/assets/img/shanghai.png',
-    title: 'The Bund',
-    city: 'Shanghai',
-    description: 'China’s most international city',
-    price: '$598',
+    slug: "#",
+    cover: "./resources/assets/img/shanghai.png",
+    title: "The Bund",
+    city: "Shanghai",
+    description: "China’s most international city",
+    price: "$598",
   },
   {
-    slug: '#',
-    cover: './resources/assets/img/sydney.png',
-    title: 'Sydney Opera House',
-    city: 'Sydney',
-    description: 'Sydney Opera House, Sydney',
-    price: '$981',
+    slug: "#",
+    cover: "./resources/assets/img/sydney.png",
+    title: "Sydney Opera House",
+    city: "Sydney",
+    description: "Sydney Opera House, Sydney",
+    price: "$981",
   },
   {
-    slug: '#',
-    cover: './resources/assets/img/Kyoto.png',
-    title: 'Kōdaiji Temple',
-    city: 'Kyoto',
-    description: 'Step back in time in the Gion district' ,
-    price: '$681',
+    slug: "#",
+    cover: "./resources/assets/img/Kyoto.png",
+    title: "Kōdaiji Temple",
+    city: "Kyoto",
+    description: "Step back in time in the Gion district",
+    price: "$681",
   },
   {
-    slug: '#',
-    cover: './resources/assets/img/Korea.png',
-    title: 'Kōdaiji Temple',
-    city: 'Kyoto',
-    description: 'Step back in time in the Gion district' ,
-    price: '$681',
+    slug: "#",
+    cover: "./resources/assets/img/Korea.png",
+    title: "Kōdaiji Temple",
+    city: "Kyoto",
+    description: "Step back in time in the Gion district",
+    price: "$681",
   },
 ];
 
 function createCard(item) {
-    return `
+  return `
     <div class="item">
     <div class="card" style="width: 18rem">
       <div class="card-img-top">
@@ -79,7 +79,6 @@ function createCard(item) {
     `;
 }
 
-data.map(createCard);
 document.querySelector(".owl-carousel").innerHTML = data
-  .map(createCard) 
+  .map(createCard)
   .join("");

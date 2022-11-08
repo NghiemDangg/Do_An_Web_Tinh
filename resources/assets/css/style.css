@@ -22,16 +22,6 @@ body {
 .navbar-expand-lg .navbar-nav {
   background-color: #fff;
 }
-/* flatpickr-calendar */
-.flatpickr-calendar {
-}
-.flatpickr-months {
-}
-
-.flatpickr-day.selected {
-  background-color: #605dec !important;
-  border-color: #605dec !important;
-}
 /* Modal */
 .modal {
   --bs-modal-width: auto;
@@ -68,6 +58,7 @@ body {
   margin-top: 5%;
 }
 .modal-header {
+  align-items: unset !important;
 }
 .modal-close {
   color: #6e7491;
