@@ -55,7 +55,7 @@ body {
   border-radius: 12px;
   position: relative;
   margin: 0 auto;
-  margin-top: 5%;
+  margin-top: 2%;
 }
 .modal-header {
   align-items: unset !important;
@@ -227,6 +227,14 @@ body {
 .nav-item {
   margin-left: 16px !important;
   margin-right: 16px !important;
+}
+.navbar-toggler{
+  border: unset;
+}
+.navbar-toggler:focus{
+  outline: unset !important;
+  box-shadow: unset !important;
+  
 }
 .nav-link {
   color: #7c8db0;

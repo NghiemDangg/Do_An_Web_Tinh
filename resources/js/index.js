@@ -5,6 +5,12 @@ $(document).ready(function () {
   });
 });
 
+$(document).ready(function () {
+  $(".noti-close").click(function () {
+    $(".notification").addClass("d-none");
+  });
+});
+
 // sticky header
 
 $(window).scroll(function () {
