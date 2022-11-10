@@ -144,6 +144,10 @@
   font-size: 13px;
   line-height: 22px;
 }
+/* modal-btn */
+.modal-btn {
+  width: 100% !important;
+}
 .selected-btn {
   font-weight: 700;
   font-size: 14px;
