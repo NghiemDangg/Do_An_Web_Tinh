@@ -100,100 +100,100 @@
         <section class="section section-input">
           <div class="row">
             <div class="col-xl-9 col-lg-12 col-md-12 col-sm-12 col-12">
-              <div class="input d-flex flex-row">
-                <div class="input-box departure">
-                  <div class="icon-wrapper">
-                    <img
-                      class="input-icon"
-                      src="./resources/assets/img/departure.svg"
-                      alt=""
+              <form action="">
+                <div class="input d-flex flex-row">
+                  <div class="input-box departure">
+                    <div class="icon-wrapper">
+                      <img
+                        class="input-icon"
+                        src="./resources/assets/img/departure.svg"
+                        alt=""
+                      />
+                    </div>
+                    <select
+                      class="form-select first-child"
+                      aria-label="Default select example"
+                    >
+                      <option selected>From where?</option>
+                      <option value="1">SFO</option>
+                      <option value="2">ATL</option>
+                      <option value="3">LAX</option>
+                      <option value="4">SLT</option>
+                      <option value="5">PVG</option>
+                      <option value="6">MSP</option>
+                      <option value="7">NRT</option>
+                      <option value="8">IFK</option>
+                      <option value="9">LAX</option>
+                      <option value="10">LAX</option>
+                    </select>
+                  </div>
+
+                  <div class="input-box arrival">
+                    <div class="icon-wrapper">
+                      <img
+                        class="input-icon"
+                        src="./resources/assets/img/arrival.svg"
+                        alt=""
+                      />
+                    </div>
+                    <select
+                      class="form-select"
+                      aria-label="Default select example"
+                    >
+                      <option selected>Where to?</option>
+                      <option value="1">NRT</option>
+                      <option value="2">ATL</option>
+                      <option value="3">LAX</option>
+                      <option value="4">SLT</option>
+                      <option value="5">PVG</option>
+                      <option value="6">MSP</option>
+                      <option value="7">NRT</option>
+                      <option value="8">IFK</option>
+                      <option value="9">LAX</option>
+                      <option value="10">LAX</option>
+                    </select>
+                  </div>
+
+                  <div class="input-box calendar">
+                    <input
+                      class="form-select"
+                      placeholder="Depart - Return"
+                      id="myID"
+                      type="datetime-local"
                     />
                   </div>
-                  <select
-                    class="form-select first-child"
-                    aria-label="Default select example"
-                  >
-                    <option value="1">SFO</option>
-                    <option value="2">ATL</option>
-                    <option value="3">LAX</option>
-                    <option value="4">SLT</option>
-                    <option value="5">PVG</option>
-                    <option value="6">MSP</option>
-                    <option value="7">NRT</option>
-                    <option value="8">IFK</option>
-                    <option value="9">LAX</option>
-                    <option value="10">LAX</option>
-                  </select>
-                </div>
 
-                <div class="input-box arrival">
-                  <div class="icon-wrapper">
-                    <img
-                      class="input-icon"
-                      src="./resources/assets/img/arrival.svg"
-                      alt=""
-                    />
+                  <div class="input-box adult">
+                    <div class="icon-wrapper">
+                      <img
+                        class="input-icon"
+                        src="./resources/assets/img/person solid.svg"
+                        alt=""
+                      />
+                    </div>
+                    <select
+                      class="form-select"
+                      aria-label="Default select example"
+                    >
+                      <option selected>Adult</option>
+                      <option value="1">1 adult</option>
+                      <option value="2">2 adult</option>
+                    </select>
                   </div>
-                  <select
-                    class="form-select"
-                    aria-label="Default select example"
-                  >
-                    <option value="1">NRT</option>
-                    <option value="2">ATL</option>
-                    <option value="3">LAX</option>
-                    <option value="4">SLT</option>
-                    <option value="5">PVG</option>
-                    <option value="6">MSP</option>
-                    <option value="7">NRT</option>
-                    <option value="8">IFK</option>
-                    <option value="9">LAX</option>
-                    <option value="10">LAX</option>
-                  </select>
-                </div>
 
-                <div class="input-box calendar">
-                  <div class="icon-wrapper">
-                    <img
-                      class="input-icon"
-                      src="./resources/assets/img/calendar with dates.svg"
-                      alt=""
-                    />
-                  </div>
-                  <input
-                    class="form-select"
-                    placeholder="Depart - Return"
-                    id="myID"
-                  />
-                </div>
-
-                <div class="input-box adult">
-                  <div class="icon-wrapper">
-                    <img
-                      class="input-icon"
-                      src="./resources/assets/img/person solid.svg"
-                      alt=""
-                    />
-                  </div>
-                  <select
-                    class="form-select"
-                    aria-label="Default select example"
-                  >
-                    <option selected>Adult</option>
-                    <option value="1">1 adult</option>
-                    <option value="2">2 adult</option>
-                  </select>
-                </div>
-
-                <div class="input-box search-btn">
-                  <div class="icon-wrapper">
-                    <a href="./flight.html">Search</a>
+                  <div class="input-box search-btn btn-responsive">
+                    <span>
+                      <a href="./flight.html">Search</a>
+                    </span>
                   </div>
                 </div>
-              </div>
+              </form>
             </div>
           </div>
         </section>
+
         <!-- filter -->
+
         <section class="section-filter">
           <div class="row d-flex">
             <div class="col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12">

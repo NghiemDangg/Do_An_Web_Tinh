@@ -113,49 +113,66 @@
             </section>
             <section class="section section-form">
               <div class="title">Passenger 1 (Adult)</div>
-              <form action="">
+              <form action="" id="information-form">
                 <div class="input-wrapper">
                   <div class="row">
                     <div
                       class="col-xl-9 col-lg-12 d-flex justify-content-between"
                     >
-                      <input
-                        type="text"
-                        class="form-input input-small"
-                        placeholder="Firt name*"
-                        required
-                      />
-
-                      <input
-                        type="text"
-                        class="form-input input-small"
-                        placeholder="Middle"
-                      />
-
-                      <input
-                        type="text"
-                        class="form-input input-small"
-                        placeholder="Last name*"
-                        required
-                      />
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          class="form-input input-small input-box"
+                          placeholder="Firt name*"
+                          required
+                          type="text"
+                          id="name"
+                          rules="required"
+                        />
+                        <div id="error" class="from_message"></div>
+                      </div>
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          class="form-input input-small input-box"
+                          placeholder="Middle"
+                        />
+                        <div id="error" class="from_message"></div>
+                      </div>
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          class="form-input input-small input-box"
+                          placeholder="Last name*"
+                          required
+                          rules="required"
+                        />
+                        <div id="error" class="from_message"></div>
+                      </div>
                     </div>
                   </div>
 
                   <div class="row">
                     <div class="col-xl-9 col-lg-12 d-flex">
-                      <input
-                        type="text"
-                        name="suffix"
-                        class="form-input input-small"
-                        placeholder="Suffix"
-                      />
-                      <input
-                        type="text"
-                        name="dob"
-                        class="form-input dob-input"
-                        placeholder="Date of birth*"
-                        required
-                      />
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          name="suffix"
+                          class="form-input input-small input-box"
+                          placeholder="Suffix"
+                        />
+                        <div id="error" class="from_message"></div>
+                      </div>
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          name="dob"
+                          class="form-input dob-input input-box"
+                          placeholder="Date of birth*"
+                          rules="required"
+                        />
+                        <div id="error" class="from_message"></div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -164,18 +181,24 @@
                     <div
                       class="col-xl-9 col-lg-12 d-flex justify-content-between"
                     >
-                      <input
-                        type="email"
-                        class="email form-input larger-input"
-                        placeholder="Email address*"
-                        required
-                      />
-                      <input
-                        type="phone"
-                        class="email form-input larger-input"
-                        placeholder="Phone number*"
-                        required
-                      />
+                      <div class="form-group">
+                        <input
+                          type="email"
+                          class="email form-input larger-input input-box"
+                          placeholder="Email address*"
+                          rules="required|email"
+                        />
+                        <div id="error" class="from_message"></div>
+                      </div>
+                      <div class="form-group">
+                        <input
+                          type="phone"
+                          class="email form-input larger-input input-box"
+                          placeholder="Phone number*"
+                          rules="required"
+                        />
+                        <div id="error" class="from_message"></div>
+                      </div>
                     </div>
                   </div>
                   <div class="row">
@@ -308,7 +331,7 @@
                   <div type="button" class="btn-border text-center">
                     <a href="./payment.html"> Save and close</a>
                   </div>
-                  <div type="button" class="btn-full">
+                  <div type="submit" class="btn-full">
                     <a href="./seat.html">Select seats</a>
                   </div>
                 </div>
@@ -611,6 +634,7 @@
     <script src="./resources//js/validator.js"></script>
     <script>
       Validator("#register-form");
+      Validator("#information-form");
     </script>
   </body>
 </html>

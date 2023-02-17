@@ -53,7 +53,6 @@ function Validator(formSelector) {
           formRules[input.name] = [varlidatorRules[rule]];
         }
       }
-      console.log(inputs);
       // Lắng nghe sự kiện để validate (blur, change, ...)
 
       input.onblur = handleValidate;

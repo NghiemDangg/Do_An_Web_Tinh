@@ -107,9 +107,6 @@
 .modal-footer {
   display: block;
 }
-.modal-btn{
-  width: 58%;
-}
 .btn-border {
   padding: 12px 20px;
   width: 191px;
@@ -143,7 +140,7 @@
 }
 .section-flight-table {
   padding: 16px;
-  min-width: 400px;
+  /* min-width: 400px; */
   height: auto;
   background: #ffffff;
   border: 1px solid #e9e8fc;
