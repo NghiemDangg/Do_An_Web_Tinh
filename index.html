@@ -5,7 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Travel</title>
-    <link rel="shortcut icon" href="./resources/assets/img/travel.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="./resources/assets/img/travel.png"
+      type="image/x-icon"
+    />
     <!-- boostrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
@@ -47,6 +51,8 @@
     <link rel="stylesheet" href="./resources/assets/css/style.css" />
     <!-- responsive -->
     <link rel="stylesheet" href="./resources/assets/css/responsive.css" />
+    <!-- validator -->
+    <link rel="stylesheet" href="./resources//assets//css/validator.css" />
   </head>
   <body>
     <header class="header-main">
@@ -69,7 +75,9 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-icon"><img src="./resources/assets/img/menu.svg" alt=""></span>
+            <span class="navbar-icon"
+              ><img src="./resources/assets/img/menu.svg" alt=""
+            /></span>
           </button>
           <div
             class="collapse navbar-collapse justify-content-end"
@@ -110,92 +118,94 @@
       >
         <div class="homepage-slogan"></div>
         <!-- input-form -->
-        <div class="input d-flex flex-row">
-          <div class="input-box departure">
-            <div class="icon-wrapper">
-              <img
-                class="input-icon"
-                src="./resources/assets/img/departure.svg"
-                alt=""
+        <form action="">
+          <div class="input d-flex flex-row">
+            <div class="input-box departure">
+              <div class="icon-wrapper">
+                <img
+                  class="input-icon"
+                  src="./resources/assets/img/departure.svg"
+                  alt=""
+                />
+              </div>
+              <select
+                class="form-select first-child"
+                aria-label="Default select example"
+              >
+                <option selected>From where?</option>
+                <option value="1">SFO</option>
+                <option value="2">ATL</option>
+                <option value="3">LAX</option>
+                <option value="4">SLT</option>
+                <option value="5">PVG</option>
+                <option value="6">MSP</option>
+                <option value="7">NRT</option>
+                <option value="8">IFK</option>
+                <option value="9">LAX</option>
+                <option value="10">LAX</option>
+              </select>
+            </div>
+
+            <div class="input-box arrival">
+              <div class="icon-wrapper">
+                <img
+                  class="input-icon"
+                  src="./resources/assets/img/arrival.svg"
+                  alt=""
+                />
+              </div>
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Where to?</option>
+                <option value="1">NRT</option>
+                <option value="2">ATL</option>
+                <option value="3">LAX</option>
+                <option value="4">SLT</option>
+                <option value="5">PVG</option>
+                <option value="6">MSP</option>
+                <option value="7">NRT</option>
+                <option value="8">IFK</option>
+                <option value="9">LAX</option>
+                <option value="10">LAX</option>
+              </select>
+            </div>
+
+            <div class="input-box calendar">
+              <div class="icon-wrapper">
+                <img
+                  class="input-icon"
+                  src="./resources/assets/img/calendar with dates.svg"
+                  alt=""
+                />
+              </div>
+              <input
+                class="form-select"
+                placeholder="Depart - Return"
+                id="myID"
               />
             </div>
-            <select
-              class="form-select first-child"
-              aria-label="Default select example"
-            >
-              <option selected>From where?</option>
-              <option value="1">SFO</option>
-              <option value="2">ATL</option>
-              <option value="3">LAX</option>
-              <option value="4">SLT</option>
-              <option value="5">PVG</option>
-              <option value="6">MSP</option>
-              <option value="7">NRT</option>
-              <option value="8">IFK</option>
-              <option value="9">LAX</option>
-              <option value="10">LAX</option>
-            </select>
-          </div>
 
-          <div class="input-box arrival">
-            <div class="icon-wrapper">
-              <img
-                class="input-icon"
-                src="./resources/assets/img/arrival.svg"
-                alt=""
-              />
+            <div class="input-box adult">
+              <div class="icon-wrapper">
+                <img
+                  class="input-icon"
+                  src="./resources/assets/img/person solid.svg"
+                  alt=""
+                />
+              </div>
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Adult</option>
+                <option value="1">1 adult</option>
+                <option value="2">2 adult</option>
+              </select>
             </div>
-            <select class="form-select" aria-label="Default select example">
-              <option selected>Where to?</option>
-              <option value="1">NRT</option>
-              <option value="2">ATL</option>
-              <option value="3">LAX</option>
-              <option value="4">SLT</option>
-              <option value="5">PVG</option>
-              <option value="6">MSP</option>
-              <option value="7">NRT</option>
-              <option value="8">IFK</option>
-              <option value="9">LAX</option>
-              <option value="10">LAX</option>
-            </select>
-          </div>
 
-          <div class="input-box calendar">
-            <div class="icon-wrapper">
-              <img
-                class="input-icon"
-                src="./resources/assets/img/calendar with dates.svg"
-                alt=""
-              />
-            </div>
-            <input
-              class="form-select"
-              placeholder="Depart - Return"
-              id="myID"
-            />
-          </div>
-
-          <div class="input-box adult">
-            <div class="icon-wrapper">
-              <img
-                class="input-icon"
-                src="./resources/assets/img/person solid.svg"
-                alt=""
-              />
-            </div>
-            <select class="form-select" aria-label="Default select example">
-              <option selected>Adult</option>
-              <option value="1">1 adult</option>
-              <option value="2">2 adult</option>
-            </select>
-          </div>
-
-          <div class="input-box search-btn btn-responsive">
-            <div class="icon-wrapper">
-              <a href="./flight.html">Search</a>
+            <div class="input-box search-btn btn-responsive">
+              <div class="icon-wrapper">
+                <a href="./flight.html">Search</a>
+              </div>
             </div>
           </div>
-        </div>
+        </form>
       </section>
       <!-- card -->
       <section class="section section-card">
@@ -210,8 +220,7 @@
         </div>
         <div class="container">
           <div class="list-card">
-            <div class="owl-carousel owl-theme row">
-            </div>
+            <div class="owl-carousel owl-theme row"></div>
           </div>
         </div>
       </section>
@@ -570,42 +579,54 @@
                 Travel is totally free to use. Sign up using your email address
                 or phone number below to get started.
               </div>
-              <form action="" class="modal-form login-form">
-                <input
-                  type="email"
-                  placeholder="Email or phone number"
-                  class="form-input modal-input"
-                  required
-                />
-                <input
-                  type="password"
-                  placeholder="Password"
-                  class="form-input modal-input"
-                  required
-                />
+              <form action="" class="modal-form login-form" id="register-form">
+                <div class="form-group">
+                  <input
+                    name="email"
+                    type="text"
+                    id="email"
+                    placeholder="Email or phone number"
+                    class="form-input modal-input"
+                    rules="required|email"
+                  />
+                  <span class="from_message"></span>
+                </div>
+                <div class="form-group">
+                  <input
+                    name="password"
+                    type="text"
+                    id="password"
+                    placeholder="Password"
+                    class="form-input modal-input"
+                    rules="required|password"
+                  />
+                  <span class="from_message"></span>
+                </div>
                 <div class="check-wrapper">
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id=""
-                    />
-                    <label class="form-check-label" for="">
-                      I agree to the
-                      <a href="">terms and conditions</a>
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id=""
-                    />
-                    <label class="form-check-label" for="">
-                      Send me the latest deal alerts
-                    </label>
+                  <div class="form_group">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="checkbox"
+                      />
+                      <label class="form-check-label" for="">
+                        I agree to the
+                        <a href="">terms and conditions</a>
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="checkbox"
+                      />
+                      <label class="form-check-label" for="">
+                        Send me the latest deal alerts
+                      </label>
+                    </div>
                   </div>
                 </div>
 
@@ -659,9 +680,11 @@
     <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./resources/js/index.js"></script>
+    <script src="./resources//js/validator.js"></script>
+
     <!-- owlcarousel -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-   
+
     <script>
       $(".owl-carousel").owlCarousel({
         loop: true,
@@ -679,6 +702,10 @@
           },
         },
       });
+    </script>
+
+    <script>
+      Validator("#register-form");
     </script>
 
     <!-- js -->
