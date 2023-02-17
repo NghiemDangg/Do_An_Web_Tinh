@@ -940,18 +940,24 @@
                     class="form-input modal-input input-box"
                     rules="required|email"
                   />
-                  <span class="from_message"></span>
+                  <div id="error" class="from_message"></div>
                 </div>
                 <div class="form-group">
                   <input
                     name="password"
-                    type="text"
+                    type="password"
                     id="password"
                     placeholder="Password"
                     class="form-input modal-input input-box"
                     rules="required|password"
                   />
-                  <span class="from_message"></span>
+                  <div class="icon-password eye-open hidden">
+                    <i class="bi bi-eye"></i>
+                  </div>
+                  <div class="icon-password eye-close">
+                    <i class="bi bi-eye-slash"></i>
+                  </div>
+                  <div id="error" class="from_message"></div>
                 </div>
                 <div class="check-wrapper">
                   <div class="form_group">
@@ -1027,6 +1033,7 @@
         </div>
       </div>
     </section>
+
     <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./resources/js/flight.js"></script>

@@ -19,16 +19,15 @@ function Validator(formSelector) {
       return value ? undefined : "Vui lòng nhập trường này";
     },
     password: function (value) {
-      let regex =
-        /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+      let regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/;
       return regex.test(value)
         ? undefined
-        : "Tối thiểu tám ký tự, chữ cái viết hoa, viết thường, số và ký tự đặc biệt";
+        : "Tối thiểu tám ký tự,ít nhất một chữ cái viết hoa, một chữ cái viết thường và một số";
     },
-    // min: function (value) {
-    //   let regex = /^[A-Za-z0-9]{6,32}$/;
-    //   return regex.test(value) ? undefined : "Username tối thiểu 6 ký tự";
-    // },
+    email: function (value) {
+      let regex = /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
+      return regex.test(value) ? undefined : "Email không hợp lệ";
+    },
     phoneNumber: function (value) {
       let regex = /^0[9|8|1|7|3|5]([0-9]|\s|-|\.){8,12}$/;
       return regex.test(value) ? undefined : "Số điện thoại không hợp lệ";
@@ -79,7 +78,7 @@ function Validator(formSelector) {
 
         if (formGroup) {
           let formInput = formGroup.querySelector(".input-box");
-          //   formInput.classList.add("invalid");
+          formInput.classList.add("invalid");
           let formMessage = formGroup.querySelector(".from_message");
           if (formMessage) {
             formMessage.innerText = errorMessage;
@@ -120,3 +119,20 @@ function Validator(formSelector) {
     }
   };
 }
+
+//show/hide password
+
+const inputPassword = document.querySelector("#password");
+const eyeOpen = document.querySelector(".eye-open");
+const eyeClose = document.querySelector(".eye-close");
+
+eyeOpen.addEventListener("click", function () {
+  eyeOpen.classList.add("hidden");
+  eyeClose.classList.remove("hidden");
+  inputPassword.setAttribute("type", "password");
+});
+eyeClose.addEventListener("click", function () {
+  eyeOpen.classList.remove("hidden");
+  eyeClose.classList.add("hidden");
+  inputPassword.setAttribute("type", "text");
+});

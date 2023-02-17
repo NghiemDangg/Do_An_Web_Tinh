@@ -5,7 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Payment method</title>
-    <link rel="shortcut icon" href="./resources/assets/img/travel.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="./resources/assets/img/travel.png"
+      type="image/x-icon"
+    />
     <!-- boostrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
@@ -53,7 +57,9 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-          <span class="navbar-icon"><img src="./resources/assets/img/menu.svg" alt=""></span>
+            <span class="navbar-icon"
+              ><img src="./resources/assets/img/menu.svg" alt=""
+            /></span>
           </button>
           <div
             class="collapse navbar-collapse justify-content-end"
@@ -565,42 +571,60 @@
                 Travel is totally free to use. Sign up using your email address
                 or phone number below to get started.
               </div>
-              <form action="" class="modal-form login-form">
-                <input
-                  type="email"
-                  placeholder="Email or phone number"
-                  class="form-input modal-input"
-                  required
-                />
-                <input
-                  type="password"
-                  placeholder="Password"
-                  class="form-input modal-input"
-                  required
-                />
-                <div class="check-wrapper">
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id=""
-                    />
-                    <label class="form-check-label" for="">
-                      I agree to the
-                      <a href="">terms and conditions</a>
-                    </label>
+              <form action="" class="modal-form login-form" id="register-form">
+                <div class="form-group">
+                  <input
+                    name="email"
+                    type="text"
+                    id="email"
+                    placeholder="Email or phone number"
+                    class="form-input modal-input input-box"
+                    rules="required|email"
+                  />
+                  <div id="error" class="from_message"></div>
+                </div>
+                <div class="form-group">
+                  <input
+                    name="password"
+                    type="password"
+                    id="password"
+                    placeholder="Password"
+                    class="form-input modal-input input-box"
+                    rules="required|password"
+                  />
+                  <div class="icon-password eye-open hidden">
+                    <i class="bi bi-eye"></i>
                   </div>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id=""
-                    />
-                    <label class="form-check-label" for="">
-                      Send me the latest deal alerts
-                    </label>
+                  <div class="icon-password eye-close">
+                    <i class="bi bi-eye-slash"></i>
+                  </div>
+                  <div id="error" class="from_message"></div>
+                </div>
+                <div class="check-wrapper">
+                  <div class="form_group">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="checkbox"
+                      />
+                      <label class="form-check-label" for="">
+                        I agree to the
+                        <a href="">terms and conditions</a>
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="checkbox"
+                      />
+                      <label class="form-check-label" for="">
+                        Send me the latest deal alerts
+                      </label>
+                    </div>
                   </div>
                 </div>
 
@@ -653,5 +677,9 @@
     <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./resources/js/index.js"></script>
+    <script src="./resources//js/validator.js"></script>
+    <script>
+      Validator("#register-form");
+    </script>
   </body>
 </html>

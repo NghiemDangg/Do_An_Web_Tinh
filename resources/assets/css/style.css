@@ -69,11 +69,21 @@ body {
 .modal-body {
   margin-bottom: 12px;
 }
+.icon-password {
+  position: absolute;
+  bottom: 174px;
+  right: 10px;
+  font-size: 22px;
+}
+.hidden {
+  display: none;
+}
 .description {
   margin-bottom: 12px;
 }
 .input {
-  width: 90%;
+  width: 94%;
+  margin: 0 auto;
 }
 .modal-input {
   margin-bottom: 12px;
@@ -82,7 +92,7 @@ body {
 .modal-form {
 }
 .form-input {
-  width: 100%;
+  width: 100% !important;
   height: 48px;
   padding: 8px 12px;
   font-weight: 400;
@@ -92,12 +102,17 @@ body {
   border: 1px solid #a1b0cc;
   border-radius: 4px;
 }
+.form-group {
+  height: 82px;
+  margin-bottom: 8px;
+}
 .form-input:focus {
   border: 1px solid #605dec;
   outline: none;
   transition: all 0.4s ease-in-out;
 }
 .check-wrapper {
+  margin-top: 24px;
   margin-bottom: 12px;
 }
 .form-check {
@@ -228,13 +243,12 @@ body {
   margin-left: 16px !important;
   margin-right: 16px !important;
 }
-.navbar-toggler{
+.navbar-toggler {
   border: unset;
 }
-.navbar-toggler:focus{
+.navbar-toggler:focus {
   outline: unset !important;
   box-shadow: unset !important;
-  
 }
 .nav-link {
   color: #7c8db0;
@@ -514,4 +528,11 @@ footer {
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
+}
+
+.from_message {
+  color: red;
+}
+.invalid {
+  border: 1px solid red;
 }
