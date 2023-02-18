@@ -119,60 +119,45 @@
                     <div
                       class="col-xl-9 col-lg-12 d-flex justify-content-between"
                     >
-                      <div class="form-group">
-                        <input
-                          type="text"
-                          class="form-input input-small input-box"
-                          placeholder="Firt name*"
-                          required
-                          type="text"
-                          id="name"
-                          rules="required"
-                        />
-                        <div id="error" class="from_message"></div>
-                      </div>
-                      <div class="form-group">
-                        <input
-                          type="text"
-                          class="form-input input-small input-box"
-                          placeholder="Middle"
-                        />
-                        <div id="error" class="from_message"></div>
-                      </div>
-                      <div class="form-group">
-                        <input
-                          type="text"
-                          class="form-input input-small input-box"
-                          placeholder="Last name*"
-                          required
-                          rules="required"
-                        />
-                        <div id="error" class="from_message"></div>
-                      </div>
+                      <input
+                        type="text"
+                        class="form-input input-small input-box"
+                        placeholder="Firt name*"
+                        required
+                        type="text"
+                        id="name"
+                        rules="required"
+                      />
+                      <input
+                        type="text"
+                        class="form-input input-small input-box"
+                        placeholder="Middle"
+                      />
+                      <input
+                        type="text"
+                        class="form-input input-small input-box"
+                        placeholder="Last name*"
+                        required
+                        rules="required"
+                      />
                     </div>
                   </div>
 
                   <div class="row">
                     <div class="col-xl-9 col-lg-12 d-flex">
-                      <div class="form-group">
-                        <input
-                          type="text"
-                          name="suffix"
-                          class="form-input input-small input-box"
-                          placeholder="Suffix"
-                        />
-                        <div id="error" class="from_message"></div>
-                      </div>
-                      <div class="form-group">
-                        <input
-                          type="text"
-                          name="dob"
-                          class="form-input dob-input input-box"
-                          placeholder="Date of birth*"
-                          rules="required"
-                        />
-                        <div id="error" class="from_message"></div>
-                      </div>
+                      <input
+                        type="text"
+                        name="suffix"
+                        class="form-input input-small input-box"
+                        placeholder="Suffix"
+                      />
+                      <input
+                        type="text"
+                        name="dob"
+                        class="form-input dob-input input-box"
+                        placeholder="Date of birth*"
+                        rules="required"
+                      />
                     </div>
                   </div>
                 </div>
@@ -181,24 +166,20 @@
                     <div
                       class="col-xl-9 col-lg-12 d-flex justify-content-between"
                     >
-                      <div class="form-group">
-                        <input
-                          type="email"
-                          class="email form-input larger-input input-box"
-                          placeholder="Email address*"
-                          rules="required|email"
-                        />
-                        <div id="error" class="from_message"></div>
-                      </div>
-                      <div class="form-group">
-                        <input
-                          type="phone"
-                          class="email form-input larger-input input-box"
-                          placeholder="Phone number*"
-                          rules="required"
-                        />
-                        <div id="error" class="from_message"></div>
-                      </div>
+                      <input
+                        name="email"
+                        type="email"
+                        class="email form-input larger-input input-box"
+                        placeholder="Email address*"
+                        rules="required|email"
+                      />
+                      <input
+                        name="phone"
+                        type="phone"
+                        class="email form-input larger-input input-box"
+                        placeholder="Phone number*"
+                        rules="required"
+                      />
                     </div>
                   </div>
                   <div class="row">
@@ -206,21 +187,24 @@
                       class="col-xl-9 col-lg-12 d-flex justify-content-between"
                     >
                       <input
+                        name="email"
                         type="email"
-                        class="email form-input larger-input"
+                        rules="required"
+                        class="email form-input larger-input input-box"
                         placeholder="Redress number"
                       />
                       <input
-                        type="phone"
-                        class="email form-input larger-input"
-                        placeholder="Known traveller number*"
-                        required
+                        name="email"
+                        type="email"
+                        rules="required"
+                        class="email form-input larger-input input-box"
+                        placeholder="Redress number"
                       />
                     </div>
                   </div>
                 </div>
 
-                <div class="row">
+                <!-- <div class="row">
                   <div class="col-12">
                     <div class="title">Emergency contact information</div>
                   </div>
@@ -275,7 +259,7 @@
                       />
                     </div>
                   </div>
-                </div>
+                </div> -->
 
                 <div class="bag-infomation">
                   <div class="row">
@@ -630,10 +614,10 @@
     </section>
     <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="./resources/js/infomation.js"></script>
     <script src="./resources//js/validator.js"></script>
+    <script src="./resources/js/infomation.js"></script>
     <script>
-      Validator("#register-form");
+      // Validator("#register-form");
       Validator("#information-form");
     </script>
   </body>
